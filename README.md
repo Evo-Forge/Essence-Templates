@@ -2,12 +2,12 @@
 
 ### Installation
 ```bash
-npm install essence-templates
+git clone git@github.com:PearlVentures/Essence-Templates.git
 ```
 
 ### Install all dependencies
 ```bash
-npm install
+npm install react-essence
 ```
 
 ### How to use
