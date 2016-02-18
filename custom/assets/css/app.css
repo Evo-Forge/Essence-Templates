@@ -1,0 +1,30 @@
+// html, body { width: 100% !important; }
+
+// Components adjusments
+.e-appbar button i {
+	font-size: 14px !important;
+}
+
+// Helpers
+.round { border-radius: 50%; }
+.badge {
+	width: 30px;
+	height: 30px;
+	margin-top: 3px;
+	line-height: 30px;
+}
+.stats-border {
+	border-right: 1px solid #353638;
+}
+.banner {
+	height: 300px;
+	background-size: cover;
+}
+.text-shadow {
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.9);
+}
+.text-truncate {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

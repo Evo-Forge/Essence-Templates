@@ -1,0 +1,59 @@
+{
+  "name": "essence-templates",
+  "version": "1.0.0",
+  "description": "React Essence Templates - based on Essence UI Framework",
+  "homepage": "http://essence.pearlhq.com/",
+  "repository": "git://github.com/PearlVentures/Essence-Templates",
+  "author": "Hetmann W. Iohan <wilhelm.hetmann@evozon.com>",
+  "license": "MIT",
+  "scripts": {
+    "template:test": "webpack-dev-server --devtool eval --hot --progress --colors --config essence/js/webpack.config.js --port 8080 --host 0.0.0.0 --content-base essence/",
+    "template:essence": "NODE_ENV=production webpack -p --config essence/js/webpack.config.js && http-server ./essence/ -p 8080 -a 0.0.0.0 -o",
+    "template:custom": "webpack-dev-server --devtool eval --hot --progress --colors --config custom/js/webpack.config.js --port 8080 --host 0.0.0.0 --content-base custom/"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "keywords": [
+    "essence",
+    "react",
+    "react-essence",
+    "essence-templates",
+    "react-component",
+    "google",
+    "google-material",
+    "google-material-design",
+    "basic",
+    "frontend",
+    "ui",
+    "framework",
+    "less"
+  ],
+  "dependencies": {
+    "react-essence": "^1.x"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.15",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "css-loader": "^0.23.0",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "gulp-less": "^3.0.5",
+    "gulp-minify-css": "^1.2.2",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.2",
+    "lodash": "^4.3.0",
+    "react-addons-css-transition-group": "^0.14.3",
+    "react-addons-transition-group": "^0.14.3",
+    "react-addons-update": "^0.14.3",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  }
+}
