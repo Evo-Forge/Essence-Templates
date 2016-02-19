@@ -1,8 +1,7 @@
 import React from 'react';
 import ClassNames from 'classnames';
 
-import Btn from 'essence-button';
-import {Block, Text} from 'essence-core';
+import { Btn, Block, Text } from 'react-essence';
 
 class CommerceBanner extends React.Component {
 	constructor(props) {

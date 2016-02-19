@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import ClassNames from 'classnames';
 
 // Essence core
-import {Block} from 'essence-core';
+import {Block} from 'react-essence';
 
 // Components
 import CommerceHeader from './components/header';

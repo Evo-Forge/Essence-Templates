@@ -1,8 +1,7 @@
 import React from 'react';
 import ClassNames from 'classnames';
 
-import Btn from 'essence-button';
-import {Block, Text, Divider} from 'essence-core';
+import {Btn, Block, Text, Divider} from 'react-essence';
 
 class CommerceGoShopping extends React.Component {
 	constructor(props) {

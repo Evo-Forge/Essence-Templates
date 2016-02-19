@@ -1,11 +1,7 @@
 import React from 'react';
 import ClassNames from 'classnames';
 
-import Btn from 'essence-button';
-import AppBar from 'essence-appbar';
-import {Block, Text, Utils} from 'essence-core';
-import {List, ListItem} from 'essence-list';
-import Menu from 'essence-menu';
+import { Btn, AppBar, Block, Text, Utils, Menu, List, ListItem} from 'react-essence';
 
 class CommerceHeader extends React.Component {
 	constructor(props) {

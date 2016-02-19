@@ -1,10 +1,17 @@
 import React from 'react';
 import ClassNames from 'classnames';
 
-import Btn from 'essence-button';
-import Image from 'essence-image';
-import {Block, Text, Divider} from 'essence-core';
-import {Card, CardHeader, CardContent, CardFooter} from 'essence-card';
+import {
+	Btn, 
+	Image, 
+	Block, 
+	Text, 
+	Divider, 
+	Card, 
+	CardHeader, 
+	CardContent, 
+	CardFooter
+} from 'react-essence';
 
 class CommerceArticles extends React.Component {
 	constructor(props) {
@@ -33,7 +40,8 @@ class CommerceArticles extends React.Component {
 								<Block className={'e-container'}>
 									<Block className={'brick brick-12'}>
 										<Text type={'small'} className={'e-caption e-text-grey-700'}>
-											Feb {new Date().getDate()}, {new Date().getUTCFullYear()}
+											Feb {new Date().getDate()}, 
+												{new Date().getUTCFullYear()}
 										</Text>
 										<Text type={'h4'} className={'text-truncate'}>
 											<Text type={'a'} href={'#!'} className={'e-text-grey-900'}>

@@ -1,11 +1,7 @@
 import React from 'react';
 import ClassNames from 'classnames';
 
-import Btn from 'essence-button';
-import Image from 'essence-image';
-import {Block, Text, Divider} from 'essence-core';
-import {Card, CardHeader, CardContent, CardFooter} from 'essence-card';
-import SnackBar from 'essence-snackbar';
+import { Btn, Image, Block, Text, Divider, Card, CardHeader, CardContent, CardFooter, SnackBar } from 'react-essence';
 
 class CommerceProducts extends React.Component {
 	constructor(props) {

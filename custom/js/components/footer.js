@@ -1,10 +1,7 @@
 import React from 'react';
 import ClassNames from 'classnames';
 
-import Icon from 'essence-icon';
-import Btn from 'essence-button';
-import Input from 'essence-input';
-import {Block, Text} from 'essence-core';
+import {Icon, Btn, Input, Block, Text} from 'react-essence';
 
 class CommerceFooter extends React.Component {
 	constructor(props) {
