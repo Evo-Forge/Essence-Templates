@@ -1,7 +1,20 @@
 import React from 'react';
 import ClassNames from 'classnames';
 
-import { Btn, Image, Block, Text, Divider, Card, CardHeader, CardContent, CardFooter, SnackBar } from 'react-essence';
+import {
+	Btn,
+	Image,
+	Block,
+	Text,
+	Divider,
+	Card,
+	CardHeader,
+	CardContent,
+	CardFooter,
+	SnackBar 
+} from 'react-essence';
+
+import CommerceProduct from './product';
 
 class CommerceProducts extends React.Component {
 	constructor(props) {
@@ -11,6 +24,7 @@ class CommerceProducts extends React.Component {
                 this.props.classes,
                 this.props.className
             ),
+            product: false,
             addToCartVisible: false,
             addToCartMessage: ''
         };
@@ -29,9 +43,32 @@ class CommerceProducts extends React.Component {
    		});
    	}
 
+   	showDialog(product) {
+   		if (product) {
+	   		this.setState({
+	   			product: product
+	   		});
+   		}
+   	}
+
+   	hideDialog() {
+   		this.setState({
+   			product: false
+   		});
+   	}
+
+   	renderDialog() {
+   		if (this.state.product) {
+	   		return (
+	   			<CommerceProduct open={true} product={this.state.product} onClose={this.hideDialog.bind(this)} />
+	   		);
+   		}
+   	}
+
     render() {
         return (
         	<Block className={'e-container'}>
+        		{this.renderDialog()}
 		   		<SnackBar 
 		   			delay={5000}
 		   			classes={'e-text-green-500'}
@@ -48,9 +85,15 @@ class CommerceProducts extends React.Component {
 					<Block classes={'brick brick-3'}>
 						<Card>
 							<CardContent className={'e-no-padding card-main-image'}>
-								<Text type={'a'} href={'#!'} className={'e-text-center'}>
+								<Block className={'e-text-center'} onClick={this.showDialog.bind(this, {
+									category: 'Technology',
+									title: 'Product computer edition',
+									description: 'Aluminium premium materials',
+									price: '679.00',
+									image: 'https://source.unsplash.com/category/technology/500x400?computer'
+								})}>
 									<Image src={'https://source.unsplash.com/category/technology/270x270?computer'} height={'275'} />
-								</Text>
+								</Block>
 								<Block className={'e-container'}>
 									<Block className={'brick brick-12'}>
 										<Text type={'p'} className={'e-caption text-truncate'}>
@@ -86,9 +129,15 @@ class CommerceProducts extends React.Component {
 					<Block classes={'brick brick-3'}>
 						<Card>
 							<CardContent className={'e-no-padding card-main-image'}>
-								<Text type={'a'} href={'#!'} className={'e-text-center'}>
+								<Block className={'e-text-center'} onClick={this.showDialog.bind(this, {
+									category: 'Technology',
+									title: 'Product Gadgets edition',
+									description: 'Latest trends in 2016',
+									price: '249.00',
+									image: 'https://source.unsplash.com/category/technology/500x400?gadget'
+								})}>
 									<Image src={'https://source.unsplash.com/category/technology/270x270?gadget'} height={'275'} />
-								</Text>
+								</Block>
 								<Block className={'e-container'}>
 									<Block className={'brick brick-12'}>
 										<Text type={'p'} className={'e-caption text-truncate'}>
@@ -121,9 +170,15 @@ class CommerceProducts extends React.Component {
 					<Block classes={'brick brick-3'}>
 						<Card>
 							<CardContent className={'e-no-padding card-main-image'}>
-								<Text type={'a'} href={'#!'} className={'e-text-center'}>
+								<Block className={'e-text-center'} onClick={this.showDialog.bind(this, {
+									category: 'Technology',
+									title: 'Premium Phone edition',
+									description: 'The cheapest phone from India',
+									price: '3.50',
+									image: 'https://source.unsplash.com/category/technology/500x400?phone'
+								})}>
 									<Image src={'https://source.unsplash.com/category/technology/270x270?phone'} height={'275'} />
-								</Text>
+								</Block>
 								<Block className={'e-container'}>
 									<Block className={'brick brick-12'}>
 										<Text type={'p'} className={'e-caption text-truncate'}>
@@ -156,9 +211,15 @@ class CommerceProducts extends React.Component {
 					<Block classes={'brick brick-3'}>
 						<Card>
 							<CardContent className={'e-no-padding card-main-image'}>
-								<Text type={'a'} href={'#!'} className={'e-text-center'}>
+								<Block className={'e-text-center'} onClick={this.showDialog.bind(this, {
+									category: 'Technology',
+									title: 'Camera Water Protective edition',
+									description: 'Resist up to 50m underwater',
+									price: '135.00',
+									image: 'https://source.unsplash.com/category/technology/500x400?camera'
+								})}>
 									<Image src={'https://source.unsplash.com/category/technology/270x270?camera'} height={'275'} />
-								</Text>
+								</Block>
 								<Block className={'e-container'}>
 									<Block className={'brick brick-12'}>
 										<Text type={'p'} className={'e-caption text-truncate'}>
