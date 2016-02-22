@@ -6,12 +6,16 @@ import Btn from 'essence-button';
 import TouchPad from 'essence-touchpad';
 import {Block, Text, Divider} from 'essence-core';
 import {Card, CardHeader, CardContent, CardFooter} from 'essence-card';
+import {List, ListItem} from 'essence-list';
 
 class AppTouchPad extends React.Component {
 	constructor(props) {
         super(props);
         this.state = {
-			visible: false,
+			visible: {
+				round: false,
+				inline: false
+			},
 			position: {
 				start: { top: 0, left: 0},
 				end: { top: 0, left: 0},
@@ -58,12 +62,27 @@ class AppTouchPad extends React.Component {
 	    };
 	}
 
-	selectedText(event) {
+	selectedTextRound(event) {
 	    var selectedText = window.getSelection().toString();
+	    var visible = this.state.visible;
+	    
+	    visible.round = selectedText.length > 0 ? true : false;
 
 	    this.getPosition(event);
 	    this.setState({
-	        visible: selectedText.length > 0 ? true : false
+	        visible: visible
+	    });
+	}
+
+	selectedTextInline(event) {
+	    var selectedText = window.getSelection().toString();
+	    var visible = this.state.visible;
+
+	    visible.inline = selectedText.length > 0 ? true : false;
+
+	    this.getPosition(event);
+	    this.setState({
+	        visible: visible
 	    });
 	}
 
@@ -86,19 +105,19 @@ class AppTouchPad extends React.Component {
 			        			<Text type={'h4'} classes={'e-text-indigo-400'}>LIVE EXAMPLE:</Text>
 		        				<Divider classes={'thick short e-background-indigo-400'} />
 		        				<Block>
-									<Text className={'e-position-relative e-text-justify'} onMouseUp={this.selectedText.bind(this)}>
-										<Text type={'p'}>
+									<Text className={'e-position-relative e-text-justify'}>
+										<Text type={'p'} onMouseUp={this.selectedTextRound.bind(this)}>
 											Lorem ipsum dolor sit amet, duo ex malis putent possit, ea dicta vitae intellegat vel, et tamquam integre mei. Debet invidunt ius ei, ex omnesque efficiendi vis, eu elit paulo ullamcorper eam. Probatus explicari ius an, ei diceret noluisse nam, eam modo mandamus no. Vis in iudico percipitur efficiantur, sea ne maiestatis neglegentur. Assum nonumes ei pro. Sit hinc audiam meliore id, tale justo solet vim ex, quodsi molestie cu his.
 											Usu eripuit principes voluptatum id, ea sint nostro vis, vel lobortis mnesarchum ex. Ne vix vide dicam delicatissimi, delenit abhorreant usu ut. Vel ne ubique mediocrem adolescens, vis sint possim omnesque id, soleat suscipiantur in eam. Paulo dolor periculis ius no, eum nisl doming corrumpit eu. Modus inermis fastidii vel ad, ei duo vocibus propriae senserit.
 											Pri ut labitur debitis consequuntur, no facer lobortis mea. Democritum vituperatoribus eam ei. Ei his adipisci salutandi accommodare. Ex alia possim nam, pro ubique graeco ea. Duo molestie oporteat constituam ad, fabulas postulant corrumpit et eam.
 										</Text>
 										<br />
-										<Text type={'p'}>
+										<Text type={'p'} onMouseUp={this.selectedTextInline.bind(this)}>
 											Eam sonet nihil singulis ex. Eum debet explicari voluptatum te. Vim sumo tritani ea, id agam brute vitae sed, eu labitur vituperatoribus has. Ad erant efficiendi mediocritatem cum, qui porro mucius ea, eu reque facer nec. Molestiae moderatius sit at, et qui veri apeirian. Ne per brute persecuti, ne alterum molestie sadipscing cum. Eu periculis omittantur qui, ei usu fabellas perfecto qualisque.
 											Duo ei tale delectus theophrastus, urbanitas mnesarchum has et. Illum quando ex sed, posse perpetua elaboraret et ius. Atqui debet usu ea, no novum alterum eam, at sea dicant urbanitas. Duo nostrum accusata no.
 										</Text>
 									</Text>
-									<TouchPad classes={'e-text-green-500'} visible={this.state.visible} position={this.state.position.touchpad}>
+									<TouchPad classes={'e-text-green-500'} visible={this.state.visible.round} position={this.state.position.touchpad}>
 										<Btn type={'touchpad'} label={'copy'} icon={'content-content-copy'} className={'copy'} />
 										<Btn type={'touchpad'} label={'paste'} icon={'content-content-paste'} className={'paste'} />
 										<Btn type={'touchpad'} label={'redo'} icon={'content-redo'} className={'redo'} />
@@ -107,6 +126,19 @@ class AppTouchPad extends React.Component {
 										<Btn type={'touchpad'} label={'italic'} icon={'editor-format-italic'} className={'italic'} />
 										<Btn type={'touchpad'} label={'undo'} icon={'content-undo'} className={'undo'} />
 										<Btn type={'touchpad'} label={'cut'} icon={'content-content-cut'} className={'cut'} />
+									</TouchPad>
+									<TouchPad inline={true} classes={'e-text-green-500'} visible={this.state.visible.inline} position={this.state.position.touchpad}>
+										<List type={'inline'} className={'e-button'}>
+											<ListItem>
+												<Text type={'a'} href={'#bold'} className={'e-text-uppercase e-text-grey-800'}>Bold</Text>
+											</ListItem>
+											<ListItem>
+												<Text type={'a'} href={'#paste'} className={'e-text-uppercase e-text-grey-800'}>Paste</Text>
+											</ListItem>
+											<ListItem>
+												<Text type={'a'} href={'#italic'} className={'e-text-uppercase e-text-grey-800'}>Italic</Text>
+											</ListItem>
+										</List>
 									</TouchPad>
 								</Block>
 		        			</Block>
