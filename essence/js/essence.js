@@ -354,29 +354,7 @@ class AppGetStarted extends React.Component {
 							</Block>
 
 		        			<Block className={'e-row'}>
-			        			<Block className={'brick brick-6'}>
-									<Block className={'e-padding-bottom-15'}>
-										<Text type={'h4'} classes={'e-text-indigo-400'}>HOW TO TEST/RUN:</Text>
-										<Divider classes={'thick short e-background-indigo-400'} />
-										
-										<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
-											There are 3 options: <br />
-											1. <u>essence:test</u> runs a development instance with this template & is started from webpack-dev-server with content base from /templates/essence
-											<br />
-											2. <u>essence:live</u> runs a production instance with this template compiled with webpack & started with http-server on port 8080 and content base from /templates/essence
-											<br />
-											3. <u>essence:custom</u> runs a development instante of a boilerplate template & is started from webpack-dev-server with content base from /templates/boilerplate
-										</Text>
-
-										<pre classes={'e-background-grey-100 e-text-black'}>
-											<code>
-												npm run <strong>essence:custom</strong>
-											</code>
-										</pre>
-									</Block>
-								</Block>
-
-								<Block className={'brick brick-6'}>
+			        			<Block className={'brick brick-12'}>
 									<Block className={'e-padding-bottom-15'}>
 										<Text type={'h4'} classes={'e-text-indigo-400'}>MAKE A TEMPLATE:</Text>
 										<Divider classes={'thick short e-background-indigo-400'} />
@@ -394,9 +372,24 @@ class AppGetStarted extends React.Component {
 
 										<pre classes={'e-background-grey-100 e-text-black'}>
 											<code>
-												npm run <strong>essence:your-template-name</strong>
+												git clone git@github.com:PearlVentures/Essence-Templates.git
+												<br />
+												npm install <strong>react-essence</strong>
+												<br />
+												npm run <strong>template:essence</strong>
+												<br />
+												or
+												<br />
+												npm run <strong>template:custom</strong>
+												<br />
+												or
+												<br />
+												npm run <strong>template:your-template-name</strong>
 											</code>
 										</pre>
+										<Text className={'e-caption'}>
+											<strong>NOTE: </strong> See more information on <a href={'https://www.npmjs.com/package/essence-templates'} target={'_blank'}>Essence Templates Package</a>
+										</Text>
 									</Block>
 								</Block>
 							</Block>
