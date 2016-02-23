@@ -23,8 +23,7 @@ import {
 	AppButton,
 	AppCard,
 	AppChip,
-	AppColors, 
-	AppCore,
+	AppColors,
 	AppDataTable,
 	AppDialog,
 	AppIcons,
@@ -44,6 +43,15 @@ import {
 	AppTouchPad,
 } from './components/';
 
+// Core components
+import {
+	AppCoreGridSystem,
+	AppCoreDivider,
+	AppCoreRippleInk,
+	AppCoreTextTypography,
+	AppCoreUtilities,
+} from './components/core';
+
 let EssenceMenu = {
 	'home': {
 		title: 'Home'
@@ -57,6 +65,24 @@ let EssenceMenu = {
 	'contact': {
 		title: 'Contact'
 	}
+};
+
+let EssenceCoreMenu = {
+	'core-grid-system': {
+		title: 'Core: Grid System'
+	},
+	'core-divider': {
+		title: 'Core: Divider'
+	},
+	'core-ripple-ink': {
+		title: 'Core: Ripple Ink'
+	},
+	'core-text-typography': {
+		title: 'Core: Text Typography'
+	},
+	'core-utilities': {
+		title: 'Core: Utilities'
+	},
 };
 
 class AppHome extends React.Component {
@@ -84,10 +110,7 @@ class AppHome extends React.Component {
 								<Text type={'h5'} classes={'e-headline e-text-white e-text-uppercase'}>
 									The Essential Material Design Framework
 								</Text>
-								<Text type={'a'} href={'#get-started'} classes={'e-btn raised e-background-indigo-700'}>
-									Get Started with Essence
-								</Text>
-								<Text type={'a'} href={'https://www.npmjs.com/~pearlventures'} target={'_blank'} classes={'e-btn raised e-background-indigo-500 e-text-white'}>
+								<Text type={'a'} href={'https://www.npmjs.com/~pearlventures'} target={'_blank'} classes={'e-btn raised e-background-indigo-700 e-text-white'}>
 									Install from NPM
 								</Text>
 								<Text type={'a'} href={'https://github.com/PearlVentures/Essence'} target={'_blank'} classes={'e-btn raised e-background-white e-text-indigo-800'}>
@@ -97,7 +120,7 @@ class AppHome extends React.Component {
 						</Block>
 						<Block classes={'brick brick-12 e-text-center'}>
 							<Block>
-								<Text type={'h3'} classes={'e-display-1 e-text-indigo-400 e-text-uppercase e-margin-bottom-100'}>
+								<Text type={'h3'} classes={'e-display-1 e-text-indigo-400 e-text-uppercase e-margin-top-25 e-margin-bottom-100'}>
 									Build it on one, use it on all!
 								</Text>
 								<Image className={'e-img-rsp'} src={'./assets/img/essence_responsive_banner.png'} alt={'Essence'} />
@@ -569,6 +592,29 @@ class AppNavigationMenu extends React.Component {
 		
 		return renderComponents;
     }
+
+    renderEssenceCoreMenu() {
+		let self = this;
+		let renderComponents = [];
+
+		Object.keys(EssenceCoreMenu).forEach(function(key) { 
+			var component = EssenceCoreMenu[key];
+			renderComponents.push(
+				(
+					<li key={'component-'+key}>
+						<Text type={'a'} href={'#'+key}>
+							<Block classes={'content e-left'}>
+								<Text type={'small'}>{component.title}</Text>
+							</Block>	
+						</Text>
+					</li>
+				)
+			); 
+		});
+		
+		return renderComponents;
+    }
+
     renderComponentsMenu() {
 		let self = this;
 		let renderComponents = [];
@@ -621,6 +667,20 @@ class AppNavigationMenu extends React.Component {
 								{this.renderEssenceMenu()}
 							</List>
 						</ListItem>
+
+						<ListItem key={'component-core'}>
+							<Block classes={'group-list-title'}>
+								<Image src={'./assets/img/styles-b.png'} height={'24px'} alt={'Essence Core'} />
+								&nbsp;
+								<Text type={'small'}>
+									Essence Core
+								</Text>
+							</Block>
+							<List type={'navigation'}>
+								{this.renderEssenceCoreMenu()}
+							</List>
+						</ListItem>
+
 						<ListItem key={'component-components'}>
 							<Block classes={'group-list-title'}>
 								<Image src={'./assets/img/components.png'} height={'24px'} alt={'Components'} />
@@ -660,7 +720,11 @@ class App extends React.Component {
 				'button',
 				'card',
 				'chip',
-				'core',
+				'core-grid-system',
+				'core-divider',
+				'core-ripple-ink',
+				'core-text-typography',
+				'core-utilities',
 				'data-table',
 				'dialog',
 				'image',
@@ -696,6 +760,7 @@ class App extends React.Component {
     componentDidMount() {
     	let essenceComponents = this.state.essenceComponents;
 		for (var objKey in EssenceMenu) { essenceComponents[objKey] = EssenceMenu[objKey]; }
+		for (var objKey in EssenceCoreMenu) { essenceComponents[objKey] = EssenceCoreMenu[objKey]; }
 		for (var objKey in Components) { essenceComponents[objKey] = Components[objKey]; }
 
 		this.setState({
@@ -794,8 +859,20 @@ class App extends React.Component {
     		case 'chip':
     			componentContent = <AppChip />;
     			break;
-    		case 'core':
-    			componentContent = <AppCore />;
+    		case 'core-grid-system':
+    			componentContent = <AppCoreGridSystem />;
+    			break;
+    		case 'core-divider':
+    			componentContent = <AppCoreDivider />;
+    			break;
+    		case 'core-ripple-ink':
+    			componentContent = <AppCoreRippleInk />;
+    			break;
+    		case 'core-text-typography':
+    			componentContent = <AppCoreTextTypography />;
+    			break;
+    		case 'core-utilities':
+    			componentContent = <AppCoreUtilities />;
     			break;
     		case 'dialog':
     			componentContent = <AppDialog />;

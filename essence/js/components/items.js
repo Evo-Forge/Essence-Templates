@@ -42,12 +42,6 @@ module.exports = {
 		'url': '/chip.html',
 		'icon': ''
 	},
-	'core': {
-		'title': 'Core',
-		'description': 'core description', 
-		'url': '/core.html',
-		'icon': ''
-	},
 	'data-table': {
 		'title': 'Data Table',
 		'description': 'table description', 

@@ -16,7 +16,7 @@ class AppBarComponent extends React.Component {
                 this.props.className
             ),
             AppBarTitle: false,
-            AppBarStyle: {position: 'relative', paddingLeft: '12px', overflow: 'inherit'}
+            AppBarStyle: {position: 'relative', paddingLeft: '12px!important', overflow: 'inherit!important'}
         };
     }
 
