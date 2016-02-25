@@ -15,14 +15,14 @@ class AppImage extends React.Component {
                 this.props.classes,
                 this.props.className
             ),
-            imageSrc: 'http://essence.pearlhq.com/assets/img/essence_icon.png'
+            imageSrc: 'http://getessence.io/assets/img/essence_icon.png'
         };
     }
 
     changeImage(event) {
     	let src = event.target.value;
     	this.setState({
-    		imageSrc: src || 'http://essence.pearlhq.com/assets/img/essence_icon.png'
+    		imageSrc: src || 'http://getessence.io/assets/img/essence_icon.png'
     	});
     }
 

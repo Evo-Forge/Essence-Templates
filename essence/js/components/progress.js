@@ -32,24 +32,18 @@ class AppProgress extends React.Component {
 			        		<CardContent>
 				        		<Block classes={'e-text-center e-padding-top-25'}>
 			        				<Block className={ClassNames('e-row e-padding-bottom-25')}>
-										<Block classes={'brick brick-2'}>
+										<Block classes={'brick brick-3'}>
 											<Progress type={'circle'} />
 										</Block>
-										<Block classes={'brick brick-2'}>
+										<Block classes={'brick brick-3'}>
 											<Progress type={'circle'} small={true} />
 										</Block>
-										<Block classes={'brick brick-2'}>
+										<Block classes={'brick brick-3'}>
 											<Progress type={'dots'} />
 										</Block>
-										<Block classes={'brick brick-2'}>
+										<Block classes={'brick brick-3'}>
 											<Progress type={'slider'} />
-										</Block>
-										<Block classes={'brick brick-2'}>
-											<Progress type={'fix'} />
-										</Block>
-										<Block classes={'brick brick-2'}>
-											<Progress type={'dynamic'} />
-										</Block>
+										</Block>										
 									</Block>
 			        			</Block>
 
@@ -79,10 +73,7 @@ class AppProgress extends React.Component {
 											&lt;Progress type=&#123;'dots'&#125; />
 											<br />
 											&lt;Progress type=&#123;'slider'&#125; />
-											<br />
-											&lt;Progress type=&#123;'fix'&#125; />
-											<br />
-											&lt;Progress type=&#123;'dynamic'&#125; />
+											<br />											
 				        				</code>
 			        				</pre>
 			        			</Block>

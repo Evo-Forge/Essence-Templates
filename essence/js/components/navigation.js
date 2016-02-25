@@ -45,7 +45,7 @@ class AppNavigation extends React.Component {
 																width={'40px'} 
 																height={'40px'} 
 																style={{ verticalAlign: 'middle'}} 
-																src={'http://essence.pearlhq.com/assets/img/essence_icon.png'} />
+																src={'http://getessence.io/assets/img/essence_icon.png'} />
 														</Text>
 														<Text type={'h2'} classes={'e-text-indigo-400 e-right'} style={{width: '74%', lineHeight: '45px'}}>
 															<Text>essence</Text>

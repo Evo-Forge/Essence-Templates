@@ -37,19 +37,19 @@ class AppSwitch extends React.Component {
 										<Block className={'e-padding-top-15'}>
 											<Block className={'e-padding-bottom-25'}>
 												<Text className={'e-text-indigo-400'}>Checkbox: </Text>
-												<br />
+												<br /><br />
 												<Switch type={'checkbox'} text={'Default checkbox'} name={'switch-uncheckbox'}/>
 											</Block>
 											<Block className={'e-padding-bottom-25'}>
 												<Text className={'e-text-indigo-400'}>Radio: </Text>
-												<br />
+												<br /><br />
 												<Switch type={'radio'} text={'1st option'} name={'switch-radio'} />
 												<br />
 												<Switch type={'radio'} text={'2nd option'} name={'switch-radio'} />
 											</Block>
 											<Block className={'e-padding-bottom-25'}>
 												<Text className={'e-text-indigo-400'}>Switches: </Text>
-												<br />
+												<br /><br />
 												<Switch type={'switches'} afterText={'ON'} beforeText={'OFF'} name={'switch-switches'} />
 											</Block>
 										</Block>

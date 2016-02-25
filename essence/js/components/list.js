@@ -55,7 +55,7 @@ class AppList extends React.Component {
 												<Text type={'a'}>
 													<Icon name={'action-stars'} classes={'e-left'} />
 													<Block classes={'content e-left'}>Mutant Ninja</Block>								
-													<Image src={'http://i.imgur.com/a7okZb.jpg'} alt={'Star Wars'} classes={'e-avatar e-right'} />
+													<Image src={'http://i.imgur.com/DhsdGIs.jpg'} alt={'Star Wars'} classes={'e-avatar e-right'} />
 												</Text>
 											</ListItem>
 										</List>
@@ -65,7 +65,7 @@ class AppList extends React.Component {
 										<List type={'navigation'} classes={'e-twolinelist'}>
 											<ListItem>
 												<Text type={'a'}>
-													<Image src={'http://i.imgur.com/Ix585.jpg'} alt={'Star Wars'} classes={'e-avatar e-left'}/>		
+													<Image src={'http://i.imgur.com/5bteaK6.jpg'} alt={'Star Wars'} classes={'e-avatar e-left'}/>		
 													<Block classes={'content e-left'}>
 														<Text classes={'primary'}>Johnny Bravo</Text>
 														<Text classes={'secondary'}>Jan 9, 2016</Text>
@@ -85,7 +85,7 @@ class AppList extends React.Component {
 											</ListItem>
 											<ListItem>
 												<Text type={'a'}>
-													<Image src={'http://i.imgur.com/a7okZb.jpg'} alt={'Star Wars'} classes={'e-avatar e-left'}/>		
+													<Image src={'http://i.imgur.com/DhsdGIs.jpg'} alt={'Star Wars'} classes={'e-avatar e-left'}/>		
 													<Block classes={'content e-left'}>
 														<Text classes={'primary'}>Mutant Ninja</Text>
 														<Text classes={'secondary'}>Jan 11, 2016</Text>
@@ -100,7 +100,7 @@ class AppList extends React.Component {
 										<List type={'navigation'} classes={'e-threelinelist'}>
 											<ListItem>
 												<Text type={'a'}>
-													<Image src={'http://i.imgur.com/Ix585.jpg'} alt={'Star Wars'} classes={'e-avatar e-left'}/>		
+													<Image src={'http://i.imgur.com/5bteaK6.jpg'} alt={'Star Wars'} classes={'e-avatar e-left'}/>		
 													<Block classes={'content e-left'}>
 														<Text classes={'primary'}>Johnny Bravo</Text>
 														<Text classes={'secondary'}>Jan 9, 2016</Text>
@@ -122,7 +122,7 @@ class AppList extends React.Component {
 											</ListItem>
 											<ListItem>
 												<Text type={'a'}>
-													<Image src={'http://i.imgur.com/a7okZb.jpg'} alt={'Star Wars'} classes={'e-avatar e-left'}/>		
+													<Image src={'http://i.imgur.com/DhsdGIs.jpg'} alt={'Star Wars'} classes={'e-avatar e-left'}/>		
 													<Block classes={'content e-left'}>
 														<Text classes={'primary'}>Mutant Ninja</Text>
 														<Text classes={'secondary'}>Jan 11, 2016</Text>
@@ -195,7 +195,7 @@ class AppList extends React.Component {
 											<br />
 											&nbsp;&nbsp;&nbsp;&lt;Block classes=&#123;'content e-left'&#125;&gt;Mutant Ninja&lt;/Block&gt;
 											<br />
-											&nbsp;&nbsp;&nbsp;&lt;Image src=&#123;'http://i.imgur.com/a7okZb.jpg'&#125; alt=&#123;'Star Wars'&#125; classes=&#123;'e-avatar e-right'&#125; /&gt;
+											&nbsp;&nbsp;&nbsp;&lt;Image src=&#123;'http://i.imgur.com/DhsdGIs.jpg'&#125; alt=&#123;'Star Wars'&#125; classes=&#123;'e-avatar e-right'&#125; /&gt;
 											<br />
 											&nbsp;&nbsp;&lt;/Text&gt;
 											<br />
@@ -212,7 +212,7 @@ class AppList extends React.Component {
 											<br />
 											&nbsp;&nbsp;&lt;Text type=&#123;'a'&#125;&gt;
 											<br />
-											&nbsp;&nbsp;&nbsp;&lt;Image src=&#123;'http://i.imgur.com/Ix585.jpg'&#125; alt=&#123;'Star Wars'&#125; classes=&#123;'e-avatar e-left'&#125;/&gt;
+											&nbsp;&nbsp;&nbsp;&lt;Image src=&#123;'http://i.imgur.com/5bteaK6.jpg'&#125; alt=&#123;'Star Wars'&#125; classes=&#123;'e-avatar e-left'&#125;/&gt;
 											<br />
 											&nbsp;&nbsp;&nbsp;&lt;Block classes=&#123;'content e-left'&#125;&gt;
 											<br />
@@ -252,7 +252,7 @@ class AppList extends React.Component {
 											<br />
 											&nbsp;&nbsp;&lt;Text type=&#123;'a'&#125;&gt;
 											<br />
-											&nbsp;&nbsp;&nbsp;&lt;Image src=&#123;'http://i.imgur.com/a7okZb.jpg'&#125; alt=&#123;'Star Wars'&#125; classes=&#123;'e-avatar e-left'&#125;/&gt;
+											&nbsp;&nbsp;&nbsp;&lt;Image src=&#123;'http://i.imgur.com/DhsdGIs.jpg'&#125; alt=&#123;'Star Wars'&#125; classes=&#123;'e-avatar e-left'&#125;/&gt;
 											<br />
 											&nbsp;&nbsp;&nbsp;&lt;Block classes=&#123;'content e-left'&#125;&gt;
 											<br />
@@ -279,7 +279,7 @@ class AppList extends React.Component {
 											<br />
 											&nbsp;&nbsp;&lt;Text type=&#123;'a'&#125;&gt;
 											<br />
-											&nbsp;&nbsp;&nbsp;&lt;Image src=&#123;'http://i.imgur.com/Ix585.jpg'&#125; alt=&#123;'Star Wars'&#125; classes=&#123;'e-avatar e-left'&#125;/&gt;&nbsp;&nbsp;
+											&nbsp;&nbsp;&nbsp;&lt;Image src=&#123;'http://i.imgur.com/5bteaK6.jpg'&#125; alt=&#123;'Star Wars'&#125; classes=&#123;'e-avatar e-left'&#125;/&gt;&nbsp;&nbsp;
 											<br />
 											&nbsp;&nbsp;&nbsp;&lt;Block classes=&#123;'content e-left'&#125;&gt;
 											<br />
@@ -323,7 +323,7 @@ class AppList extends React.Component {
 											<br />
 											&nbsp;&nbsp;&lt;Text type=&#123;'a'&#125;&gt;
 											<br />
-											&nbsp;&nbsp;&nbsp;&lt;Image src=&#123;'http://i.imgur.com/a7okZb.jpg'&#125; alt=&#123;'Star Wars'&#125; classes=&#123;'e-avatar e-left'&#125;/&gt;&nbsp;&nbsp;
+											&nbsp;&nbsp;&nbsp;&lt;Image src=&#123;'http://i.imgur.com/DhsdGIs.jpg'&#125; alt=&#123;'Star Wars'&#125; classes=&#123;'e-avatar e-left'&#125;/&gt;&nbsp;&nbsp;
 											<br />
 											&nbsp;&nbsp;&nbsp;&lt;Block classes=&#123;'content e-left'&#125;&gt;
 											<br />
