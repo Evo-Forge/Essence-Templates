@@ -101,98 +101,100 @@ class AppHome extends React.Component {
         	<Block>
 				<Block>
 					<Block classes={'clearfix'}>
-						<Block classes={'brick brick-12 e-text-center e-background-indigo-400 e-padding-top-100 e-padding-bottom-50 e-no-margin'} style={{width: '100%'}}>
-							<Block>
-								<Image className={'e-img-rsp'} src={'./assets/img/ess-logo.png'} alt={'Essence'} />
-								<Text type={'h5'} classes={'e-display-4 e-text-white'}>
-									essence
-								</Text>
-								<Text type={'h5'} classes={'e-headline e-text-white e-text-uppercase'}>
-									The Essential Material Design Framework
-								</Text>
-								<Text type={'a'} href={'https://www.npmjs.com/~pearlventures'} target={'_blank'} classes={'e-btn raised e-background-indigo-700 e-text-white'}>
-									Install from NPM
-								</Text>
-								<Text type={'a'} href={'https://github.com/PearlVentures/Essence'} target={'_blank'} classes={'e-btn raised e-background-white e-text-indigo-800'}>
-									Download from GitHub
-								</Text>
-							</Block>
-						</Block>
-						<Block classes={'brick brick-12 e-text-center'}>
-							<Block>
-								<Text type={'h3'} classes={'e-display-1 e-text-indigo-400 e-text-uppercase e-margin-top-25 e-margin-bottom-100'}>
-									Build it on one, use it on all!
-								</Text>
-								<Image className={'e-img-rsp'} src={'./assets/img/essence_responsive_banner.png'} alt={'Essence'} />
-							</Block>
-
-							<Block className={'e-row e-padding-top-15 e-padding-bottom-15'}>
-								<Block classes={'brick brick-1'}>&nbsp;</Block>
-								<Block classes={'brick brick-10'}>
-									<Divider />
-								</Block>
-								<Block classes={'brick brick-1'}>&nbsp;</Block>
-							</Block>
-
-							<Block className={'e-row'}>
-								<Text type={'h3'} classes={'e-display-1 e-text-indigo-400 e-text-uppercase e-margin-bottom-15'}>
-									Distilled with
-								</Text>
-								<Block classes={'brick brick-5 e-text-center'}>
-									<Image className={'e-img-rsp'} src={'./assets/img/less.png'} alt={'Less'} />
-								</Block>
-								<Block classes={'brick brick-2'}>
-									&nbsp;
-								</Block>
-								<Block classes={'brick brick-5 e-text-center'}>
-									<Image className={'e-img-rsp'} src={'./assets/img/react.png'} alt={'ReactJS'} />
-								</Block>
-							</Block>
-
-							<Block className={'e-row'}>
-								<Block classes={'brick brick-1'}>&nbsp;</Block>
-								<Block classes={'brick brick-10'}>
-									<Divider />
-								</Block>
-								<Block classes={'brick brick-1'}>&nbsp;</Block>
-							</Block>
-
-							<Block className={'e-row'}>
-								<Block classes={'brick brick-6 e-text-center'}>
-									<Image className={'e-img-rsp'} src={'./assets/img/focus.png'} alt={'Fully focused'} />
-									<Text type={'p'} classes={'e-title line-height-12 e-text-indigo-400 e-text-uppercase'}>
-										Fully focused
+						<Block classes={'e-row'}>
+							<Block classes={'brick brick-12 e-text-center e-background-indigo-400 e-padding-top-50 e-padding-bottom-50 e-no-margin'} style={{width: '100%'}}>
+								<Block>
+									<Image className={'e-img-rsp'} src={'./assets/img/ess-logo.png'} alt={'Essence'} />
+									<Text type={'h5'} classes={'e-display-4 e-text-white'}>
+										essence
 									</Text>
-									<Divider classes={'thick medium e-background-indigo-400'} style={{left: '37%'}} />
-									<Text type={'p'} classes={'e-subhead line-height-12 e-text-blue-grey-400'}>
-										On intuitive & natural interaction
+									<Text type={'h5'} classes={'e-headline e-text-white e-text-uppercase'}>
+										The Essential Material Design Framework
 									</Text>
-								</Block>
-								<Block classes={'brick brick-6 e-text-center'}>
-									<Image className={'e-img-rsp'} src={'./assets/img/document.png'} alt={'Fully documented'} />
-									<Text type={'p'} classes={'e-title line-height-12 e-text-indigo-400 e-text-uppercase'}>
-										Fully documented
+									<Text type={'a'} href={'https://www.npmjs.com/~pearlventures'} target={'_blank'} classes={'e-btn raised e-background-indigo-600 e-text-white'}>
+										Install from NPM
 									</Text>
-									<Divider classes={'thick medium e-background-indigo-400'} style={{left: '37%'}} />
-									<Text type={'p'} classes={'e-subhead line-height-12 e-text-blue-grey-400'}>
-										And example-packed
+									<Text type={'a'} href={'https://github.com/PearlVentures/Essence'} target={'_blank'} classes={'e-btn raised e-background-white e-text-indigo-600'}>
+										Download from GitHub
 									</Text>
 								</Block>
 							</Block>
 						</Block>
-						<Block classes={'brick brick-12 e-text-center e-text-indigo-100 e-background-indigo-400 e-padding-top-25 e-padding-bottom-25 e-no-margin'} style={{width: '100%'}}>
-							<Text type={'p'} classes={'e-title e-text-indigo-100'}>
-								<Text>Join us on </Text>
-								<Text type={'a'} className={'e-text-white'} href={'https://twitter.com/Pearl_HQ'}>Twitter </Text> 
-								<Text type={'a'} className={'e-text-white'} href={'https://facebook.com/pearlhq'}>Facebook </Text> 
-								<Text type={'a'} className={'e-text-white'} href={'https://github.com/PearlVentures/Essence'}>GitHub </Text>
-							</Text>
-							<Text type={'small'} classes={'e-text-indigo-100'}>
-								<Text type={'small'}>Copyright {(new Date().getFullYear())}</Text>
-								<br />
-								<Text type={'a'} className={'e-text-white'} href={'http://pearlhq.com'}>Pearl Ventures</Text>
-								<Text> - an Evozon Company</Text>
-							</Text>
+						<Block classes={'e-row'}>
+							<Block classes={'brick brick-12 e-text-center'}>
+								<Block>
+									<Text type={'h3'} classes={'e-display-1 e-text-indigo-400 e-text-uppercase e-margin-top-25 e-margin-bottom-100'}>
+										Build it on one, use it on all!
+									</Text>
+									<Image className={'e-img-rsp'} src={'./assets/img/essence_responsive_banner.png'} alt={'Essence'} />
+								</Block>
+
+								<Block className={'e-row e-padding-top-15 e-padding-bottom-15'}>
+									<Block classes={'brick brick-1'}>&nbsp;</Block>
+									<Block classes={'brick brick-10'}>
+										<Divider />
+									</Block>
+									<Block classes={'brick brick-1'}>&nbsp;</Block>
+								</Block>
+
+								<Block className={'e-row'}>
+									<Text type={'h3'} classes={'e-display-1 e-text-indigo-400 e-text-uppercase e-margin-bottom-15'}>
+										Distilled with
+									</Text>
+									<Block classes={'brick brick-6 e-text-center'}>
+										<Image className={'e-img-rsp'} src={'./assets/img/less.png'} alt={'Less'} />
+									</Block>								
+									<Block classes={'brick brick-6 e-text-center'}>
+										<Image className={'e-img-rsp'} src={'./assets/img/react.png'} alt={'ReactJS'} />
+									</Block>
+								</Block>
+
+								<Block className={'e-row'}>
+									<Block classes={'brick brick-1'}>&nbsp;</Block>
+									<Block classes={'brick brick-10'}>
+										<Divider />
+									</Block>
+									<Block classes={'brick brick-1'}>&nbsp;</Block>
+								</Block>
+
+								<Block className={'e-row'}>
+									<Block classes={'brick brick-6 e-text-center'}>
+										<Image className={'e-img-rsp'} src={'./assets/img/focus.png'} alt={'Fully focused'} />
+										<Text type={'p'} classes={'e-title line-height-12 e-text-indigo-400 e-text-uppercase'}>
+											Fully focused
+										</Text>
+										<Divider classes={'thick medium e-background-indigo-400'} style={{left: '37%'}} />
+										<Text type={'p'} classes={'e-subhead line-height-12 e-text-blue-grey-400'}>
+											On intuitive & natural interaction
+										</Text>
+									</Block>
+									<Block classes={'brick brick-6 e-text-center'}>
+										<Image className={'e-img-rsp'} src={'./assets/img/document.png'} alt={'Fully documented'} />
+										<Text type={'p'} classes={'e-title line-height-12 e-text-indigo-400 e-text-uppercase'}>
+											Fully documented
+										</Text>
+										<Divider classes={'thick medium e-background-indigo-400'} style={{left: '37%'}} />
+										<Text type={'p'} classes={'e-subhead line-height-12 e-text-blue-grey-400'}>
+											And example-packed
+										</Text>
+									</Block>
+								</Block>
+							</Block>
+						</Block>
+						<Block classes={'e-row'}>
+							<Block classes={'brick brick-12 e-text-center e-text-indigo-100 e-background-indigo-400 e-padding-top-25 e-padding-bottom-25 e-no-margin'} style={{width: '100%'}}>
+								<Text type={'p'} classes={'e-title e-text-indigo-100'}>
+									<Text>Join us on </Text>
+									<Text type={'a'} className={'e-text-white'} href={'https://twitter.com/Pearl_HQ'}>Twitter </Text> 
+									<Text type={'a'} className={'e-text-white'} href={'https://facebook.com/pearlhq'}>Facebook </Text> 
+									<Text type={'a'} className={'e-text-white'} href={'https://github.com/PearlVentures/Essence'}>GitHub </Text>
+								</Text>
+								<Text type={'small'} classes={'e-text-indigo-100'}>
+									<Text type={'small'} classes={'e-padding-bottom-15'}>Copyright {(new Date().getFullYear())}</Text>
+									<br />
+									<Text type={'a'} className={'e-text-white'} href={'http://pearlhq.com'}>Pearl Ventures</Text>								
+								</Text>
+							</Block>
 						</Block>
 					</Block>
 				</Block>
@@ -215,101 +217,113 @@ class AppAbout extends React.Component {
     render() {
         return (
         	<Block classes={'e-container e-padding-top-25'}>
-				<Block classes={'brick brick-12'}>
-		        	<Card>
-		        		<CardHeader> 
-		        			<Text type={'h3'} classes={'e-text-indigo-400 e-text-uppercase'}>The Basics of Material Design</Text>
-		        			<Divider classes={'thick medium e-background-indigo-400'} />
-							<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
-								What is it and how it works?
-							</Text>
-		        		</CardHeader>
+        		<Block classes={'e-row'}>
+					<Block classes={'brick brick-12'}>
+						<Text type={'h3'} classes={'e-text-indigo-400 e-text-uppercase'}>The Basics of Material Design</Text>
+	        			<Divider classes={'thick medium e-background-indigo-400'} />
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+							What is it and how it works?
+						</Text>
 
-		        		<CardContent>
-		        			<Block className={'e-row'}>
-			        			<Block className={'brick-12'}>
-			        				<Text type={'blockquote'} className={'e-text-indigo-400'} style={{marginLeft: '90px', marginTop: '30px'}}>
-			        					<Text classes={'e-title e-text-blue-grey-400'}>
-			        						Below the surface of the machine, the program moves. Without effort, it expands and contracts. In great harmony, electrons scatter and regroup. The forms on the monitor are but ripples on the water. The essence stays invisibly below.
-			        					</Text>
-			        					<Divider className={'thick short e-background-indigo-400 e-margin-top-25 e-margin-bottom-25'} />
-			        					<Block type={'footer'} className={'e-title e-text-blue-grey-400'}>
-			        						Master Yuan-Ma
-			        						<Text type={'cite'} className={'e-subhead e-text-blue-grey-400'}>
-			        							The Book of Programming
-			        						</Text>
-			        					</Block>
-			        				</Text>
+			        	<Card>
+			        		<CardContent>			        			
+		        				<Block className={'e-row'}>
+				        			<Block className={'brick-12'}>
+				        				<Text type={'blockquote'} className={'e-text-indigo-400'} style={{marginLeft: '90px', marginTop: '60px'}}>
+				        					<Text classes={'e-title e-text-blue-grey-400'}>
+				        						Below the surface of the machine, the program moves. Without effort, it expands and contracts. In great harmony, electrons scatter and regroup. The forms on the monitor are but ripples on the water. The essence stays invisibly below.
+				        					</Text>
+				        					<Divider className={'thick short e-background-indigo-400 e-margin-top-25 e-margin-bottom-25'} />
+				        					<Block type={'footer'} className={'e-title e-text-blue-grey-400'}>
+				        						Master Yuan-Ma
+				        						<Text type={'cite'} className={'e-subhead e-text-blue-grey-400'}>
+				        							The Book of Programming
+				        						</Text>
+				        					</Block>
+				        				</Text>
+				        			</Block>
 			        			</Block>
 								
 								<Divider className={'thinnest e-background-grey-300'} />
-			        			
-			        			<Block className={'brick-12'}>
-						        	<Block classes={'e-padding-top-15 e-padding-bottom-15'}>
-										<Text type={'h3'} classes={'e-text-indigo-400 e-text-uppercase'}>THE ESSENCE</Text>
-										<Divider classes={'thick medium e-background-indigo-400'} />
+
+
+								<Block className={'e-row'}>
+				        			<Block className={'brick-12'}>
+							        	<Block classes={'e-padding-top-15 e-padding-bottom-15'}>
+											<Text type={'h3'} classes={'e-text-indigo-400 e-text-uppercase'}>THE ESSENCE</Text>
+											<Divider classes={'thick medium e-background-indigo-400'} />
+										</Block>
 									</Block>
 								</Block>
-			        			<Block className={'brick-12'}>
-			        				<Block className={'e-row'}>
-										<Block className={'brick brick-4'}>
-											<Image src={'./assets/img/visual-1.png'} className={'e-img-rsp'} />
-										</Block>
-										<Block className={'brick brick-8 e-text-left e-padding-top-50'}>
-											<Text type={'p'} classes={'e-headline line-height-15 e-text-uppercase e-text-indigo-400'}>
-												GOOGLE DEFINED, CRAFTED WITH ESSENCE
-											</Text>
-											<Divider classes={'thick short e-background-indigo-400'} />
-											<Text type={'p'} classes={'e-body1 line-height-15 e-text-blue-grey-400 e-padding-bottom-15'}>
-												In the word of the mighty Google, material design is a visual language for our users that synthesizes the classic principles of good design with the innovation and possibility of technology and science. Google's goal is to develop a system of design that allows for a unified user experience across all their products on any platform.
-											</Text>
-											<Text type={'p'} classes={'e-body1 line-height-15 e-text-blue-grey-400 e-padding-bottom-15'}>
-												And we're trying to make this even better with Essence
-											</Text>
-										</Block>
-			        				</Block>
-			        			</Block>
-			        			<Block className={'brick-12'}>
-			        				<Block className={'e-row'}>
-										<Block className={'brick brick-4'}>
-											<Image src={'./assets/img/visual-2.png'} className={'e-img-rsp'} />
-										</Block>
-										<Block className={'brick brick-8 e-text-left e-padding-top-50'}>
-											<Text type={'p'} classes={'e-headline line-height-15 e-text-uppercase e-text-indigo-400'}>
-												INHERENTLY NATURAL FEEL
-											</Text>
-											<Divider classes={'thick short e-background-indigo-400'} />
-											<Text type={'p'} classes={'e-body1 line-height-15 e-text-blue-grey-400 e-padding-bottom-15'}>
-												It’s not always natural what feels to be natural. We call natural interactions those that are total automatisms and require no extra thinking on our part. And for this to happen we need to have meaning, intuitiveness and intention. We use crisp and large typography, big imagery and perfect color balances to immerse the user in his experience.
-											</Text>
-											<Text type={'p'} classes={'e-body1 line-height-15 e-text-blue-grey-400 e-padding-bottom-15'}>
-												All this combined provide a user interaction that “feels natural”.
-											</Text>
-										</Block>
-			        				</Block>
-			        			</Block>
-			        			<Block className={'brick-12'}>
-			        				<Block className={'e-row'}>
-										<Block className={'brick brick-4'}>
-											<Image src={'./assets/img/visual-3.png'} className={'e-img-rsp'} />
-										</Block>
-										<Block className={'brick brick-8 e-text-left e-padding-top-50'}>
-											<Text type={'p'} classes={'e-headline line-height-15 e-text-uppercase e-text-indigo-400'}>
-												MOVEMENT DEFINES FLOW
-											</Text>
-											<Divider classes={'thick short e-background-indigo-400'} />
-											<Text type={'p'} classes={'e-body1 line-height-15 e-text-blue-grey-400 e-padding-bottom-15'}>
-												No interface should start movement by itself. Motion is only within the grasp of the user and he holds the absolute authority of what happens and when. And when the motion starts, it transforms the whole design - but it all takes place in a single environment that gives the user a sense of familiarity, coherence and trust.
-											</Text>
-											<Text type={'p'} classes={'e-body1 line-height-15 e-text-blue-grey-400 e-padding-bottom-15'}>
-												Movement has purpose and that purpose is to provide seamless interaction and continuity, down to its essence.
-											</Text>
-										</Block>
-			        				</Block>
-			        			</Block>
-							</Block>
-		        		</CardContent>
-					</Card>
+								
+								<Block className={'e-row'}>
+				        			<Block className={'brick-12'}>
+				        				<Block className={'e-row'}>
+											<Block className={'brick brick-4'}>
+												<Image src={'./assets/img/visual-1.png'} className={'e-img-rsp'} />
+											</Block>
+											<Block className={'brick brick-8 e-text-left e-padding-top-50'}>
+												<Text type={'p'} classes={'e-headline line-height-15 e-text-uppercase e-text-indigo-400'}>
+													GOOGLE DEFINED, CRAFTED WITH ESSENCE
+												</Text>
+												<Divider classes={'thin short e-background-indigo-400'} />
+												<Text type={'p'} classes={'e-body1 line-height-15 e-text-blue-grey-400 e-padding-bottom-15'}>
+													In the word of the mighty Google, material design is a visual language for our users that synthesizes the classic principles of good design with the innovation and possibility of technology and science. Google's goal is to develop a system of design that allows for a unified user experience across all their products on any platform.
+												</Text>
+												<Text type={'p'} classes={'e-body1 line-height-15 e-text-blue-grey-400 e-padding-bottom-15'}>
+													And we're trying to make this even better with Essence
+												</Text>
+											</Block>
+				        				</Block>
+				        			</Block>
+				        		</Block>
+			        			
+			        			<Block className={'e-row'}>
+				        			<Block className={'brick-12'}>
+				        				<Block className={'e-row'}>
+											<Block className={'brick brick-4'}>
+												<Image src={'./assets/img/visual-2.png'} className={'e-img-rsp'} />
+											</Block>
+											<Block className={'brick brick-8 e-text-left e-padding-top-50'}>
+												<Text type={'p'} classes={'e-headline line-height-15 e-text-uppercase e-text-indigo-400'}>
+													INHERENTLY NATURAL FEEL
+												</Text>
+												<Divider classes={'thin short e-background-indigo-400'} />
+												<Text type={'p'} classes={'e-body1 line-height-15 e-text-blue-grey-400 e-padding-bottom-15'}>
+													It’s not always natural what feels to be natural. We call natural interactions those that are total automatisms and require no extra thinking on our part. And for this to happen we need to have meaning, intuitiveness and intention. We use crisp and large typography, big imagery and perfect color balances to immerse the user in his experience.
+												</Text>
+												<Text type={'p'} classes={'e-body1 line-height-15 e-text-blue-grey-400 e-padding-bottom-15'}>
+													All this combined provide a user interaction that “feels natural”.
+												</Text>
+											</Block>
+				        				</Block>
+				        			</Block>
+				        		</Block>
+
+			        			<Block className={'e-row'}>
+				        			<Block className={'brick-12'}>
+				        				<Block className={'e-row'}>
+											<Block className={'brick brick-4'}>
+												<Image src={'./assets/img/visual-3.png'} className={'e-img-rsp'} />
+											</Block>
+											<Block className={'brick brick-8 e-text-left e-padding-top-50'}>
+												<Text type={'p'} classes={'e-headline line-height-15 e-text-uppercase e-text-indigo-400'}>
+													MOVEMENT DEFINES FLOW
+												</Text>
+												<Divider classes={'thin short e-background-indigo-400'} />
+												<Text type={'p'} classes={'e-body1 line-height-15 e-text-blue-grey-400 e-padding-bottom-15'}>
+													No interface should start movement by itself. Motion is only within the grasp of the user and he holds the absolute authority of what happens and when. And when the motion starts, it transforms the whole design - but it all takes place in a single environment that gives the user a sense of familiarity, coherence and trust.
+												</Text>
+												<Text type={'p'} classes={'e-body1 line-height-15 e-text-blue-grey-400 e-padding-bottom-15'}>
+													Movement has purpose and that purpose is to provide seamless interaction and continuity, down to its essence.
+												</Text>
+											</Block>
+				        				</Block>
+				        			</Block>
+				        		</Block>								
+			        		</CardContent>
+						</Card>
+					</Block>
 				</Block>
 			</Block>
 		);
@@ -330,94 +344,94 @@ class AppGetStarted extends React.Component {
     render() {
         return (
         	<Block classes={'e-container e-padding-top-25'}>
-				<Block classes={'brick brick-12'}>
-		        	<Card>
-		        		<CardHeader> 
-		        			<Text type={'h3'} classes={'e-text-indigo-400 e-text-uppercase'}>Get Started with Essence</Text>
-		        			<Divider classes={'thick medium e-background-indigo-400'} />
-							<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
-								Learn how to use Essence for your application
-							</Text>
-		        		</CardHeader>
+        		<Block className={'e-row'}>
+					<Block classes={'brick brick-12'}>
+						<Text type={'h3'} classes={'e-text-indigo-400 e-text-uppercase'}>Get Started with Essence</Text>
+	        			<Divider classes={'thick medium e-background-indigo-400'} />
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+							Learn how to use Essence for your application
+						</Text>
 
-		        		<CardContent>
-		        			<Block className={'e-row'}>
-			        			<Block className={'brick brick-6'}>
-						        	<Block className={'e-padding-bottom-15'}>
-										<Text type={'h4'} classes={'e-text-indigo-400'}>INSTALL:</Text>
-										<Divider classes={'thick short e-background-indigo-400'} />
+			        	<Card>
+			        		<CardContent>
+			        			<Block className={'e-row'}>
+				        			<Block className={'brick brick-6'} style={{padding:'0'}}>
+							        	<Block>
+											<Text type={'h4'} classes={'e-text-indigo-400'}>INSTALL:</Text>
+											<Divider classes={'thin short e-background-indigo-400'} />
 
-										<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
-											To install all Essence components you can use the command bellow.
-										</Text>
+											<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+												To install all Essence components you can use the command bellow.
+											</Text>
 
-										<pre classes={'e-background-grey-100 e-text-black'}>
-											<code>
-												npm install <strong>react-essence</strong>
-											</code>
-										</pre>
+											<pre classes={'e-background-grey-100 e-text-black'}>
+												<code>
+													npm install <strong>react-essence</strong>
+												</code>
+											</pre>
+										</Block>
+									</Block>
+									<Block className={'brick brick-6'} style={{padding:'0'}}>
+										<Block>
+											<Text type={'h4'} classes={'e-text-indigo-400'}>USE COMPONENTS:</Text>
+											<Divider classes={'thin short e-background-indigo-400'} />
+											
+											<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+												To install individual components please see the side menu. Each component has a live example and a "How To Use" instructions.
+											</Text>
+
+											<pre classes={'e-background-grey-100 e-text-black'}>
+												<code>
+													npm install <strong>essence-__component-name__</strong>
+												</code>
+											</pre>
+										</Block>
 									</Block>
 								</Block>
-								<Block className={'brick brick-6'}>
-									<Block className={'e-padding-bottom-15'}>
-										<Text type={'h4'} classes={'e-text-indigo-400'}>USE COMPONENTS:</Text>
-										<Divider classes={'thick short e-background-indigo-400'} />
-										
-										<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
-											To install individual components please see the side menu. Each component has a live example and a "How To Use" instructions.
-										</Text>
 
-										<pre classes={'e-background-grey-100 e-text-black'}>
-											<code>
-												npm install <strong>essence-__component-name__</strong>
-											</code>
-										</pre>
+			        			<Block className={'e-row'}>
+				        			<Block className={'brick brick-12'} style={{padding:'0'}}>
+										<Block className={'e-padding-bottom-15'}>
+											<Text type={'h4'} classes={'e-text-indigo-400'}>MAKE A TEMPLATE:</Text>
+											<Divider classes={'thin short e-background-indigo-400'} />
+											
+											<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+												1. create a copy of the boilerplate template
+												<br />
+												2. choose a unique name for the template
+												<br />
+												3. use the Essence components & copy/paste the component code from "How to use"
+												<br />
+												4. run the command bellow & replace the <u>your-template-name</u> with the name for the template
+												<br />
+											</Text>
+
+											<pre classes={'e-background-grey-100 e-text-black'}>
+												<code>
+													git clone git@github.com:PearlVentures/Essence-Templates.git
+													<br />
+													npm install <strong>react-essence</strong>
+													<br />
+													npm run <strong>template:essence</strong>
+													<br />
+													or
+													<br />
+													npm run <strong>template:custom</strong>
+													<br />
+													or
+													<br />
+													npm run <strong>template:your-template-name</strong>
+												</code>
+											</pre>
+											<Text className={'e-caption'}>
+												<strong>NOTE: </strong> See more information on <a href={'https://www.npmjs.com/package/essence-templates'} target={'_blank'}>Essence Templates Package</a>
+											</Text>
+										</Block>
 									</Block>
 								</Block>
-							</Block>
-
-		        			<Block className={'e-row'}>
-			        			<Block className={'brick brick-12'}>
-									<Block className={'e-padding-bottom-15'}>
-										<Text type={'h4'} classes={'e-text-indigo-400'}>MAKE A TEMPLATE:</Text>
-										<Divider classes={'thick short e-background-indigo-400'} />
-										
-										<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
-											1. create a copy of the boilerplate template
-											<br />
-											2. choose a unique name for the template
-											<br />
-											3. use the Essence components & copy/paste the component code from "How to use"
-											<br />
-											4. run the command bellow & replace the <u>your-template-name</u> with the name for the template
-											<br />
-										</Text>
-
-										<pre classes={'e-background-grey-100 e-text-black'}>
-											<code>
-												git clone git@github.com:PearlVentures/Essence-Templates.git
-												<br />
-												npm install <strong>react-essence</strong>
-												<br />
-												npm run <strong>template:essence</strong>
-												<br />
-												or
-												<br />
-												npm run <strong>template:custom</strong>
-												<br />
-												or
-												<br />
-												npm run <strong>template:your-template-name</strong>
-											</code>
-										</pre>
-										<Text className={'e-caption'}>
-											<strong>NOTE: </strong> See more information on <a href={'https://www.npmjs.com/package/essence-templates'} target={'_blank'}>Essence Templates Package</a>
-										</Text>
-									</Block>
-								</Block>
-							</Block>
-		        		</CardContent>
-					</Card>
+			        		</CardContent>
+						</Card>
+					</Block>
 				</Block>
 			</Block>
 		);
@@ -491,10 +505,7 @@ class AppContact extends React.Component {
 			let errors = [
 				(<li key={'error-title'} style={{listStyleType:'none'}}>
 					Your message has NOT been sent!
-				</li>),
-				(<li key={'error-separator'} style={{listStyleType:'none'}}>
-					Unknown error
-				</li>)
+				</li>)				
 			];
 
 			self.setState({
@@ -508,47 +519,47 @@ class AppContact extends React.Component {
     render() {
         return (
         	<Block classes={'e-container e-padding-top-25'}>
-				<Block classes={'brick brick-12'}>
-		        	<Card>
-		        		<CardHeader> 
-		        			<Text type={'h3'} classes={'e-text-indigo-400 e-text-uppercase'}>GET IN TOUCH WITH US HERE</Text>
-		        			<Divider classes={'thick medium e-background-indigo-400'} />
-							<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
-								Let us know what you think about Essence Project, write us any suggestion or idea that can help improve Essence.
-							</Text>
-		        		</CardHeader>
+        		<Block className={'e-row'}>
+					<Block classes={'brick brick-12'}>
+						<Text type={'h3'} classes={'e-text-indigo-400 e-text-uppercase'}>GET IN TOUCH WITH US HERE</Text>
+	        			<Divider classes={'thick medium e-background-indigo-400'} />
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+							Let us know what you think about Essence Project, write us any suggestion or idea that can help improve Essence.
+						</Text>
 
-		        		<CardContent>
-		        			<Block className={'e-row'}>
-			        			<Block className={'brick-12'}>
-						        	<Block className={'e-padding-bottom-15'}>
-										<Text type={'h4'} classes={'e-text-indigo-400'}>CONTACT:</Text>
-										<Divider classes={'thick short e-background-indigo-400'} />
-										
-										<Toast classes={'e-text-green-500'} visible={this.state.visibleOK} delay={3000}>
-											{this.state.message}
-										</Toast>
-										<Toast classes={'e-text-orange-500'} visible={this.state.visibleFailed} delay={8000}>
-											{this.state.message}
-										</Toast>
+			        	<Card>
+			        		<CardContent>
+			        			<Block className={'e-row'}>
+				        			<Block className={'brick-12'}>
+							        	<Block className={'e-padding-bottom-15'}>
+											<Text type={'h4'} classes={'e-text-indigo-400'}>CONTACT:</Text>
+											<Divider classes={'thin short e-background-indigo-400'} />
+											
+											<Toast classes={'e-text-green-500'} visible={this.state.visibleOK} delay={3000}>
+												{this.state.message}
+											</Toast>
+											<Toast classes={'e-text-white'} visible={this.state.visibleFailed} delay={8000}>
+												{this.state.message}
+											</Toast>
 
-										<Block classes={'e-body1'}>
-											<Block className={'e-padding-top-15'}>
-												<Input type={'email'} ref={(ref) => this.contactEmail = ref} name={'email'} label={'Email address'} />
+											<Block classes={'e-body1'}>
+												<Block className={'e-padding-top-15'}>
+													<Input type={'email'} ref={(ref) => this.contactEmail = ref} name={'email'} label={'Email address'} />
+												</Block>
+												<Block className={'e-padding-top-15'}>
+													<Input type={'text'} ref={(ref) => this.contactSubject = ref} name={'subject'} label={'Message subject'} />
+												</Block>
+												<Block className={'e-padding-top-15'}>
+													<Input type={'textarea'} ref={(ref) => this.contactMessage = ref} name={'message'} label={'Your message for us'} />
+												</Block>
+												<Button label={'SEND MESSAGE'} type={'succes'} className={'raised e-background-indigo-600'} onClick={this.sendMessage.bind(this)} />
 											</Block>
-											<Block className={'e-padding-top-15'}>
-												<Input type={'text'} ref={(ref) => this.contactSubject = ref} name={'subject'} label={'Message subject'} />
-											</Block>
-											<Block className={'e-padding-top-15'}>
-												<Input type={'textarea'} ref={(ref) => this.contactMessage = ref} name={'message'} label={'Your message for us'} />
-											</Block>
-											<Button label={'SEND MESSAGE'} type={'succes'} className={'raised'} onClick={this.sendMessage.bind(this)} />
 										</Block>
 									</Block>
 								</Block>
-							</Block>
-		        		</CardContent>
-					</Card>
+			        		</CardContent>
+						</Card>
+					</Block>
 				</Block>
 			</Block>
 		);

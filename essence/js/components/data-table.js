@@ -96,124 +96,124 @@ class AppDataTable extends React.Component {
     render() {
         return (
 			<Block classes={ClassNames('e-container e-padding-top-25', this.state.classes)}>
-				<Block classes={'brick brick-12'}>
-		        	<Card>
-		        		<CardHeader> 
-		        			<Text type={'h3'} classes={'e-text-indigo-400'}>DATA TABLE</Text>
-		        			<Divider classes={'thick short e-background-indigo-400'} />
-							<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
-								Data tables display raw data sets. They usually appear in desktop enterprise products.
-							</Text>
-		        		</CardHeader>
+				<Block classes={'e-row'}>
+					<Block classes={'brick brick-12'}>
+						<Text type={'h3'} classes={'e-text-indigo-400'}>DATA TABLE</Text>
+		    			<Divider classes={'thick short e-background-indigo-400'} />
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+							Data tables display raw data sets. They usually appear in desktop enterprise products.
+						</Text>
 
-		        		<CardContent>
-			        		<Block classes={'e-text-center'}>
-		        				<Block className={ClassNames('e-padding-bottom-25')}>
-									<DataTable data={tableData} />
-								</Block>
-		        			</Block>
-			        		<Divider />
+			        	<Card>
+			        		<CardContent style={{padding:'0'}}>
+				        		<Block classes={'e-text-center'}>
+			        				<Block className={ClassNames('e-padding-bottom-25')}>
+										<DataTable data={tableData} />
+									</Block>
+			        			</Block>
+				        		<Divider style={{paddingLeft:'16px',paddingRight:'16px'}} />
 
-		        			<Block>
-		        				<Text type={'h4'} classes={'e-text-indigo-400'}>HOW TO USE:</Text>
-		        				<Divider classes={'thick short e-background-indigo-400'} />
+			        			<Block style={{paddingLeft:'16px',paddingRight:'16px'}}>
+			        				<Text type={'h4'} classes={'e-text-indigo-400'}>HOW TO USE:</Text>
+			        				<Divider classes={'thin short e-background-indigo-400'} />
 
-		        				<pre className={'e-background-grey-100 e-text-black'}>
-			        				<code>
-										npm install <strong>essence-data-table</strong>
-			        				</code>
-		        				</pre>
+			        				<pre className={'e-background-grey-100 e-text-black'}>
+				        				<code>
+											npm install <strong>essence-data-table</strong>
+				        				</code>
+			        				</pre>
 
-		        				<Text classes={'e-body1 e-text-blue-grey-400'}>
-		        					Use the example bellow to customize your own App.
-		        				</Text>
+			        				<Text classes={'e-body1 e-text-blue-grey-400'}>
+			        					Use the example bellow to customize your own App.
+			        				</Text>
 
-		        				<pre className={'e-background-grey-100 e-text-black'}>
-			        				<code>
-										import Icon from 'essence-icon';
-										<br />
-										import DataTable from 'essence-data-table';
-										<br />
-										<br />
-										var tableInfo = &#123;
-										<br />
-										&nbsp;&nbsp;'header': [ 
-										<br />
-										&nbsp;&nbsp;&nbsp;&#123;
-										<br />
-										&nbsp;&nbsp;&nbsp;&nbsp;'name': 'Column 1', 
-										<br />
-										&nbsp;&nbsp;&nbsp;&nbsp;'tooltip': 'Caption for the column 1',
-										<br />
-										&nbsp;&nbsp;&nbsp;&nbsp;'onSorting': (function() &#123; console.log('sort by Column 1'); &#125;)
-										<br />
-										&nbsp;&nbsp;&nbsp;&#125;,
-										<br />
-										&nbsp;&nbsp;&nbsp;&#123;
-										<br />
-										&nbsp;&nbsp;&nbsp;&nbsp;'name': 'Column 2', 
-										<br />
-										&nbsp;&nbsp;&nbsp;&nbsp;'tooltip': 'Caption for the column 2',
-										<br />
-										&nbsp;&nbsp;&nbsp;&nbsp;'onSorting': (function() &#123; console.log('sort by Column 2'); &#125;)
-										<br />
-										&nbsp;&nbsp;&nbsp;&#125;
-										<br />
-										&nbsp;&nbsp;],
-										<br />
-										&nbsp;&nbsp;'rows': [
-										<br />
-										&nbsp;&nbsp;&nbsp;['Row 1 Column 1', 'Row 1 Column 2'],
-										<br />
-										&nbsp;&nbsp;&nbsp;['Row 2 Column 1', 'Row 2 Column 2'],
-										<br />
-										&nbsp;&nbsp;&nbsp;['Row 3 Column 1', 'Row 3 Column 2']
-										<br />
-										&nbsp;&nbsp;],
-										<br />
-										&nbsp;&nbsp;'footer': &#123;
-										<br />
-										&nbsp;&nbsp;&nbsp;'limit': 5, 
-										<br />
-										&nbsp;&nbsp;&nbsp;'total': 100,
-										<br />
-										&nbsp;&nbsp;&nbsp;'pagination': &#123;
-										<br />
-										&nbsp;&nbsp;&nbsp;'start': 1,
-										<br />
-										&nbsp;&nbsp;&nbsp;'end': 10,
-										<br />
-										&nbsp;&nbsp;&nbsp;'callback': (function() &#123; console.log('footer page change'); &#125;)
-										<br />
-										&nbsp;&nbsp;&#125;,
-										<br />
-										&nbsp;&nbsp;'next': &#123;
-										<br />
-										&nbsp;&nbsp;&nbsp;'context': (&lt;Icon name='hardware-keyboard-arrow-right' /&gt;),
-										<br />
-										&nbsp;&nbsp;&nbsp;'callback': (function() &#123; console.log('footer next page'); &#125;)
-										<br />
-										&nbsp;&nbsp;&#125;, 
-										<br />
-										&nbsp;&nbsp;'prev': &#123;
-										<br />
-										&nbsp;&nbsp;&nbsp;'context': (&lt;Icon name='hardware-keyboard-arrow-left' /&gt;),
-										<br />
-										&nbsp;&nbsp;&nbsp;'callback': (function() &#123; console.log('footer previous page'); &#125;)
-										<br />
-										&nbsp;&nbsp;&nbsp;&#125;, 
-										<br />
-										&nbsp;&nbsp;&#125;
-										<br />
-										&#125;;
-										<br />
-										<br />
-										&lt;DataTable data=&#123;tableInfo&#125;/&gt;
-			        				</code>
-		        				</pre>
-		        			</Block>
-		        		</CardContent>
-					</Card>
+			        				<pre className={'e-background-grey-100 e-text-black'}>
+				        				<code>
+											import Icon from 'essence-icon';
+											<br />
+											import DataTable from 'essence-data-table';
+											<br />
+											<br />
+											var tableInfo = &#123;
+											<br />
+											&nbsp;&nbsp;'header': [ 
+											<br />
+											&nbsp;&nbsp;&nbsp;&#123;
+											<br />
+											&nbsp;&nbsp;&nbsp;&nbsp;'name': 'Column 1', 
+											<br />
+											&nbsp;&nbsp;&nbsp;&nbsp;'tooltip': 'Caption for the column 1',
+											<br />
+											&nbsp;&nbsp;&nbsp;&nbsp;'onSorting': (function() &#123; console.log('sort by Column 1'); &#125;)
+											<br />
+											&nbsp;&nbsp;&nbsp;&#125;,
+											<br />
+											&nbsp;&nbsp;&nbsp;&#123;
+											<br />
+											&nbsp;&nbsp;&nbsp;&nbsp;'name': 'Column 2', 
+											<br />
+											&nbsp;&nbsp;&nbsp;&nbsp;'tooltip': 'Caption for the column 2',
+											<br />
+											&nbsp;&nbsp;&nbsp;&nbsp;'onSorting': (function() &#123; console.log('sort by Column 2'); &#125;)
+											<br />
+											&nbsp;&nbsp;&nbsp;&#125;
+											<br />
+											&nbsp;&nbsp;],
+											<br />
+											&nbsp;&nbsp;'rows': [
+											<br />
+											&nbsp;&nbsp;&nbsp;['Row 1 Column 1', 'Row 1 Column 2'],
+											<br />
+											&nbsp;&nbsp;&nbsp;['Row 2 Column 1', 'Row 2 Column 2'],
+											<br />
+											&nbsp;&nbsp;&nbsp;['Row 3 Column 1', 'Row 3 Column 2']
+											<br />
+											&nbsp;&nbsp;],
+											<br />
+											&nbsp;&nbsp;'footer': &#123;
+											<br />
+											&nbsp;&nbsp;&nbsp;'limit': 5, 
+											<br />
+											&nbsp;&nbsp;&nbsp;'total': 100,
+											<br />
+											&nbsp;&nbsp;&nbsp;'pagination': &#123;
+											<br />
+											&nbsp;&nbsp;&nbsp;'start': 1,
+											<br />
+											&nbsp;&nbsp;&nbsp;'end': 10,
+											<br />
+											&nbsp;&nbsp;&nbsp;'callback': (function() &#123; console.log('footer page change'); &#125;)
+											<br />
+											&nbsp;&nbsp;&#125;,
+											<br />
+											&nbsp;&nbsp;'next': &#123;
+											<br />
+											&nbsp;&nbsp;&nbsp;'context': (&lt;Icon name='hardware-keyboard-arrow-right' /&gt;),
+											<br />
+											&nbsp;&nbsp;&nbsp;'callback': (function() &#123; console.log('footer next page'); &#125;)
+											<br />
+											&nbsp;&nbsp;&#125;, 
+											<br />
+											&nbsp;&nbsp;'prev': &#123;
+											<br />
+											&nbsp;&nbsp;&nbsp;'context': (&lt;Icon name='hardware-keyboard-arrow-left' /&gt;),
+											<br />
+											&nbsp;&nbsp;&nbsp;'callback': (function() &#123; console.log('footer previous page'); &#125;)
+											<br />
+											&nbsp;&nbsp;&nbsp;&#125;, 
+											<br />
+											&nbsp;&nbsp;&#125;
+											<br />
+											&#125;;
+											<br />
+											<br />
+											&lt;DataTable data=&#123;tableInfo&#125;/&gt;
+				        				</code>
+			        				</pre>
+			        			</Block>
+			        		</CardContent>
+						</Card>
+					</Block>
 				</Block>
 			</Block>
 		);

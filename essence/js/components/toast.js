@@ -64,87 +64,87 @@ class AppToast extends React.Component {
     render() {
         return (
 			<Block classes={ClassNames('e-container e-padding-top-25', this.state.classes)}>
-				<Block classes={'brick brick-12'}>
-		        	<Card>
-		        		<CardHeader> 
-		        			<Text type={'h3'} classes={'e-text-indigo-400'}>TOASTS</Text>
-		        			<Divider classes={'thick short e-background-indigo-400'} />
-							<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
-								Remember those confirmation messages from long time ago? They’re now called snackbars and toasts and they come with rules. Head onto Google to check out how to use them. Then check out the below examples hot to integrate them from Essence.
-							</Text>
-		        		</CardHeader>
+				<Block className={'e-row'}>
+					<Block classes={'brick brick-12'}>
+						<Text type={'h3'} classes={'e-text-indigo-400'}>TOASTS</Text>
+	        			<Divider classes={'thick short e-background-indigo-400'} />
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+							Remember those confirmation messages from long time ago? They’re now called snackbars and toasts and they come with rules. Head onto Google to check out how to use them. Then check out the below examples hot to integrate them from Essence.
+						</Text>
 
-		        		<CardContent>
-		        			<Block className={'e-row'}>
-				        		<Block className={'brick brick-6'}>
-		        					<Text type={'h4'} classes={'e-text-indigo-400'}>LIVE EXAMPLE:</Text>
-		        					<Divider classes={'thick short e-background-indigo-400'} />
-			        				<Block className={'e-row e-padding-top-15'}>
-			        					<Block className={'brick brick-8'}>
-				        					<Input
-												classes={'has-success'}
-												defaultValue={this.state.message}
-												onBlur={this.changeMessage.bind(this)}
-												label={'Toast message'}/>
-			        					</Block>
-			        					<Block className={'brick brick-4'}>
-											<Input 
-												type={'number'}
-												classes={'has-success'}
-												defaultValue={this.state.delay}
-												onBlur={this.changeNumber.bind(this)}
-											label={'Delay in ms'}/>
-			        					</Block>
-			        				</Block>
-			        				<Block className={'e-text-center e-padding-top-15'}>
-	                					<Btn 
-	                						type={'succes'} 
-	                						label={'Show Toast'}
-	                						onClick={this.showToast.bind(this)} 
-	                						className={'flat'} />
-									</Block>
-									<Toast 
-										delay={this.state.delay}
-										classes={'e-text-green-500'} 
-										visible={this.state.visible} 
-										onStart={this.toastStarted.bind(this)} 
-										onPause={this.toastPaused.bind(this)} 
-										onResume={this.toastResumed.bind(this)} 
-										onEnd={this.toastEnded.bind(this)} >
-										{this.state.message}
-									</Toast>
-			        			</Block>
-			        			<Block className={'brick brick-6'}>
-			        				<Text type={'h4'} classes={'e-text-indigo-400'}>HOW TO USE:</Text>
-			        				<Divider classes={'thick short e-background-indigo-400'} />
+			        	<Card>
+			        		<CardContent>
+			        			<Block className={'e-row'}>
+					        		<Block className={'brick brick-6'} style={{paddingTop:'0', paddingLeft:'0'}}>
+			        					<Text type={'h4'} classes={'e-text-indigo-400'}>LIVE EXAMPLE:</Text>
+			        					<Divider classes={'thin short e-background-indigo-400'} />
+				        				<Block className={'e-row e-padding-top-15'}>
+				        					<Block className={'brick brick-8'}>
+					        					<Input
+													classes={'has-success'}
+													defaultValue={this.state.message}
+													onBlur={this.changeMessage.bind(this)}
+													label={'Toast message'}/>
+				        					</Block>
+				        					<Block className={'brick brick-4'}>
+												<Input 
+													type={'number'}
+													classes={'has-success'}
+													defaultValue={this.state.delay}
+													onBlur={this.changeNumber.bind(this)}
+												label={'Delay in ms'}/>
+				        					</Block>
+				        				</Block>
+				        				<Block className={'e-text-center e-padding-top-15'}>
+		                					<Btn 
+		                						type={'succes e-background-indigo-600'} 
+		                						label={'Show Toast'}
+		                						onClick={this.showToast.bind(this)} 
+		                						className={'flat'} />
+										</Block>
+										<Toast 
+											delay={this.state.delay}
+											classes={'e-text-white'} 
+											visible={this.state.visible} 
+											onStart={this.toastStarted.bind(this)} 
+											onPause={this.toastPaused.bind(this)} 
+											onResume={this.toastResumed.bind(this)} 
+											onEnd={this.toastEnded.bind(this)} >
+											{this.state.message}
+										</Toast>
+				        			</Block>
+				        			<Block className={'brick brick-6'} style={{paddingTop:'0', paddingRight:'0'}}>
+				        				<Text type={'h4'} classes={'e-text-indigo-400'}>HOW TO USE:</Text>
+				        				<Divider classes={'thin short e-background-indigo-400'} />
 
-			        				<pre className={'e-background-grey-100 e-text-black'}>
-				        				<code>
-											npm install <strong>essence-toast</strong>
-				        				</code>
-			        				</pre>
+				        				<pre className={'e-background-grey-100 e-text-black'}>
+					        				<code>
+												npm install <strong>essence-toast</strong>
+					        				</code>
+				        				</pre>
 
-			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
-										To customise the hide function for Toast modify the number from option <strong>delay</strong> with a delay in miliseconds. 
-									</Text>
+				        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+											To customise the hide function for Toast modify the number from option <strong>delay</strong> with a delay in miliseconds. 
+										</Text>
 
-			        				<pre className={'e-background-grey-100 e-text-black'}>
-				        				<code>
-											import Toast from 'essence-toast';
-											<br />
-											<br />
-											&lt;Toast classes=&#123;'e-text-green-500'&#125; visible=&#123;{this.state.visible.toString()}&#125; delay=&#123;{this.state.delay}&#125;&gt;
-											<br />
-											&nbsp;{this.state.message}
-											<br />
-											&lt;/Toast&gt;
-											<br />
-				        				</code>
-			        				</pre>
-			        			</Block>
-			        		</Block>
-		        		</CardContent>
-					</Card>
+				        				<pre className={'e-background-grey-100 e-text-black'}>
+					        				<code>
+												import Toast from 'essence-toast';
+												<br />
+												<br />
+												&lt;Toast classes=&#123;'e-text-white'&#125; visible=&#123;{this.state.visible.toString()}&#125; delay=&#123;{this.state.delay}&#125;&gt;
+												<br />
+												&nbsp;{this.state.message}
+												<br />
+												&lt;/Toast&gt;
+												<br />
+					        				</code>
+				        				</pre>
+				        			</Block>
+				        		</Block>
+			        		</CardContent>
+						</Card>
+					</Block>
 				</Block>
 			</Block>
 		);

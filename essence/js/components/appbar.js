@@ -29,21 +29,20 @@ class AppBarComponent extends React.Component {
     render() {
         return (
 			<Block classes={ClassNames('e-container e-padding-top-25', this.state.classes)}>
-				<Block classes={'brick brick-12'}>
-		        	<Card>
-		        		<CardHeader> 
-		        			<Text type={'h3'} classes={'e-text-indigo-400'}>APPBAR</Text>
-		        			<Divider classes={'thick short e-background-indigo-400'} />
-							<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
-								It’s never been more fun to create an appbar with button and navigation and whatever. Start with the .e-appbar class then add buttons, menus and whatever you need.
-							</Text>
-		        		</CardHeader>
+				<Block classes={'e-row'}>
+					<Block classes={'brick brick-12'}>
+					<Text type={'h3'} classes={'e-text-indigo-400'}>APPBAR</Text>
+        			<Divider classes={'thick short e-background-indigo-400'} />
+					<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+						It’s never been more fun to create an appbar with button and navigation and whatever. Start with the .e-appbar class then add buttons, menus and whatever you need.
+					</Text>
 
+		        	<Card>
 		        		<CardContent>
 		        			<Block>
 			        			<Block>
 			        				<Text type={'h4'} classes={'e-text-indigo-400'}>LIVE EXAMPLE:</Text>
-			        				<Divider classes={'thick short e-background-indigo-400'} />
+			        				<Divider classes={'thin short e-background-indigo-400'} />
 
 									<AppBar 
 										style={this.state.AppBarStyle}
@@ -95,7 +94,7 @@ class AppBarComponent extends React.Component {
 			        			</Block>
 			        			<Block>
 			        				<Text type={'h4'} classes={'e-text-indigo-400'}>HOW TO USE:</Text>
-			        				<Divider classes={'thick short e-background-indigo-400'} />
+			        				<Divider classes={'thin short e-background-indigo-400'} />
 
 			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
 										See the Live Example from above and customize your own AppBar component with code below.
@@ -198,6 +197,7 @@ class AppBarComponent extends React.Component {
 		        			</Block>
 		        		</CardContent>
 					</Card>
+				</Block>
 				</Block>
 			</Block>
 		);
