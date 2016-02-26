@@ -101,7 +101,7 @@ class AppNavigation extends React.Component {
 												<br />
 												&nbsp;&nbsp;&nbsp;&lt;Text type=&#123;'a'&#125; href=&#123;'#home'&#125;&gt;
 												<br />
-												&nbsp;&nbsp;&nbsp;&nbsp;&lt;Image width=&#123;'40px'&#125; height=&#123;'40px'&#125; style=&#123;&#123;verticalAlign: 'middle'&#125;&#125; src=&#123;'http://essence.pearlhq.com/assets/img/essence_icon.png'&#125; /&gt;
+												&nbsp;&nbsp;&nbsp;&nbsp;&lt;Image width=&#123;'40px'&#125; height=&#123;'40px'&#125; style=&#123;&#123;verticalAlign: 'middle'&#125;&#125; src=&#123;'http://getessence.io/assets/img/essence_icon.png'&#125; /&gt;
 												<br />
 												&nbsp;&nbsp;&nbsp;&lt;/Text&gt;
 												<br />

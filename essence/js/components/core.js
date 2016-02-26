@@ -471,7 +471,7 @@ class AppCoreTextTypography extends React.Component {
 													<Text 
 														target={'_blank'}
 														type={this.state.textType}
-														href={'http://essence.pearlhq.com'}
+														href={'http://getessence.io'}
 														classes={ClassNames('e-text-grey-600', this.state.textPosition, this.state.textTypography)}>
 														Text Typography Example
 													</Text>
@@ -545,7 +545,7 @@ class AppCoreTextTypography extends React.Component {
 													import &#123;Text&#125; from 'essence-core';
 													<br />
 													<br />
-													&lt;Text type=&#123;a&#125; href=&#123;'http://essence.pearlhq.com'&#125; target=&#123;'_blank'&#125;&gt;
+													&lt;Text type=&#123;a&#125; href=&#123;'http://getessence.io'&#125; target=&#123;'_blank'&#125;&gt;
 														Discover Essence
 													&lt;Text/&gt;
 													<br />

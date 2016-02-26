@@ -114,7 +114,7 @@ class AppHome extends React.Component {
 									<Text type={'a'} href={'https://www.npmjs.com/~essence_md'} target={'_blank'} classes={'e-btn raised e-background-indigo-600 e-text-white'}>
 										Install from NPM
 									</Text>
-									<Text type={'a'} href={'https://github.com/PearlVentures/Essence'} target={'_blank'} classes={'e-btn raised e-background-white e-text-indigo-600'}>
+									<Text type={'a'} href={'https://github.com/Evo-Forge/Essence'} target={'_blank'} classes={'e-btn raised e-background-white e-text-indigo-600'}>
 										Download from GitHub
 									</Text>
 								</Block>
@@ -187,7 +187,7 @@ class AppHome extends React.Component {
 									<Text>Join us on </Text>
 									<Text type={'a'} className={'e-text-white'} href={'https://twitter.com/Essence_MD'}>Twitter </Text> 
 									<Text type={'a'} className={'e-text-white'} href={'https://www.facebook.com/getEssence/'}>Facebook </Text> 
-									<Text type={'a'} className={'e-text-white'} href={'https://github.com/'}>GitHub </Text>
+									<Text type={'a'} className={'e-text-white'} href={'https://github.com/Evo-Forge/Essence'}>GitHub </Text>
 								</Text>
 								<Text type={'small'} classes={'e-text-indigo-100'}>
 									<Text type={'small'} classes={'e-padding-bottom-15'}>Copyright {(new Date().getFullYear())}</Text>
@@ -406,7 +406,7 @@ class AppGetStarted extends React.Component {
 
 											<pre classes={'e-background-grey-100 e-text-black'}>
 												<code>
-													git clone git@github.com:PearlVentures/Essence-Templates.git
+													git clone git@github.com:Evo-Forge/Essence-Templates.git
 													<br />
 													npm install <strong>react-essence</strong>
 													<br />

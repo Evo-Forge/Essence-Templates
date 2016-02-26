@@ -2,7 +2,7 @@
 
 ### Installation
 ```bash
-git clone git@github.com:PearlVentures/Essence-Templates.git
+git clone git@github.com:Evo-Forge/Essence-Templates.git
 ```
 
 ### Install all dependencies

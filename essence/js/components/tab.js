@@ -11,7 +11,7 @@ var tabs = {
         { 'context': (<Text>Tab 1</Text>) },
         { 'context': (<Text>Tab 2</Text>) },
         { 'context': (<Text>Tab with callback alert</Text>), 'callback': ( function() { alert('Hey you'); } ) },
-        { 'context': (<Text>Tab with callback link</Text>), 'callback': ( function() { window.open('http://essence.pearlhq.com/', '_blank'); }) }
+        { 'context': (<Text>Tab with callback link</Text>), 'callback': ( function() { window.open('http://getessence.io/', '_blank'); }) }
     ],
     'rows': [ 
         (<Text>This is the context for Tab 1</Text>),
@@ -84,7 +84,7 @@ class AppTab extends React.Component {
 											<br />
 											&nbsp;&nbsp;&nbsp;&#123; 'context': (&lt;Text&gt;Tab with callback alert&lt;/Text&gt;), 'callback': ( function() &#123; alert('Hey you'); &#125; ) &#125;,
 											<br />
-											&nbsp;&nbsp;&nbsp;&#123; 'context': (&lt;Text&gt;Tab with callback link&lt;/Text&gt;), 'callback': ( function() &#123; window.open('http://essence.pearlhq.com/', '_blank'); &#125;) &#125;
+											&nbsp;&nbsp;&nbsp;&#123; 'context': (&lt;Text&gt;Tab with callback link&lt;/Text&gt;), 'callback': ( function() &#123; window.open('http://getessence.io/', '_blank'); &#125;) &#125;
 											<br />
 											&nbsp;&nbsp;],
 											<br />
