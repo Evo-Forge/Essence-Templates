@@ -3,7 +3,10 @@ var react = require('react');
 var webpack = require('webpack');
  
 module.exports = {
-  entry: path.resolve(__dirname, 'essence.js'),
+  entry: {
+    app: path.resolve(__dirname, 'essence.js'),
+    vendor: ['react'],
+  },
   output: { 
     path: path.resolve(__dirname, '../build/'), 
     publicPath: '/build/',
@@ -35,9 +38,21 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.CommonsChunkPlugin({
+      chunkName: 'vendor',
+      filename: 'react.js',
+      children: true,
+      minChunks: 2,
+    }),
+    new webpack.optimize.MinChunkSizePlugin({
+      minChunkSize: 51200, // ~50kb
+    }),
     new webpack.optimize.UglifyJsPlugin({
+        mangle: true,
         compress: {
-            warnings: true
+            warnings: false
         },
     }),
   ]

@@ -1,14 +1,14 @@
 {
   "name": "essence-templates",
   "version": "1.0.3",
-  "description": "React Essence Templates - based on Essence UI Framework",
-  "homepage": "http://essence.pearlhq.com/",
+  "description": "React Essence Templates - based on Essence Material Design Framework",
+  "homepage": "http://getessence.io/",
   "repository": "git://github.com/PearlVentures/Essence-Templates",
-  "author": "Hetmann W. Iohan <wilhelm.hetmann@evozon.com>",
+  "author": "Hetmann W. Iohan <iohan@getessece.io>",
   "license": "MIT",
   "scripts": {
-    "template:test": "webpack-dev-server --devtool eval --hot --progress --colors --config essence/js/webpack.config.js --port 8080 --host 0.0.0.0 --content-base essence/",
-    "template:essence": "NODE_ENV=production webpack -p --config essence/js/webpack.config.js && http-server ./essence/ -p 8080 -a 0.0.0.0 -o",
+    "template:test": "NODE_ENV=production webpack-dev-server --devtool eval --hot --progress --colors --optimize-minimize --config essence/js/webpack.config.js --port 8080 --host 0.0.0.0 --content-base essence/",
+    "template:essence": "NODE_ENV=production webpack -p --optimize-minimize --config essence/js/webpack.config.js && http-server ./essence/ -p 8080 -a 0.0.0.0 -o",
     "template:custom": "webpack-dev-server --devtool eval --hot --progress --colors --config custom/js/webpack.config.js --port 8080 --host 0.0.0.0 --content-base custom/"
   },
   "babel": {
