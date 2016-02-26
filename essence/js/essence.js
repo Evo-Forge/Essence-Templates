@@ -111,7 +111,7 @@ class AppHome extends React.Component {
 									<Text type={'h5'} classes={'e-headline e-text-white e-text-uppercase'}>
 										The Essential Material Design Framework
 									</Text>
-									<Text type={'a'} href={'https://www.npmjs.com/~pearlventures'} target={'_blank'} classes={'e-btn raised e-background-indigo-600 e-text-white'}>
+									<Text type={'a'} href={'https://www.npmjs.com/~essence_md'} target={'_blank'} classes={'e-btn raised e-background-indigo-600 e-text-white'}>
 										Install from NPM
 									</Text>
 									<Text type={'a'} href={'https://github.com/PearlVentures/Essence'} target={'_blank'} classes={'e-btn raised e-background-white e-text-indigo-600'}>
@@ -965,37 +965,7 @@ class App extends React.Component {
         	<div>
 				<AppBar classes={'e-background-indigo-400'} style={{overflow: 'inherit'}}>
 					{this.renderSideBarButton()}
-					<Text className={'e-text-white'}>Essence - {this.state.AppBarTitle || 'MD Framework'}</Text>
-					
-					{/*
-					<Menu type={'cover'} icon={'navigation-more-vert'} classes={'e-text-white e-right'}>
-						<Text className={'e-text-black'}>
-							<Text type={'a'} href={'#about'}>
-								About
-							</Text>
-						</Text>
-						<Text className={'e-text-black'}>
-							<Text type={'a'} href={'#get-started'}>
-								Get Started with Essence
-							</Text>
-						</Text>
-						<Text className={'e-text-black'}>
-							<Text type={'a'} href={'https://github.com/PearlVentures/Essence'} target={'_blank'}>
-								Download from GitHub
-							</Text>
-						</Text>
-						<Text className={'e-text-black'}>
-							<Text type={'a'} href={'https://www.npmjs.com/~pearlventures'} target={'_blank'}>
-								Install from NPM
-							</Text>
-						</Text>
-						<Text className={'e-text-black'}>
-							<Text type={'a'} href={'#contact'}>
-								Contact
-							</Text>
-						</Text>
-					</Menu>
-					*/}
+					<Text className={'e-text-white'}>Essence - {this.state.AppBarTitle || 'Material Design Framework'}</Text>
 					
 					{this.props.children}
 				</AppBar>
