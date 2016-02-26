@@ -63,7 +63,7 @@ class AppChip extends React.Component {
 				        		<Block classes={'e-text-center'}>
 			        				<Block className={ClassNames('e-padding-top-15 e-padding-bottom-25')}>
 										<Chip data={ChipDeletable} iconColor='e-background-indigo-400' />
-										<Chip data={ChipNonDeletable} iconColor='e-background-indigo-400' />
+										<Chip data={ChipNonDeletable} iconColor='e-background-grey-600' />
 										<Chip data={ChipNoIconDeletable} />
 										<Chip data={ChipNoIconNonDeletable} />
 									</Block>

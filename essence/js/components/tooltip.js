@@ -85,7 +85,7 @@ class AppTooltip extends React.Component {
 												className={'flat e-margin-bottom-50 e-background-indigo-600'} />
 											<br />
 											<Btn 
-												type={'info e-background-indigo-600'} 
+												type={'info e-background-grey-700'} 
 												label={'Tooltip by class name'}
 												onMouseOver={this.showTooltipByClassName.bind(this)} 
 												onMouseOut={this.hideTooltipByClassName.bind(this)} 

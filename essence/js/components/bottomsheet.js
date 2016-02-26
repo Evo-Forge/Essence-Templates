@@ -88,7 +88,7 @@ class AppBottomSheet extends React.Component {
 											type={'info'} 
 											label={'Show Big Icons Bottom Sheets'}
 											onClick={this.showBigIcons.bind(this)} 
-											className={'flat e-background-indigo-600'} />
+											className={'flat e-background-grey-700'} />
 									</Block>
 
 									<BottomSheets 

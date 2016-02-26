@@ -185,8 +185,8 @@ class AppHome extends React.Component {
 							<Block classes={'brick brick-12 e-text-center e-text-indigo-100 e-background-indigo-400 e-padding-top-25 e-padding-bottom-25 e-no-margin'} style={{width: '100%'}}>
 								<Text type={'p'} classes={'e-title e-text-indigo-100'}>
 									<Text>Join us on </Text>
-									<Text type={'a'} className={'e-text-white'} href={'https://twitter.com/'}>Twitter </Text> 
-									<Text type={'a'} className={'e-text-white'} href={'https://facebook.com/'}>Facebook </Text> 
+									<Text type={'a'} className={'e-text-white'} href={'https://twitter.com/Essence_MD'}>Twitter </Text> 
+									<Text type={'a'} className={'e-text-white'} href={'https://www.facebook.com/getEssence/'}>Facebook </Text> 
 									<Text type={'a'} className={'e-text-white'} href={'https://github.com/'}>GitHub </Text>
 								</Text>
 								<Text type={'small'} classes={'e-text-indigo-100'}>

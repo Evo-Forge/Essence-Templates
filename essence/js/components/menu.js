@@ -56,7 +56,7 @@ class AppMenu extends React.Component {
 
 										<Block classes={'brick brick-4'}>
 			        						<Text type={'p'} classes={'e-text-center e-text-indigo-400'}>Menu with Icon</Text>
-											<Block classes={'e-background-grey-100'}  style={{padding:'15px'}}>
+											<Block classes={'e-background-grey-100'}  style={{padding:'10px 15px', fontSize:'24px'}}>
 												<Menu type={'cover'} icon={'action-account-circle'} className={'e-text-center e-text-indigo-400'}>
 													<Text classes={'e-text-black'}>Profile</Text>
 													<Text classes={'e-text-black'}>Settings</Text>
