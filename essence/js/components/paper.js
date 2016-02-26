@@ -25,7 +25,7 @@ class AppPaper extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>PAPERS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
 							In material design, every pixel drawn by an application resides on a sheet of paper. Paper has a flat background color and can be sized to serve a variety of purposes. A typical layout is composed of multiple sheets of paper. Here you have some examples in the most common shapes and states.
 						</Text>
 			        	

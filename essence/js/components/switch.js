@@ -24,7 +24,7 @@ class AppSwitch extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>SWITCHES</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
 							Switches allow the user to select options. There are three kinds: checkboxes, radio buttons, and on/off switches. Here they are, in all their splendor.
 						</Text>
 

@@ -188,7 +188,7 @@ class AppButton extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>BUTTONS</Text>
 		    			<Divider classes={'thick short e-background-indigo-400'} />
-		    			<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+		    			<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
 							A button clearly communicates what action will occur when the user touches it. It consists of text, an image, or both, designed in accordance with your app’s color theme.
 						</Text>
 

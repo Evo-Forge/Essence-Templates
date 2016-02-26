@@ -33,7 +33,7 @@ class AppImage extends React.Component {
 					<Block classes={'brick brick-12'}>
 							<Text type={'h3'} classes={'e-text-indigo-400'}>IMAGES</Text>
 		        			<Divider classes={'thick short e-background-indigo-400'} />
-							<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+							<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
 								They cannot be eaten. But can be used to show complex information, such as calendar events or contacts. Use them wisely by adding the e-chip-image/text/address class, as well as desired button class to your nifty code.
 							</Text>
 			        	<Card>

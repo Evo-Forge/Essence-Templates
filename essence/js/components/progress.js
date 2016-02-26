@@ -24,7 +24,7 @@ class AppProgress extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>PROGRESS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
 							Make loading content in your app as delightful and painless as possible by minimizing the amount of visual change a user sees before they can view and interact with content. Each operation should only be represented by one activity indicator—for example, one refresh operation should not display both a refresh bar and an activity circle. Below you’ll find six variations of activity indicators. Use them wisely.
 						</Text>
 

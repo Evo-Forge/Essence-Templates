@@ -69,19 +69,19 @@ let EssenceMenu = {
 
 let EssenceCoreMenu = {
 	'core-grid-system': {
-		title: 'Core: Grid System'
+		title: 'Grid System'
 	},
 	'core-divider': {
-		title: 'Core: Divider'
+		title: 'Divider'
 	},
 	'core-ripple-ink': {
-		title: 'Core: Ripple Ink'
+		title: 'Ripple Ink'
 	},
 	'core-text-typography': {
-		title: 'Core: Text Typography'
+		title: 'Text Typography'
 	},
 	'core-utilities': {
-		title: 'Core: Utilities'
+		title: 'Utilities'
 	},
 };
 
@@ -219,7 +219,7 @@ class AppAbout extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400 e-text-uppercase'}>The Basics of Material Design</Text>
 	        			<Divider classes={'thick medium e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
 							What is it and how it works?
 						</Text>
 
@@ -346,7 +346,7 @@ class AppGetStarted extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400 e-text-uppercase'}>Get Started with Essence</Text>
 	        			<Divider classes={'thick medium e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
 							Learn how to use Essence for your application
 						</Text>
 
@@ -521,7 +521,7 @@ class AppContact extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400 e-text-uppercase'}>GET IN TOUCH WITH US HERE</Text>
 	        			<Divider classes={'thick medium e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
 							Let us know what you think about Essence Project, write us any suggestion or idea that can help improve Essence.
 						</Text>
 

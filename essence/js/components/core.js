@@ -25,7 +25,7 @@ class AppCoreGridSystem extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>ESSENCE CORE COMPONENTS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
 							There are several components that are included in the Essence Core package.
 							Please review them bellow to understand how to use them.
 						</Text>
@@ -153,7 +153,7 @@ class AppCoreDivider extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>ESSENCE CORE COMPONENTS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
 							There are several components that are included in the Essence Core package.
 							Please review them bellow to understand how to use them.
 						</Text>
@@ -256,7 +256,7 @@ class AppCoreRippleInk extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>ESSENCE CORE COMPONENTS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
 							There are several components that are included in the Essence Core package.
 							Please review them bellow to understand how to use them.
 						</Text>
@@ -274,7 +274,7 @@ class AppCoreRippleInk extends React.Component {
 											label={'Ripple Effect'}
 											ripple={true}
 											type={'succes'}
-											className={'raised e-background-green-500'} />
+											className={'raised e-background-indigo-600'} />
 									</Block>
 									
 									<br />
@@ -386,7 +386,7 @@ class AppCoreTextTypography extends React.Component {
 					label={type}
 					type={ (type === self.state.active.type) ? 'info' : 'succes' }
 					ripple={false}
-					className={ClassNames('flat', (type === self.state.active.type) ? 'e-background-indigo-600' : '')}
+					className={ClassNames('flat', (type === self.state.active.type) ? 'e-background-indigo-600' : 'e-background-indigo-400')}
 					key={'text-type-' + type}
 					onClick={self.changeType.bind(self, type.toLowerCase())}/>
 			);
@@ -408,7 +408,7 @@ class AppCoreTextTypography extends React.Component {
 					label={position}
 					type={ (position === self.state.active.position) ? 'info' : 'succes'}
 					ripple={false}
-					className={ClassNames('flat', (position === self.state.active.position) ? 'e-background-indigo-600' : '')}
+					className={ClassNames('flat', (position === self.state.active.position) ? 'e-background-indigo-600' : 'e-background-indigo-400')}
 					key={'text-position-' + position.toLowerCase()}
 					onClick={self.changePosition.bind(self, position.toLowerCase())}/>
 			);
@@ -430,7 +430,7 @@ class AppCoreTextTypography extends React.Component {
 					label={typograph}
 					type={ (typograph === self.state.active.typo) ? 'info' : 'succes'}
 					ripple={false}
-					className={ClassNames('flat', (typograph === self.state.active.typo) ? 'e-background-indigo-600' : '')}
+					className={ClassNames('flat', (typograph === self.state.active.typo) ? 'e-background-indigo-600' : 'e-background-indigo-400')}
 					key={'text-typograph-' + typograph.toLowerCase()}
 					onClick={self.changeTypography.bind(self, typograph.toLowerCase())}/>
 			);
@@ -446,7 +446,7 @@ class AppCoreTextTypography extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>ESSENCE CORE COMPONENTS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
 							There are several components that are included in the Essence Core package.
 							Please review them bellow to understand how to use them.
 						</Text>
@@ -464,15 +464,15 @@ class AppCoreTextTypography extends React.Component {
 											<Divider classes={'thin short e-background-indigo-400'} />
 											<Block className={'e-padding-bottom-100'} />
 
-											<Block className={'e-background-green-500 e-text-center e-padding-top-15 e-padding-bottom-15 e-body1'}>
+											<Block className={'e-background-grey-100 e-text-center e-padding-top-15 e-padding-bottom-15 e-body1'}>
 												<Block
-													classes={'e-text-white'}>
+													classes={''}>
 													&lt;Text type=&#123;'{this.state.textType}'&#125; classes=&#123;'{ClassNames(this.state.textPosition, this.state.textTypography)}'&#125;&gt;
 													<Text 
 														target={'_blank'}
 														type={this.state.textType}
 														href={'http://essence.pearlhq.com'}
-														classes={ClassNames('e-text-grey-300', this.state.textPosition, this.state.textTypography)}>
+														classes={ClassNames('e-text-grey-600', this.state.textPosition, this.state.textTypography)}>
 														Text Typography Example
 													</Text>
 													&lt;/Text&gt;
@@ -611,7 +611,7 @@ class AppCoreUtilities extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>ESSENCE CORE COMPONENTS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
 							There are several components that are included in the Essence Core package.
 							Please review them bellow to understand how to use them.
 						</Text>

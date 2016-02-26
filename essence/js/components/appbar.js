@@ -33,7 +33,8 @@ class AppBarComponent extends React.Component {
 					<Block classes={'brick brick-12'}>
 					<Text type={'h3'} classes={'e-text-indigo-400'}>APPBAR</Text>
         			<Divider classes={'thick short e-background-indigo-400'} />
-					<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+					<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}
+					>
 						It’s never been more fun to create an appbar with button and navigation and whatever. Start with the .e-appbar class then add buttons, menus and whatever you need.
 					</Text>
 

@@ -65,7 +65,7 @@ class AppTooltip extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>TOOLTIPS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
 							Tooltips are labels that appear on hover and focus when the user hovers over an element with the cursor, focuses on an element using a keyboard (usually through the tab key), or, in a touch UI, upon touch (without releasing). Check out some examples and how to use them below.
 						</Text>
 
@@ -82,7 +82,7 @@ class AppTooltip extends React.Component {
 												label={'Tooltip by ID'}
 												onMouseOver={this.showTooltipByID.bind(this)} 
 												onMouseOut={this.hideTooltipByID.bind(this)} 
-												className={'flat e-margin-bottom-50'} />
+												className={'flat e-margin-bottom-50 e-background-indigo-600'} />
 											<br />
 											<Btn 
 												type={'info e-background-indigo-600'} 

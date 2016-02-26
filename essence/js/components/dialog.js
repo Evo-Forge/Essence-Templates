@@ -46,7 +46,7 @@ class AppDialog extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>DIALOGS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
 							As you might expect, dialog boxes pop. And they have actions - set the dialog content and its actions with .e-dialogs-content and .e-dialogs-actions, as well as the button type & text. That’s it.
 						</Text>
 
@@ -62,13 +62,13 @@ class AppDialog extends React.Component {
 
 										<Dialog dismissible={false} visible={this.state.open} onOpen={this.dialogOpened.bind(this)} onClose={this.dialogClosed.bind(this)}>
 											<DialogHeader className={'e-text-right'} style={{paddingBottom:'0', position:'relative'}}>
-												<Btn icon={'navigation-close'} onClick={this.hideDialog.bind(this)} className={'flat e-background-white'} style={{position:'absolute', right:'-24px', top:'-24px'}}/>
+												<Btn icon={'navigation-close'} onClick={this.hideDialog.bind(this)} className={'flat e-background-white'} style={{position:'absolute', right:'-24px', top:'-24px', zIndex:'1'}}/>
 											</DialogHeader>
 											<DialogContent>
 												This is the Dialog content
 											</DialogContent>
 											<DialogFooter>
-												<Btn type={'succes'} label={'OK'} className={'flat'} />
+												<Btn type={'succes'} label={'OK'} className={'flat e-background-indigo-600'} />
 												<Btn type={'info'} label={'Cancel'} onClick={this.hideDialog.bind(this)}  className={'flat e-background-indigo-600'} />
 											</DialogFooter>
 										</Dialog>

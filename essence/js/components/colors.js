@@ -1279,7 +1279,7 @@ class AppColors extends React.Component {
 	        		<Block classes={'brick brick-12'}>
 		        		<Text type={'h3'} classes={'e-text-indigo-400'}>COLORS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-	        			<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+	        			<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
 							Colors are pretty. And Essence has them all, powered by Google.
 						</Text>
 

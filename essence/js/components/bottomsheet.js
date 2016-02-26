@@ -67,7 +67,7 @@ class AppBottomSheet extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>BOTTOM SHEETS</Text>
 						<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
 							You know those cool looking sheets that pop-up from the bottom of the screen? Yeah, we have those too. Depending on how you want information to be displayed, aligned or arranged, use the appropriate code. Here are some examples to get you started.
 						</Text>
 
@@ -82,7 +82,7 @@ class AppBottomSheet extends React.Component {
 											type={'succes'} 
 											label={'Show Simple Bottom Sheets'}
 											onClick={this.showSimple.bind(this)} 
-											className={'flat'} />
+											className={'flat e-background-indigo-600'} />
 
 										<Btn 
 											type={'info'} 
