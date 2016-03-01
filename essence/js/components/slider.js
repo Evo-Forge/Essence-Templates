@@ -2,19 +2,115 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ClassNames from 'classnames';
 
+import Btn from 'essence-button';
 import Slider from 'essence-slider';
 import {Block, Text, Divider} from 'essence-core';
 import {Card, CardHeader, CardContent, CardFooter} from 'essence-card';
+import {Dialog, DialogHeader, DialogContent, DialogFooter} from 'essence-dialog';
 
 class AppSlider extends React.Component {
 	constructor(props) {
         super(props);
         this.state = {
+        	open: false,
+			r: '92',
+			g: '107',
+			b: '192',
             classes: ClassNames(
                 this.props.classes,
                 this.props.className
             )
         };
+    }
+
+    changeR(event) {
+    	this.setState({
+    		r: event.currentTarget.value.toString()
+    	})
+    }
+    changeG(event) {
+    	this.setState({
+    		g: event.currentTarget.value.toString()
+    	})
+    }
+    changeB(event) {
+    	this.setState({
+    		b: event.currentTarget.value.toString()
+    	})
+    }
+
+    showDialog() {
+        this.setState({
+            open: true
+        });
+    }
+
+    hideDialog() {
+        this.setState({
+            open: false
+        });
+    }
+
+    renderRGB() {
+    	return (
+    		<Block>
+	    		<Btn 
+					type={'primary'} 
+					label={'Color Palette RGB'}
+					onClick={this.showDialog.bind(this)} 
+					className={'flat e-background-indigo-600'} />
+
+				<Dialog className={'colorDialog'} visible={this.state.open}>
+					<DialogContent>
+						<Block 
+							className={'preview e-text-center'} 
+							style={{backgroundColor: 'rgb('+(this.state.r)+', '+(this.state.g)+', '+(this.state.b)+')'}}>
+							<Text type={'h2'} className={'rgb'}>
+								backgroundColor: {'rgb('+this.state.r+', '+this.state.g+', '+this.state.b+')'}
+							</Text>
+							<Text type={'h4'} className={'hex'}>
+								backgroundColor: {'#'+('0'+parseInt(this.state.r,10).toString(16)).slice(-2)+('0'+parseInt(this.state.g,10).toString(16)).slice(-2)+('0'+parseInt(this.state.b,10).toString(16)).slice(-2)+''}
+							</Text>
+						</Block>
+						<Block classes={'e-row'}>
+							<Block classes={'brick brick-1'}>
+								RED
+							</Block>
+							<Block classes={'brick brick-9'}>
+								<Slider start={this.state.r} max={255} onChange={this.changeR.bind(this)} />
+							</Block>
+							<Block classes={'brick brick-2 e-text-right'}>
+								{this.state.r}
+							</Block>
+						</Block>
+
+						<Block classes={'e-row'}>
+							<Block classes={'brick brick-1'}>
+								GREEN
+							</Block>
+							<Block classes={'brick brick-9'}>
+								<Slider start={this.state.g} max={255} onChange={this.changeG.bind(this)} />
+							</Block>
+							<Block classes={'brick brick-2 e-text-right'}>
+								{this.state.g}
+							</Block>
+						</Block>
+
+						<Block classes={'e-row'}>
+							<Block classes={'brick brick-1'}>
+								BLUE
+							</Block>
+							<Block classes={'brick brick-9'}>
+								<Slider start={this.state.b} max={255} onChange={this.changeB.bind(this)} />
+							</Block>
+							<Block classes={'brick brick-2 e-text-right'}>
+								{this.state.b}
+							</Block>
+						</Block>
+					</DialogContent>
+				</Dialog>
+			</Block>
+    	);
     }
 
     render() {
@@ -36,19 +132,22 @@ class AppSlider extends React.Component {
 			        					<Divider classes={'thin short e-background-indigo-400'} />
 
 										<Block classes={'brick brick-12'}>
-											<Slider step={1} fill={false} />
+											<Slider step={1} fill={false}/>
 										</Block>
 										<Block classes={'brick brick-12'}>
 											<Slider step={10} start={10}/>
 										</Block>
 										<Block classes={'brick brick-12'}>
-											<Slider discrete={true} step={1} start={20}/>
+											<Slider discrete={true} step={1} start={100} max={255} />
 										</Block>
 										<Block classes={'brick brick-12'}>
-											<Slider discrete={true} step={10} start={30}/>
+											<Slider discrete={true} step={10} start={150} max={255}/>
 										</Block>
 										<Block classes={'brick brick-12'}>
-											<Slider discrete={true} step={10} start={40} disable={true}/>
+											<Slider discrete={true} step={10} start={60} disabled={true}/>
+										</Block>
+										<Block classes={'brick brick-12'}>
+											{this.renderRGB()}
 										</Block>
 									</Block>
 				        			
@@ -79,7 +178,7 @@ class AppSlider extends React.Component {
 												<br />
 												&lt;Slider discrete=&#123;true&#125; step=&#123;10&#125; start=&#123;30&#125;/&gt;
 												<br />
-												&lt;Slider discrete=&#123;true&#125; step=&#123;10&#125; start=&#123;40&#125; disable=&#123;true&#125;/&gt;
+												&lt;Slider discrete=&#123;true&#125; step=&#123;10&#125; start=&#123;40&#125; disabled=&#123;true&#125;/&gt;
 					        				</code>
 				        				</pre>
 				        			</Block>

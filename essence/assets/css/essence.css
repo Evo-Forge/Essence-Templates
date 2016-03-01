@@ -70,3 +70,23 @@ pre {
 .icon-preview:hover {
 	color: #6B6B6B!important;
 }
+
+.colorDialog {
+	padding: 0;
+}
+.colorDialog .e-dialogs-content {
+	opacity: 1!important;
+}
+.colorDialog .preview {
+	width: 100%;
+    height: 200px;
+}
+.colorDialog .preview .rgb {
+	color: #FFF;
+	text-shadow: 1px 1px 3px #222;
+	line-height: 100px;
+}
+.colorDialog .preview .hex {
+	color: #FFF;
+	text-shadow: 1px 1px 3px #222;
+}
