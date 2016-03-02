@@ -965,7 +965,7 @@ class App extends React.Component {
         	<div>
 				<AppBar classes={'e-background-indigo-400'} style={{overflow: 'inherit'}}>
 					{this.renderSideBarButton()}
-					<Text className={'e-text-white'}>Essence - {this.state.AppBarTitle || 'Material Design Framework'}</Text>
+					<Text className={'e-text-white'}>{this.state.AppBarTitle || 'Essence - Material Design Framework'}</Text>
 					
 					{this.props.children}
 				</AppBar>

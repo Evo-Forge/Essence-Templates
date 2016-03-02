@@ -95,3 +95,12 @@ pre {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+
+#navigationMenu {
+	overflow-y: hidden; 
+}
+
+#navigationMenu > ul {
+	overflow-y:scroll;
+	height: 100%;
+}
