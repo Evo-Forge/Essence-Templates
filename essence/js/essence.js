@@ -36,6 +36,7 @@ import {
 	AppProgress,
 	AppSlider,
 	AppSnackBar,
+	AppStepper,
 	AppSwitch,
 	AppTab,
 	AppToast,
@@ -745,6 +746,7 @@ class App extends React.Component {
 				'progress',
 				'slider',
 				'snackbar',
+				'stepper',
 				'switch',
 				'tab',
 				'toast',
@@ -915,6 +917,9 @@ class App extends React.Component {
     			break;
     		case 'snackbar':
     			componentContent = <AppSnackBar />;
+    			break;
+    		case 'stepper':
+    			componentContent = <AppStepper />;
     			break;
     		case 'switch':
     			componentContent = <AppSwitch />;

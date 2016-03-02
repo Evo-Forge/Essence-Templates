@@ -108,6 +108,9 @@ module.exports = {
 		'url': '/snackbar.html',
 		'icon': ''
 	},
+	'stepper': {
+		'title': 'Steppers'
+	},
 	'switch': {
 		'title': 'Switch',
 		'description': 'Switches allow the user to select options. There are three kinds: checkboxes, radio buttons, and on/off switches. Here they are, in all their splendor.', 
