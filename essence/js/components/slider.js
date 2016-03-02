@@ -53,62 +53,52 @@ class AppSlider extends React.Component {
 
     renderRGB() {
     	return (
-    		<Block>
-	    		<Btn 
-					type={'primary'} 
-					label={'Color Palette RGB'}
-					onClick={this.showDialog.bind(this)} 
-					className={'flat e-background-indigo-600'} />
+    		<Block>    
+				<Block 
+					className={'preview e-text-center'} 
+					style={{backgroundColor: 'rgb('+(this.state.r)+', '+(this.state.g)+', '+(this.state.b)+')'}}>
+					<Text type={'h2'} className={'rgb e-padding-top-25 e-text-white'}>
+						backgroundColor: {'rgb('+this.state.r+', '+this.state.g+', '+this.state.b+')'}
+					</Text>
+					<Text type={'h4'} className={'hex e-padding-bottom-25 e-text-white'}>
+						backgroundColor: {'#'+('0'+parseInt(this.state.r,10).toString(16)).slice(-2)+('0'+parseInt(this.state.g,10).toString(16)).slice(-2)+('0'+parseInt(this.state.b,10).toString(16)).slice(-2)+''}
+					</Text>
+				</Block>
+				<Block classes={'e-row'} style={{display:'flex'}}>
+					<Block classes={'brick brick-1 e-text-left'}>
+						R
+					</Block>
+					<Block classes={'brick brick-10'}>
+						<Slider start={this.state.r} max={255} onChange={this.changeR.bind(this)} />
+					</Block>
+					<Block classes={'brick brick-1 e-text-right'}>
+						{this.state.r}
+					</Block>
+				</Block>
 
-				<Dialog className={'colorDialog'} visible={this.state.open}>
-					<DialogContent>
-						<Block 
-							className={'preview e-text-center'} 
-							style={{backgroundColor: 'rgb('+(this.state.r)+', '+(this.state.g)+', '+(this.state.b)+')'}}>
-							<Text type={'h2'} className={'rgb'}>
-								backgroundColor: {'rgb('+this.state.r+', '+this.state.g+', '+this.state.b+')'}
-							</Text>
-							<Text type={'h4'} className={'hex'}>
-								backgroundColor: {'#'+('0'+parseInt(this.state.r,10).toString(16)).slice(-2)+('0'+parseInt(this.state.g,10).toString(16)).slice(-2)+('0'+parseInt(this.state.b,10).toString(16)).slice(-2)+''}
-							</Text>
-						</Block>
-						<Block classes={'e-row'}>
-							<Block classes={'brick brick-1'}>
-								RED
-							</Block>
-							<Block classes={'brick brick-9'}>
-								<Slider start={this.state.r} max={255} onChange={this.changeR.bind(this)} />
-							</Block>
-							<Block classes={'brick brick-2 e-text-right'}>
-								{this.state.r}
-							</Block>
-						</Block>
+				<Block classes={'e-row'} style={{display:'flex'}}>
+					<Block classes={'brick brick-1 e-text-left'}>
+						G
+					</Block>
+					<Block classes={'brick brick-10'}>
+						<Slider start={this.state.g} max={255} onChange={this.changeG.bind(this)} />
+					</Block>
+					<Block classes={'brick brick-1 e-text-right'}>
+						{this.state.g}
+					</Block>
+				</Block>
 
-						<Block classes={'e-row'}>
-							<Block classes={'brick brick-1'}>
-								GREEN
-							</Block>
-							<Block classes={'brick brick-9'}>
-								<Slider start={this.state.g} max={255} onChange={this.changeG.bind(this)} />
-							</Block>
-							<Block classes={'brick brick-2 e-text-right'}>
-								{this.state.g}
-							</Block>
-						</Block>
-
-						<Block classes={'e-row'}>
-							<Block classes={'brick brick-1'}>
-								BLUE
-							</Block>
-							<Block classes={'brick brick-9'}>
-								<Slider start={this.state.b} max={255} onChange={this.changeB.bind(this)} />
-							</Block>
-							<Block classes={'brick brick-2 e-text-right'}>
-								{this.state.b}
-							</Block>
-						</Block>
-					</DialogContent>
-				</Dialog>
+				<Block classes={'e-row'} style={{display:'flex'}}> 
+					<Block classes={'brick brick-1 e-text-left'}>
+						B
+					</Block>
+					<Block classes={'brick brick-10'}>
+						<Slider start={this.state.b} max={255} onChange={this.changeB.bind(this)} />
+					</Block>
+					<Block classes={'brick brick-1 e-text-right'}>
+						{this.state.b}
+					</Block>
+				</Block>				
 			</Block>
     	);
     }
@@ -120,7 +110,7 @@ class AppSlider extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>SLIDERS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 e-padding-top-25 e-padding-bottom-25'} style={{fontSize:'14px'}}>
 							Sliders let users select a value from a continuous or discrete range of values by moving the slider thumb. The smallest value is to the left, the largest to the right.
 						</Text>
 
@@ -145,10 +135,7 @@ class AppSlider extends React.Component {
 										</Block>
 										<Block classes={'brick brick-12'}>
 											<Slider discrete={true} step={10} start={60} disabled={true}/>
-										</Block>
-										<Block classes={'brick brick-12'}>
-											{this.renderRGB()}
-										</Block>
+										</Block>										
 									</Block>
 				        			
 				        			<Block className={'brick brick-6'} style={{paddingTop:'0'}}>
@@ -161,7 +148,7 @@ class AppSlider extends React.Component {
 					        				</code>
 				        				</pre>
 
-				        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+				        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 											Create a new ReactJS file with the code bellow.
 										</Text>
 
@@ -182,9 +169,28 @@ class AppSlider extends React.Component {
 					        				</code>
 				        				</pre>
 				        			</Block>
-			        			</Block>
+			        			</Block>			        			
 			        		</CardContent>
 						</Card>
+
+						<Card>
+			        		<CardContent>
+			        			<Text type={'h4'} classes={'e-text-indigo-400'}>LIVE EXAMPLE:</Text>
+			        			<Divider classes={'thin short e-background-indigo-400'} />
+			        			<Block classes={'e-row'}>
+			        				<Block classes={'brick brick-2'}></Block>
+			        				<Block classes={'brick brick-8'}>
+			        					<Block classes={'e-row'}>
+			        						<Block classes={'brick brick-12'}>
+												{this.renderRGB()}
+											</Block>	
+			        					</Block>		        				
+			        				</Block>
+			        				<Block classes={'brick brick-2'}></Block>			        			
+			        			</Block>			        			
+			        		</CardContent>
+						</Card>
+
 					</Block>
 				</Block>
 			</Block>

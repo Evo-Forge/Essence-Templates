@@ -90,3 +90,8 @@ pre {
 	color: #FFF;
 	text-shadow: 1px 1px 3px #222;
 }
+
+.padding-top-bottom-10 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

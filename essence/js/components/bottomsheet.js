@@ -67,7 +67,7 @@ class AppBottomSheet extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>BOTTOM SHEETS</Text>
 						<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 e-padding-top-25 e-padding-bottom-25'} style={{fontSize:'14px'}}>
 							You know those cool looking sheets that pop-up from the bottom of the screen? Yeah, we have those too. Depending on how you want information to be displayed, aligned or arranged, use the appropriate code. Here are some examples to get you started.
 						</Text>
 
@@ -189,7 +189,7 @@ class AppBottomSheet extends React.Component {
 			        				<Text type={'h4'} classes={'e-text-indigo-400'}>HOW TO USE:</Text>
 			        				<Divider classes={'thin short e-background-indigo-400'} />
 
-			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Use the "BottomSheets" Essence component to render a group of "BottomSheetsItem" components. The "BottomSheets" Essence component will return a div container with class name "e-bottom-sheet". Inside the BottomSheets component you can include only the BottomSheetsItem component. A "BottomSheetsItem" Essence component will render one List component. 
 									</Text>
 
@@ -203,7 +203,7 @@ class AppBottomSheet extends React.Component {
 										BOTTOM SHEETS SIMPLE
 									</Text>
 
-			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Create a new ReactJS file with the code bellow.
 									</Text>
 
@@ -306,7 +306,7 @@ class AppBottomSheet extends React.Component {
 										BOTTOM SHEETS BIG ICONS
 									</Text>
 
-			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Create a new ReactJS file with the code bellow.
 									</Text>
 

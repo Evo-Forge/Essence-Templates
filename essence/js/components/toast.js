@@ -68,7 +68,7 @@ class AppToast extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>TOASTS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 e-padding-top-25 e-padding-bottom-25'} style={{fontSize:'14px'}}>
 							Remember those confirmation messages from long time ago? They’re now called snackbars and toasts and they come with rules. Head onto Google to check out how to use them. Then check out the below examples hot to integrate them from Essence.
 						</Text>
 
@@ -123,7 +123,7 @@ class AppToast extends React.Component {
 					        				</code>
 				        				</pre>
 
-				        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+				        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 											To customise the hide function for Toast modify the number from option <strong>delay</strong> with a delay in miliseconds. 
 										</Text>
 

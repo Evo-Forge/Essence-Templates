@@ -25,7 +25,7 @@ class AppCoreGridSystem extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>ESSENCE CORE COMPONENTS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 e-padding-top-25 e-padding-bottom-700 e-padding-top-25 e-padding-bottom-25'} style={{fontSize:'14px'}}>
 							There are several components that are included in the Essence Core package.
 							Please review them bellow to understand how to use them.
 						</Text>
@@ -34,7 +34,7 @@ class AppCoreGridSystem extends React.Component {
 			        		<CardContent>
 			        			<Block>
 			        				<Text type={'h4'} classes={'e-background-indigo-400 e-padding-top-15 e-padding-bottom-15 e-text-white'}>&nbsp; 1. GRID SYSTEM</Text>
-									<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+									<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										When it comes to organizing content, grids come in handy. Take a look at the examples below to pick the best system for your content.
 									</Text>
 									
@@ -89,7 +89,7 @@ class AppCoreGridSystem extends React.Component {
 				        				</code>
 			        				</pre>
 
-			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Create a new ReactJS file with the code bellow.
 									</Text>
 
@@ -153,7 +153,7 @@ class AppCoreDivider extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>ESSENCE CORE COMPONENTS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 e-padding-top-25 e-padding-bottom-25'} style={{fontSize:'14px'}}>
 							There are several components that are included in the Essence Core package.
 							Please review them bellow to understand how to use them.
 						</Text>
@@ -161,34 +161,34 @@ class AppCoreDivider extends React.Component {
 			        		<CardContent>
 								<Block>
 									<Text type={'h4'} classes={'e-background-indigo-400 e-padding-top-15 e-padding-bottom-15 e-text-white'}>&nbsp; 2. DIVIDER</Text>
-									<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+									<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										According to our needs we created some dividers and stored them in a .less file called, you've guest it, dividers.
 										
 										We've created three values for width and five values for height. You can combine them as you please.
 									</Text>
 
-									<Block className={'e-padding-top-15 e-text-blue-grey-400'}>
+									<Block className={'e-padding-top-15 e-text-blue-grey-700'}>
 										Thin short
 										<Divider classes={'thin short e-background-indigo-400'} />
 									</Block>
-									<Block className={'e-padding-top-15 e-text-blue-grey-400'}>
+									<Block className={'e-padding-top-15 e-text-blue-grey-700'}>
 										Thin long
 										<Divider classes={'thin long e-background-indigo-400'} />
 									</Block>
-									<Block className={'e-padding-top-15 e-text-blue-grey-400'}>
+									<Block className={'e-padding-top-15 e-text-blue-grey-700'}>
 										Thin
 										<Divider classes={'thin e-background-indigo-400'} />
 									</Block>
 									
-									<Block className={'e-padding-top-15 e-text-blue-grey-400'}>
+									<Block className={'e-padding-top-15 e-text-blue-grey-700'}>
 										Thick short
 										<Divider classes={'thick short e-background-indigo-400'} />
 									</Block>
-									<Block className={'e-padding-top-15 e-text-blue-grey-400'}>
+									<Block className={'e-padding-top-15 e-text-blue-grey-700'}>
 										Thick long
 										<Divider classes={'thick long e-background-indigo-400'} />
 									</Block>
-									<Block className={'e-padding-top-15 e-text-blue-grey-400'}>
+									<Block className={'e-padding-top-15 e-text-blue-grey-700'}>
 										Thick
 										<Divider classes={'thick e-background-indigo-400'} />
 									</Block>
@@ -205,7 +205,7 @@ class AppCoreDivider extends React.Component {
 					    				</code>
 									</pre>
 
-									<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+									<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Create a new ReactJS file with the code bellow.
 									</Text>
 
@@ -256,7 +256,7 @@ class AppCoreRippleInk extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>ESSENCE CORE COMPONENTS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 e-padding-top-25 e-padding-bottom-25'} style={{fontSize:'14px'}}>
 							There are several components that are included in the Essence Core package.
 							Please review them bellow to understand how to use them.
 						</Text>
@@ -265,7 +265,7 @@ class AppCoreRippleInk extends React.Component {
 			        		<CardContent>
 								<Block>
 									<Text type={'h4'} classes={'e-background-indigo-400 e-padding-top-15 e-padding-bottom-15 e-text-white'}>&nbsp; 3. RIPPLE INK</Text>
-									<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+									<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										This component is design for Btn component to simulate a color ripple effect on the background element.
 									</Text>
 
@@ -289,7 +289,7 @@ class AppCoreRippleInk extends React.Component {
 					    				</code>
 									</pre>
 
-									<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+									<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Include the RippleInk component inside an element container where style position must be 'relative'.
 										<br />
 										<br />
@@ -446,7 +446,7 @@ class AppCoreTextTypography extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>ESSENCE CORE COMPONENTS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 e-padding-top-25 e-padding-bottom-25'} style={{fontSize:'14px'}}>
 							There are several components that are included in the Essence Core package.
 							Please review them bellow to understand how to use them.
 						</Text>
@@ -454,7 +454,7 @@ class AppCoreTextTypography extends React.Component {
 			        		<CardContent>
 								<Block>
 									<Text type={'h4'} classes={'e-background-indigo-400 e-padding-top-15 e-padding-bottom-15 e-text-white'}>&nbsp; 4. TEXT TYPOGRAPHY</Text>
-									<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+									<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Typography is such an important part of a catchy website, so you must use it carefully. You are just a few classes away of doing it! To do that, we are here helping you with predefined classes.
 									</Text>
 
@@ -490,7 +490,7 @@ class AppCoreTextTypography extends React.Component {
 							    				</code>
 											</pre>
 
-											<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+											<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 												There are a list of available types that can be used as in the list bellow: 
 												<br />
 												<Text classes={'e-caption'}>
@@ -514,7 +514,7 @@ class AppCoreTextTypography extends React.Component {
 												<br />
 											</Text>
 
-											<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+											<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 												For typography styling there are a list of available options:
 												<br />
 												<Text classes={'e-caption'}>
@@ -611,7 +611,7 @@ class AppCoreUtilities extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>ESSENCE CORE COMPONENTS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 e-padding-top-25 e-padding-bottom-25'} style={{fontSize:'14px'}}>
 							There are several components that are included in the Essence Core package.
 							Please review them bellow to understand how to use them.
 						</Text>
@@ -620,12 +620,12 @@ class AppCoreUtilities extends React.Component {
 			        		<CardContent>
 								<Block>
 									<Text type={'h4'} classes={'e-background-indigo-400 e-padding-top-15 e-padding-bottom-15 e-text-white'}>&nbsp; 5. UTILITIES</Text>
-									<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+									<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Utilities are named 'Utils' and represent helpers for other components to maintain the desired functionality.
 									</Text>
 
 									<Divider />
-									<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+									<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										- <strong>BackgroundColor</strong>: extracts the color property from an element, it is used on the RippleEffect for a Btn component
 										<br />
 										<br />

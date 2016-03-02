@@ -46,7 +46,7 @@ class AppDialog extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>DIALOGS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 e-padding-top-25 e-padding-bottom-25'} style={{fontSize:'14px'}}>
 							As you might expect, dialog boxes pop. And they have actions - set the dialog content and its actions with .e-dialogs-content and .e-dialogs-actions, as well as the button type & text. That’s it.
 						</Text>
 
@@ -85,7 +85,7 @@ class AppDialog extends React.Component {
 				        				</code>
 			        				</pre>
 
-			        				<Text type={'p'} classes={'e-body1 e-text-black'}>
+			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Dialog component has the following options:
 										<br />
 										<br />
