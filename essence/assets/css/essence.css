@@ -90,3 +90,18 @@ pre {
 	color: #FFF;
 	text-shadow: 1px 1px 3px #222;
 }
+
+.padding-top-bottom-10 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#navigationMenu {
+	overflow-y: hidden; 
+}
+
+#navigationMenu > ul {
+	overflow-y:scroll;
+	height: 100%;
+	padding-bottom: 70px;
+}

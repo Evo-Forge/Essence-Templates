@@ -100,7 +100,7 @@ class AppDataTable extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>DATA TABLE</Text>
 		    			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 e-padding-top-25 e-padding-bottom-25'} style={{fontSize:'14px'}}>
 							Data tables display raw data sets. They usually appear in desktop enterprise products.
 						</Text>
 
@@ -123,7 +123,7 @@ class AppDataTable extends React.Component {
 				        				</code>
 			        				</pre>
 
-			        				<Text classes={'e-body1 e-text-blue-grey-400'}>
+			        				<Text classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 			        					Use the example bellow to customize your own App.
 			        				</Text>
 

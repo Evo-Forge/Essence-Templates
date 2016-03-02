@@ -24,7 +24,7 @@ class AppCard extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>CARDS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 e-padding-top-25 e-padding-bottom-25'} style={{fontSize:'14px'}}>
 							There are several types of cards which can be used in different situations.
 						</Text>		        		
 
@@ -62,7 +62,7 @@ class AppCard extends React.Component {
 				        				</code>
 			        				</pre>
 
-			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Create a new ReactJS file with the code bellow.
 									</Text>
 

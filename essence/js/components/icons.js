@@ -3106,7 +3106,7 @@ class AppIcons extends React.Component {
 	        		<Block classes={'brick brick-12'}>
 		        		<Text type={'h3'} classes={'e-text-indigo-400'}>ICONS</Text>
 						<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}> 
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 e-padding-top-25 e-padding-bottom-25'} style={{fontSize:'14px'}}> 
 							We’ve included hundreds of icons that you can freely use for whatever your mind can conceive.
 						</Text>
 

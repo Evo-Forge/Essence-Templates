@@ -24,7 +24,7 @@ class AppInput extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>TEXT FIELDS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 e-padding-top-25 e-padding-bottom-25'} style={{fontSize:'14px'}}>
 							Text fields allow the user to input text. They can be single line, with or without scrolling, or multi-line, and can have an icon. Touching a text field places the cursor and automatically displays the keyboard. Check out our examples and use the one that fits your scenario.
 						</Text>
 
@@ -110,7 +110,7 @@ class AppInput extends React.Component {
 				        				</code>
 			        				</pre>
 
-			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Create a new ReactJS file with the code bellow.
 									</Text>
 

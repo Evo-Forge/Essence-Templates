@@ -24,7 +24,7 @@ class AppMenu extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>MENUS</Text>
 		    			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 e-padding-top-25 e-padding-bottom-25'} style={{fontSize:'14px'}}>
 							Sliders let users select a value from a continuous or discrete range of values by moving the slider thumb. The smallest value is to the left, the largest to the right.
 						</Text>
 
@@ -77,7 +77,7 @@ class AppMenu extends React.Component {
 				        				</code>
 			        				</pre>
 
-			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'}>
+			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Create a new ReactJS file with the code bellow.
 									</Text>
 
