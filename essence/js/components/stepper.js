@@ -3,33 +3,42 @@ import ReactDOM from 'react-dom';
 import ClassNames from 'classnames';
 
 import Stepper from 'essence-stepper';
+// import Stepper from '../../../../EssenceMD/components/essence-stepper/src/stepper.jsx';
 import {Block, Text, Divider} from 'essence-core';
 import {Card, CardHeader, CardContent, CardFooter} from 'essence-card';
 
-const Editable = {
-    'steps': [
-        { 'title': (<Text>Select campaign settings</Text>) },
-        { 'title': (<Text>Create an ad group</Text>), 'optional': (<Text>Optional</Text>) },
-        { 'title': (<Text>Create an ad</Text>) }
+const Steps = {
+    'editable': [
+        { 
+        	'title': (<Text>Select campaign settings</Text>),
+        	'content': (<Text className={'e-caption'}>Campaign settings</Text>)
+        },
+        { 
+        	'title': (<Text>Create an ad group</Text>), 
+        	'optional': (<Text>Optional</Text>),
+        	'content': (<Text className={'e-caption'}>Ad group</Text>)
+        },
+        { 
+        	'title': (<Text>Create an ad</Text>),
+        	'content': (<Text className={'e-caption'}>Ad details</Text>)
+        }
     ],
-    'items': [ 
-        { 'item': (<Text className={'e-caption'}>Campaign settings</Text>) },
-        { 'item': (<Text className={'e-caption'}>Ad group</Text>) },
-        { 'item': (<Text className={'e-caption'}>Ad details</Text>) }
-    ]
-};
-
-const NonEditable = {
-    'steps': [
-        { 'title': (<Text>Select campaign settings</Text>) },
-        { 'title': (<Text>Create an ad group</Text>) },
-        { 'title': (<Text>Create an ad</Text>) }
-    ],
-    'items': [ 
-        { 'item': (<Text className={'e-caption'}>Campaign settings</Text>) },
-        { 'item': (<Text className={'e-caption'}>Ad group</Text>) },
-        { 'item': (<Text className={'e-caption'}>Ad details</Text>) },
-        { 'item': (<Text className={'e-caption'}>Summary</Text>) }
+    'non-editable': [
+        { 
+        	'title': (<Text>Select campaign settings</Text>),
+        	'content': (<Text className={'e-caption'}>Campaign settings</Text>)
+        },
+        { 
+        	'title': (<Text>Create an ad group</Text>),
+        	'content': (<Text className={'e-caption'}>Ad group</Text>)
+        },
+        { 
+        	'title': (<Text>Create an ad</Text>),
+        	'content': (<Text className={'e-caption'}>Ad details</Text>)
+        },
+        { 
+        	'content': (<Text className={'e-caption'}>Summary</Text>)
+        }
     ]
 };
 
@@ -61,7 +70,7 @@ class AppStepper extends React.Component {
 						<Text type={'h3'} classes={'e-text-indigo-400'}>STEPPERS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
 						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
-							Steppers...
+							Steppers convey progress through numbered steps. They may also be used for navigation.
 						</Text>
 
 			        	<Card>
@@ -71,17 +80,14 @@ class AppStepper extends React.Component {
 			        				<Divider classes={'thin short e-background-indigo-400'} />
 				        			
 				        			<Text type={'h3'} classes={'e-text-indigo-400 e-caption e-padding-top-25'}>EDITABLE:</Text>
-			        				<Stepper 
-			        					steps={Editable.steps} 
-			        					items={Editable.items} />
+			        				<Stepper steps={Steps['editable']} />
 				        			
 				        			<Text type={'h3'} classes={'e-text-indigo-400 e-caption e-padding-top-25'}>NON EDITABLE:</Text>
-			        				<Stepper
-			        					editable={false}
-			        					onContinue={this.continueStep.bind(this)}
-			        					onBack={this.backStep.bind(this)}
-			        					steps={NonEditable.steps} 
-			        					items={NonEditable.items} />
+			        				<Stepper editable={false} steps={Steps['non-editable']} onContinue={this.continueStep.bind(this)} onBack={this.backStep.bind(this)} />
+			        				
+				        			<Text type={'h3'} classes={'e-text-indigo-400 e-caption e-padding-top-25'}>VERTICAL:</Text>
+			        				<Stepper type={'vertical'} editable={false} steps={Steps['non-editable']} onContinue={this.continueStep.bind(this)} onBack={this.backStep.bind(this)} />
+			        				
 			        			</Block>
 
 			        			<Block className={'e-padding-top-50'}>
