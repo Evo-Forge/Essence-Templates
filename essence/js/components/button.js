@@ -211,6 +211,25 @@ class AppButton extends React.Component {
 										<Text type={'h4'} classes={'e-text-indigo-400'}>HOW TO USE:</Text>
 										<Divider classes={'thin short e-background-indigo-400'} />
 
+				        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+											Button component has the following options:
+											<br />
+											<br />
+											1. <strong>icon</strong>: name of icon
+											<br />
+											2. <strong>label</strong>: the text of the button
+											<br />
+											3. <strong>type</strong>: type of button from the list: <u>raised</u>, <u>flat</u> or <u>fab</u>
+											<br />
+											4. <strong>submit</strong>: <u>false</u> (<strong>default</strong>) or <u>true</u> - set type to <u>submit</u> or <u>button</u>
+											<br />
+											5. <strong>onClick</strong>: callback function on click event
+											<br />
+											6. <strong>ripple</strong>: <u>true</u> (<strong>default</strong>) - enable ripple effect & <u>false</u> - disable ripple effect
+											<br />
+											<br />
+										</Text>
+
 										<pre className={'e-background-grey-100 e-text-black'}>
 											<code>
 												import Btn from 'essence-button';

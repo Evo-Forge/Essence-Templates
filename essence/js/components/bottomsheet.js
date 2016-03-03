@@ -199,6 +199,19 @@ class AppBottomSheet extends React.Component {
 				        				</code>
 			        				</pre>
 
+			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+										BottomSheets component has the following options:
+										<br />
+										<br />
+										1. <strong>visible</strong>: <u>true</u> - show the bottom sheet & <u>false</u> (<strong>default</strong>) - hide the bottom sheet
+										<br />
+										2. <strong>onStart</strong>: callback function when the BottomSheet has toggled <strong>visible</strong> to <u>true</u>
+										<br />
+										3. <strong>onEnd</strong>: callback function when the BottomSheet has toggled <strong>visible</strong> to <u>false</u>
+										<br />
+										<br />
+									</Text>
+
 									<Text type={'p'} classes={'e-body1 e-text-indigo-400'}>
 										BOTTOM SHEETS SIMPLE
 									</Text>

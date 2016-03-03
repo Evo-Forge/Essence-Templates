@@ -84,6 +84,27 @@ class AppChip extends React.Component {
 										Create a new ReactJS file with the code bellow.
 									</Text>
 
+			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+										Chip component has the following options:
+										<br />
+										<br />
+										1. <strong>data</strong>: object with properties:
+										<br />
+										2. <strong>name</strong>: string for input name, default: chip
+										<br />
+										3. <strong>text</strong>: string or html or component
+										<br />
+										4. <strong>icon</strong>: string or image url
+										<br />
+										5. <strong>deletable</strong>: boolean ( <strong>true</strong> or <strong>false</strong> ) - default: <strong>false</strong>
+										<br />
+										6. <strong>onClose</strong>: callback for on closing chip component
+										<br />
+										7. <strong>iconColor</strong>: string from the Colors list
+										<br />
+										<br />
+									</Text>
+
 			        				<pre className={'e-background-grey-100 e-text-black'}>
 				        				<code>
 											import Chip from 'essence-chip';

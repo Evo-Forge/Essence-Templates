@@ -116,6 +116,17 @@ class AppTooltip extends React.Component {
 				        				</pre>
 
 				        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+											Tooltip component has the following options:
+											<br />
+											<br />
+											1. <strong>target</strong>: <u>string</u> - target ID or element class name or element tag (see example below)
+											<br />
+											2. <strong>visible</strong>: <u>true</u> - show the tooltip or <u>false</u> (<strong>default</strong>) - hide the tooltip
+											<br />
+											<br />
+										</Text>
+										
+				        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 											Create a new ReactJS file with the code bellow.
 										</Text>
 

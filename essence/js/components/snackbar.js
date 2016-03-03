@@ -143,6 +143,27 @@ class AppSnackBar extends React.Component {
 					        				</code>
 				        				</pre>
 				        			</Block>
+
+				        			<Block className={'brick brick-12'}>
+				        				<Divider />
+				        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+											SnackBar component has the following options:
+											<br />
+											<br />
+											1. <strong>visible</strong>: <u>true</u> - show the snackbar & <u>false</u> (<strong>default</strong>) - hide the snackbar
+											<br />
+											2. <strong>delay</strong>: <u>2000</u> (<strong>default</strong>) - miliseconds delay to hide
+											<br />
+											3. <strong>onStart</strong>: callback function when SnackBar component has <strong>visible</strong> toggle to <u>true</u>
+											<br />
+											4. <strong>onEnd</strong>: callback function when SnackBar component has <strong>visible</strong> toggle to <u>false</u>
+											<br />
+											5. <strong>onPause</strong>: callback function when SnackBar component has an active <u>mouseOver</u> event
+											<br />
+											6. <strong>onResume</strong>: callback function when SnackBar component has an active <u>mouseOout</u> event
+											<br />
+										</Text>
+				        			</Block>
 				        		</Block>
 			        		</CardContent>
 						</Card>

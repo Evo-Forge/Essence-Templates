@@ -68,6 +68,13 @@ class AppPaper extends React.Component {
 												Create a new ReactJS file with the code bellow.
 											</Text>
 
+					        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+												Paper component has the following options:
+												<br />
+												1. <strong>type</strong>: <u>paper type</u> from Paper list (<u>sharp</u> or <u>circle</u>), as default there is no <u>type</u>
+												<br />
+											</Text>
+
 					        				<pre className={'e-background-grey-100 e-text-black'}>
 						        				<code>
 						        					import Paper from 'essence-paper';
@@ -114,6 +121,13 @@ class AppPaper extends React.Component {
 												Create a new ReactJS file with the code bellow.
 											</Text>
 
+					        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+												Paper component has the following options:
+												<br />
+												1. <strong>type</strong>: <u>paper type</u> from Paper list (<u>sharp</u> or <u>circle</u>), as default there is no <u>type</u>
+												<br />
+											</Text>
+
 					        				<pre className={'e-background-grey-100 e-text-black'}>
 						        				<code>
 						        					import Paper from 'essence-paper';
@@ -158,6 +172,13 @@ class AppPaper extends React.Component {
 
 					        				<Text type={'p'} classes={'e-body1 e-text-indigo-grey-400'}>
 												Create a new ReactJS file with the code bellow.
+											</Text>
+											
+					        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+												Paper component has the following options:
+												<br />
+												1. <strong>type</strong>: <u>paper type</u> from Paper list (<u>sharp</u> or <u>circle</u>), as default there is no <u>type</u>
+												<br />
 											</Text>
 
 					        				<pre className={'e-background-grey-100 e-text-black'}>

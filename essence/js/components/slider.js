@@ -152,6 +152,23 @@ class AppSlider extends React.Component {
 											Create a new ReactJS file with the code bellow.
 										</Text>
 
+				        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+											Slider component has the following options:
+											<br />
+											<br />
+											1. <strong>start</strong>: integer value to set the initial value - values: <strong>0</strong> to <strong>100</strong>
+											<br />
+											2. <strong>fill</strong>: return a colored track to indicate the current value position
+											<br />
+											3. <strong>discrete</strong>: <u>true</u> it uses the <u>discrete</u> class name to render a indicator for the current value
+											<br />
+											4. <strong>disabled</strong>: <u>true</u> it uses the <u>disabled</u> class name to render a non-editable component
+											<br />
+											5. <strong>onChange</strong>: <u>callback function</u> returns current value of slider
+											<br />
+											<br />
+										</Text>
+
 				        				<pre className={'e-background-grey-100 e-text-black'}>
 					        				<code>
 												import Slider from 'essence-slider';
