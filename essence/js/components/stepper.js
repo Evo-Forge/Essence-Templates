@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import ClassNames from 'classnames';
 
 import Stepper from 'essence-stepper';
-// import Stepper from '../../../../EssenceMD/components/essence-stepper/src/stepper.jsx';
+// import Stepper from '../../../../Essence/components/essence-stepper/src/stepper.jsx';
 import {Block, Text, Divider} from 'essence-core';
 import {Card, CardHeader, CardContent, CardFooter} from 'essence-card';
 
@@ -100,76 +100,105 @@ class AppStepper extends React.Component {
 				        				</code>
 			        				</pre>
 
+			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+										Stepper component has the following options:
+										<br />
+										<br />
+										1. <strong>steps</strong>: default <u>{}</u> empty object, see the example bellow to customize 
+										<br />
+										2. <strong>editable</strong>: default <u>true</u> or <u>false</u>
+										<br />
+										3. <strong>type</strong>: default <u>horizontal</u> or <u>vertical</u>
+										<br />
+										4. <strong>currentStep</strong>: initial step <u>0</u>
+										<br />
+										5. <strong>onContinue</strong>: default callback <u>null</u>
+										<br />
+										6. <strong>onBack</strong>: default callback <u>null</u>
+										<br />
+									</Text>
+
 			        				<pre className={'e-background-grey-100 e-text-black'}>
 				        				<code>
 											import Stepper from 'essence-stepper';
 											<br />
 											<br />
-											const Editable = &#123;
+											const Steps = &#123;
 											<br />
-											&nbsp;'steps': [
+											&nbsp;'editable': [
 											<br />
-											&nbsp;&nbsp;&nbsp;&#123; 'title': (&lt;Text&gt;Select campaign settings&lt;/Text&gt;) &#125;,
+											&nbsp;&nbsp;&#123; 
 											<br />
-											&nbsp;&nbsp;&nbsp;&#123; 'title': (&lt;Text&gt;Create an ad group&lt;/Text&gt;), 'optional': (&lt;Text&gt;Optional&lt;/Text&gt;) &#125;,
+											&nbsp;&nbsp;&nbsp;'title': (&lt;Text&gt;Select campaign settings&lt;/Text&gt;),
 											<br />
-											&nbsp;&nbsp;&nbsp;&#123; 'title': (&lt;Text&gt;Create an ad&lt;/Text&gt;) &#125;
+											&nbsp;&nbsp;&nbsp;'content': (&lt;Text className=&#123;'e-caption'&#125;&gt;Campaign settings&lt;/Text&gt;)
+											<br />
+											&nbsp;&nbsp;&#125;,
+											<br />
+											&nbsp;&nbsp;&#123; 
+											<br />
+											&nbsp;&nbsp;&nbsp;'title': (&lt;Text&gt;Create an ad group&lt;/Text&gt;), 
+											<br />
+											&nbsp;&nbsp;&nbsp;'optional': (&lt;Text&gt;Optional&lt;/Text&gt;),
+											<br />
+											&nbsp;&nbsp;&nbsp;'content': (&lt;Text className=&#123;'e-caption'&#125;&gt;Ad group&lt;/Text&gt;)
+											<br />
+											&nbsp;&nbsp;&#125;,
+											<br />
+											&nbsp;&nbsp;&#123; 
+											<br />
+											&nbsp;&nbsp;&nbsp;'title': (&lt;Text&gt;Create an ad&lt;/Text&gt;),
+											<br />
+											&nbsp;&nbsp;&nbsp;'content': (&lt;Text className=&#123;'e-caption'&#125;&gt;Ad details&lt;/Text&gt;)
+											<br />
+											&nbsp;&nbsp;&#125;
 											<br />
 											&nbsp;],
 											<br />
-											&nbsp;'items': [ 
+											&nbsp;'non-editable': [
 											<br />
-											&nbsp;&nbsp;&nbsp;&#123; 'item': (&lt;Text className=&#123;'e-caption'&#125;&gt;Campaign settings&lt;/Text&gt;) &#125;,
+											&nbsp;&nbsp;&#123; 
 											<br />
-											&nbsp;&nbsp;&nbsp;&#123; 'item': (&lt;Text className=&#123;'e-caption'&#125;&gt;Ad group&lt;/Text&gt;) &#125;,
+											&nbsp;&nbsp;&nbsp;'title': (&lt;Text&gt;Select campaign settings&lt;/Text&gt;),
 											<br />
-											&nbsp;&nbsp;&nbsp;&#123; 'item': (&lt;Text className=&#123;'e-caption'&#125;&gt;Ad details&lt;/Text&gt;) &#125;
+											&nbsp;&nbsp;&nbsp;'content': (&lt;Text className=&#123;'e-caption'&#125;&gt;Campaign settings&lt;/Text&gt;)
+											<br />
+											&nbsp;&nbsp;&#125;,
+											<br />
+											&nbsp;&nbsp;&#123; 
+											<br />
+											&nbsp;&nbsp;&nbsp;'title': (&lt;Text&gt;Create an ad group&lt;/Text&gt;),
+											<br />
+											&nbsp;&nbsp;&nbsp;'content': (&lt;Text className=&#123;'e-caption'&#125;&gt;Ad group&lt;/Text&gt;)
+											<br />
+											&nbsp;&nbsp;&#125;,
+											<br />
+											&nbsp;&nbsp;&#123; 
+											<br />
+											&nbsp;&nbsp;&nbsp;'title': (&lt;Text&gt;Create an ad&lt;/Text&gt;),
+											<br />
+											&nbsp;&nbsp;&nbsp;'content': (&lt;Text className=&#123;'e-caption'&#125;&gt;Ad details&lt;/Text&gt;)
+											<br />
+											&nbsp;&nbsp;&#125;,
+											<br />
+											&nbsp;&nbsp;&#123; 
+											<br />
+											&nbsp;&nbsp;&nbsp;'content': (&lt;Text className=&#123;'e-caption'&#125;&gt;Summary&lt;/Text&gt;)
+											<br />
+											&nbsp;&nbsp;&#125;
 											<br />
 											&nbsp;]
 											<br />
 											&#125;;
 											<br />
-											const NonEditable = &#123;
 											<br />
-											&nbsp;'steps': [
-											<br />
-											&nbsp;&nbsp;&nbsp;&#123; 'title': (&lt;Text&gt;Select campaign settings&lt;/Text&gt;) &#125;,
-											<br />
-											&nbsp;&nbsp;&nbsp;&#123; 'title': (&lt;Text&gt;Create an ad group&lt;/Text&gt;) &#125;,
-											<br />
-											&nbsp;&nbsp;&nbsp;&#123; 'title': (&lt;Text&gt;Create an ad&lt;/Text&gt;) &#125;
-											<br />
-											&nbsp;],
-											<br />
-											&nbsp;'items': [ 
-											<br />
-											&nbsp;&nbsp;&nbsp;&#123; 'item': (&lt;Text className=&#123;'e-caption'&#125;&gt;Campaign settings&lt;/Text&gt;) &#125;,
-											<br />
-											&nbsp;&nbsp;&nbsp;&#123; 'item': (&lt;Text className=&#123;'e-caption'&#125;&gt;Ad group&lt;/Text&gt;) &#125;,
-											<br />
-											&nbsp;&nbsp;&nbsp;&#123; 'item': (&lt;Text className=&#123;'e-caption'&#125;&gt;Ad details&lt;/Text&gt;) &#125;,
-											<br />
-											&nbsp;&nbsp;&nbsp;&#123; 'item': (&lt;Text className=&#123;'e-caption'&#125;&gt;Summary&lt;/Text&gt;) &#125;
-											<br />
-											&nbsp;]
-											<br />
-											&#125;;
+											&lt;Stepper steps=&#123;Steps['editable']&#125; /&gt;
 											<br />
 											<br />
-											&lt;Stepper steps=&#123;Editable.steps&#125; items=&#123;Editable.items&#125; /&gt;
+											&lt;Stepper editable=&#123;false&#125; steps=&#123;Steps['non-editable']&#125; onContinue=&#123;this.continueStep.bind(this)&#125; onBack=&#123;this.backStep.bind(this)&#125; /&gt;
 											<br />
 											<br />
-											&lt;Stepper
-											<br />											
-											&nbsp;&nbsp;editable=&#123;false&#125; 
-											<br />											
-											&nbsp;&nbsp;steps=&#123;NonEditable.steps&#125; 
-											<br />											
-											&nbsp;&nbsp;items=&#123;NonEditable.items&#125; 
-											<br />
-											&nbsp;&nbsp;onContinue=&#123;callbackOnContinue(currentStep)&#125; 
-											<br />
-											&nbsp;&nbsp;onBack=&#123;callbackOnBack(currentStep)&#125; /&gt;
+											&lt;Stepper type=&#123;'vertical'&#125; editable=&#123;false&#125; steps=&#123;Steps['non-editable']&#125; onContinue=&#123;this.continueStep.bind(this)&#125; onBack=&#123;this.backStep.bind(this)&#125; /&gt;
 				        				</code>
 			        				</pre>
 			        			</Block>
