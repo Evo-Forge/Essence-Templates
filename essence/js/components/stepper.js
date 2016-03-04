@@ -66,7 +66,7 @@ class AppStepper extends React.Component {
 					<Block classes={'brick brick-12'}>
 						<Text type={'h3'} classes={'e-text-indigo-400'}>STEPPERS</Text>
 	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-400'} style={{fontSize:'14px'}}>
+						<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 e-padding-top-25 e-padding-bottom-25'} style={{fontSize:'14px'}}>
 							Steppers convey progress through numbered steps. They may also be used for navigation.
 						</Text>
 
@@ -77,7 +77,7 @@ class AppStepper extends React.Component {
 			        				<Divider classes={'thin short e-background-indigo-400'} />
 				        			
 				        			<Text type={'h3'} classes={'e-text-indigo-400 e-caption e-padding-top-25'}>EDITABLE:</Text>
-			        				<Stepper steps={Steps['editable']} />
+			        				<Stepper steps={Steps['editable']}/>
 				        			
 				        			<Text type={'h3'} classes={'e-text-indigo-400 e-caption e-padding-top-25'}>NON EDITABLE:</Text>
 			        				<Stepper editable={false} steps={Steps['non-editable']} onContinue={this.continueStep.bind(this)} onBack={this.backStep.bind(this)} />
