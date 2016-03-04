@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ClassNames from 'classnames';
 
-import Stepper from 'essence-stepper';
-// import Stepper from '../../../../Essence/components/essence-stepper/src/stepper.jsx';
+// import Stepper from 'essence-stepper';
+import Stepper from '../../../../Essence/components/essence-stepper/src/stepper.jsx';
 import {Block, Text, Divider} from 'essence-core';
 import {Card, CardHeader, CardContent, CardFooter} from 'essence-card';
 
@@ -35,9 +35,6 @@ const Steps = {
         { 
         	'title': (<Text>Create an ad</Text>),
         	'content': (<Text className={'e-caption'}>Ad details</Text>)
-        },
-        { 
-        	'content': (<Text className={'e-caption'}>Summary</Text>)
         }
     ]
 };
