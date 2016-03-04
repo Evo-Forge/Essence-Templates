@@ -147,6 +147,13 @@ class AppList extends React.Component {
 			        				</pre>
 
 			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+										List component has the following option:
+										<br />
+										<br />
+										1. <strong>type</strong>: string from the list <u>navigation</u> or <u>big-icon</u>
+									</Text>
+
+			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Create a new ReactJS file with the code bellow.
 									</Text>
 

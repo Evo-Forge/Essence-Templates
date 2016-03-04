@@ -89,6 +89,13 @@ class AppNavigation extends React.Component {
 				        				</pre>
 
 				        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+											Navigation component has the following option:
+											<br />
+											<br />
+											1. <strong>visible</strong>: <u>true</u> - show the bottom sheet or <u>false</u> (<strong>default</strong>) - hide the bottom sheet
+										</Text>
+
+				        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 											Create a new ReactJS file with the code bellow.
 										</Text>
 

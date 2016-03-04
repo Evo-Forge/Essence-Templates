@@ -3126,6 +3126,13 @@ class AppIcons extends React.Component {
 											<Text type={'h4'} classes={'e-text-indigo-400'}>HOW TO USE:</Text>
 			        						<Divider classes={'thin short e-background-indigo-400'} />
 
+					        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+												Icon component has the following option:
+												<br />
+												<br />
+												1. <strong>name</strong>: string from the icons list
+											</Text>
+
 											<pre className={'e-background-grey-100 e-text-black'}>
 												<code>
 													import Icon from 'essence-icon';

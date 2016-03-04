@@ -65,6 +65,19 @@ class AppTab extends React.Component {
 			        				</pre>
 
 			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+										Tab component has the following options:
+										<br />
+										<br />
+										1. <strong>data</strong>: an object list with keys: <u>header</u>, <u>rows</u>, <u>footer</u>
+										<br />
+										2. <strong>header</strong>: an object list with keys: <u>context</u> & <u>callback</u> callback function
+										<br />
+										3. <strong>rows</strong>: an array list with the same number of columns as from header
+										<br />
+										4. <strong>indicator</strong>: the class color for tab header indicator
+									</Text>
+
+			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										To customise the colour <strong>indicator</strong> try the example below. 
 									</Text>
 

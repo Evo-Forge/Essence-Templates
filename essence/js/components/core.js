@@ -90,6 +90,13 @@ class AppCoreGridSystem extends React.Component {
 			        				</pre>
 
 			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+										Core: Block component has the following option:
+										<br />
+										<br />
+										1. <strong>type</strong>: default <u>div</u> or from the list: <u>span</u>, <u>header</u>, <u>footer</u>, <u>section</u>, <u>ul</u>, <u>li</u>, <u>hr</u>, <u>br</u>
+									</Text>
+
+			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Create a new ReactJS file with the code bellow.
 									</Text>
 
@@ -205,6 +212,13 @@ class AppCoreDivider extends React.Component {
 					    				</code>
 									</pre>
 
+			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+										Core: Divider component has the following option:
+										<br />
+										<br />
+										1. <strong>classes</strong>: className from the list: <u>thinnest</u>, <u>thin</u>, <u>regular</u>, <u>thick</u>, <u>thickest</u>, <u>short</u>, <u>medium</u>, <u>long</u>
+									</Text>
+
 									<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Create a new ReactJS file with the code bellow.
 									</Text>
@@ -288,6 +302,15 @@ class AppCoreRippleInk extends React.Component {
 											npm install <strong>essence-core</strong>
 					    				</code>
 									</pre>
+
+			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+										Core: RippleInk component has the following options:
+										<br />
+										<br />
+										1. <strong>position</strong>: object with <u>x</u> for <strong>left</strong> position in px & <u>y</u> for <strong>top</strong> position in px 
+										<br />
+										2. <strong>color</strong>: for <u>backgroundColor</u>
+									</Text>
 
 									<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Include the RippleInk component inside an element container where style position must be 'relative'.
@@ -489,6 +512,15 @@ class AppCoreTextTypography extends React.Component {
 													npm install <strong>essence-core</strong>
 							    				</code>
 											</pre>
+
+					        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+												Core: Text component has the following option:
+												<br />
+												<br />
+												1. <strong>type</strong>: string from the list explained below
+												<br />
+												2. <strong>badge</strong>: for <u>data-badge</u> option with a maximum lenght of 3 chars
+											</Text>
 
 											<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 												There are a list of available types that can be used as in the list bellow: 

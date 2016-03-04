@@ -127,6 +127,20 @@ class AppDataTable extends React.Component {
 			        					Use the example bellow to customize your own App.
 			        				</Text>
 
+
+			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+										DataTable component has the following options:
+										<br />
+										<br />
+										1. <strong>data</strong>: an object list with keys: <u>header</u>, <u>rows</u>, <u>footer</u>
+										<br />
+										2. <strong>header</strong>: an object list with keys: <u>name</u>, <u>tooltip</u>, <u>onSorting</u> callback
+										<br />
+										3. <strong>rows</strong>: an array list with the same number of columns as from header
+										<br />
+										4. <strong>footer</strong>: an object list with keys: <u>limit</u>, <u>total</u>, <u>pagination</u> with callback, <u>next</u> with context (icon) & callback, <u>prev</u> with context (icon) & callback
+									</Text>
+
 			        				<pre className={'e-background-grey-100 e-text-black'}>
 				        				<code>
 											import Icon from 'essence-icon';

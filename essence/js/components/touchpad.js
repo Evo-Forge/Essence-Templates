@@ -153,6 +153,15 @@ class AppTouchPad extends React.Component {
 			        				</pre>
 
 			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+										TouchPad component has the following options:
+										<br />
+										<br />
+										1. <strong>visible</strong>: <u>true</u> - show the touchpad or <u>false</u> (<strong>default</strong>) - hide the touchpad
+										<br />
+										2. <strong>position</strong>: <u>list</u> - <strong>top</strong>: offset pixels & <strong>left</strong>: offset pixels
+									</Text>
+
+			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 											Create a new ReactJS file with the code bellow.
 										</Text>
 

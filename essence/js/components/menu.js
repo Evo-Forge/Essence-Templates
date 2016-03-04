@@ -78,6 +78,17 @@ class AppMenu extends React.Component {
 			        				</pre>
 
 			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+										Menu component has the following options:
+										<br />
+										<br />
+										1. <strong>type</strong>: <u>string</u> from selected list: <u>fab</u> or <u>cover</u>
+										<br />
+										2. <strong>placeholder</strong>: <u>string</u> for initial menu text
+										<br />
+										3. <strong>icon</strong>: <u>icon name</u> from the Icons list
+									</Text>
+
+			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Create a new ReactJS file with the code bellow.
 									</Text>
 

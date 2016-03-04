@@ -145,7 +145,7 @@ class AppToast extends React.Component {
 				        			<Block className={'brick brick-12'}>
 				        				<Divider />
 				        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
-											SnackBar component has the following options:
+											Toast component has the following options:
 											<br />
 											<br />
 											1. <strong>visible</strong>: <u>true</u> - show the toast & <u>false</u> (<strong>default</strong>) - hide the toast

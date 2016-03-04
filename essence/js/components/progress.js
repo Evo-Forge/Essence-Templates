@@ -58,6 +58,28 @@ class AppProgress extends React.Component {
 			        				</pre>
 
 			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+										Progress component has the following options:
+										<br />
+										<br />
+										1. <strong>color</strong> - string from Colors list for the indicator color
+										<br />
+										2. <strong>small</strong> - <u>true</u> or <u>false</u> with type: circle will render a small circle visualization 
+										<br />
+										3. <strong>type</strong>:
+										<br />
+										- <u>slider</u>: appends <strong>slider</strong> to the class name <u>e-progress-slider</u>
+										<br />
+										- <u>circle</u>: appends <strong>circle</strong> to the class name <u>e-progress-circle</u>
+										<br />
+										- <u>dots</u>: appends <strong>dots</strong> to the class name <u>e-progress-dots</u>
+										<br />
+										- <u>fix</u>: appends <strong>fix</strong> to the class name <u>e-progress-fix</u>
+										<br />
+										- <u>dynamic</u>: appends <strong>dynamic</strong> to the class name <u>e-progress-dynamic</u>
+										<br />
+									</Text>
+
+			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Create a new ReactJS file with the code bellow.
 									</Text>
 

@@ -66,6 +66,21 @@ class AppSwitch extends React.Component {
 				        				</pre>
 
 				        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+											Switch component has the following options:
+											<br />
+											<br />
+											1. <strong>type</strong>: <u>switches</u>, <u>radio</u>, <u>checkbox</u> (<strong>default</strong>)
+											<br />
+											2. <strong>text</strong>: <u>string</u> for checkbox label
+											<br />
+											3. <strong>beforeText</strong>: <u>string</u> for switches position on left side
+											<br />
+											4. <strong>afterText</strong>: <u>string</u> for switches position on right side
+											<br />
+											5. <strong>onChange</strong>: callback function on Switch value change
+										</Text>
+
+				        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 											Create a new ReactJS file with the code bellow.
 										</Text>
 

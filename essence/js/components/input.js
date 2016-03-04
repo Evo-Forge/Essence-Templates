@@ -111,6 +111,21 @@ class AppInput extends React.Component {
 			        				</pre>
 
 			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
+										Input component has the following options:
+										<br />
+										<br />
+										1. <strong>placeholder</strong>: <u>string</u> for a placeholder text
+										<br />
+										2. <strong>label</strong>: <u>string</u> for a label text which will float above the input when text is typed
+										<br />
+										3. <strong>hint</strong>: <u>string</u> for a hint text which will show below the input as an informative text
+										<br />
+										4. <strong>counter</strong>: <u>integer</u> for limit the input value length, also it will show the current / maximum value length
+										<br />
+										5. <strong>disabled</strong>: prop for disabling the input 
+									</Text>
+
+			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Create a new ReactJS file with the code bellow.
 									</Text>
 
