@@ -7,7 +7,7 @@ git clone git@github.com:Evo-Forge/Essence-Templates.git
 
 ### Install all dependencies
 ```bash
-npm install react-essence
+npm install
 ```
 
 ### How to use

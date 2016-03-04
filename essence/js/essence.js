@@ -363,7 +363,7 @@ class AppGetStarted extends React.Component {
 												To install all Essence components you can use the command bellow.
 											</Text>
 
-											<pre classes={'e-background-grey-100 e-text-black'}>
+											<pre className={'e-background-grey-100 e-text-black'}>
 												<code>
 													npm install <strong>react-essence</strong>
 												</code>
@@ -379,7 +379,7 @@ class AppGetStarted extends React.Component {
 												To install individual components please see the side menu. Each component has a live example and a "How To Use" instructions.
 											</Text>
 
-											<pre classes={'e-background-grey-100 e-text-black'}>
+											<pre className={'e-background-grey-100 e-text-black'}>
 												<code>
 													npm install <strong>essence-__component-name__</strong>
 												</code>
@@ -405,20 +405,36 @@ class AppGetStarted extends React.Component {
 												<br />
 											</Text>
 
-											<pre classes={'e-background-grey-100 e-text-black'}>
+											<pre className={'e-background-grey-100 e-text-black'}>
 												<code>
 													git clone git@github.com:Evo-Forge/Essence-Templates.git
-													<br />
-													npm install <strong>react-essence</strong>
-													<br />
+												</code>
+											</pre>
+
+											<pre className={'e-background-grey-100 e-text-black'}>
+												<code>
+													npm install
+												</code>
+											</pre>
+
+											<pre className={'e-background-grey-100 e-text-black'}>
+												<code>
 													npm run <strong>template:essence</strong>
-													<br />
-													or
-													<br />
+												</code>
+											</pre>
+
+											<div>or</div>
+
+											<pre className={'e-background-grey-100 e-text-black'}>
+												<code>
 													npm run <strong>template:custom</strong>
-													<br />
-													or
-													<br />
+												</code>
+											</pre>
+
+											<div>or</div>
+
+											<pre className={'e-background-grey-100 e-text-black'}>
+												<code>
 													npm run <strong>template:your-template-name</strong>
 												</code>
 											</pre>
