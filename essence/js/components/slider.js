@@ -166,6 +166,10 @@ class AppSlider extends React.Component {
 											<br />
 											5. <strong>onChange</strong>: <u>callback function</u> returns current value of slider
 											<br />
+											6. <strong>lowerColor</strong>: default <u>e-background-indigo-400</u> or a background color for left side of slider
+											<br />
+											7. <strong>upperColor</strong>: default <u>e-background-grey-100</u> or a background color for right side of slider
+											<br />
 											<br />
 										</Text>
 

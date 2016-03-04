@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ClassNames from 'classnames';
 
-// import Stepper from 'essence-stepper';
-import Stepper from '../../../../Essence/components/essence-stepper/src/stepper.jsx';
+import Stepper from 'essence-stepper';
 import {Block, Text, Divider} from 'essence-core';
 import {Card, CardHeader, CardContent, CardFooter} from 'essence-card';
 
@@ -112,6 +111,10 @@ class AppStepper extends React.Component {
 										5. <strong>onContinue</strong>: default callback <u>null</u>
 										<br />
 										6. <strong>onBack</strong>: default callback <u>null</u>
+										<br />
+										7. <strong>activeColor</strong>: default color <u>e-background-indigo-400</u>, use a background color class to change the default active color
+										<br />
+										8. <strong>inactiveColor</strong>: default color <u>e-background-grey-400</u>, use a background color class to change the default inactive color
 										<br />
 									</Text>
 
