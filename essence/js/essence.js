@@ -407,7 +407,7 @@ class AppGetStarted extends React.Component {
 
 											<pre className={'e-background-grey-100 e-text-black'}>
 												<code>
-													git clone git@github.com:Evo-Forge/Essence-Templates.git
+													git clone https://github.com/Evo-Forge/Essence.git
 												</code>
 											</pre>
 
