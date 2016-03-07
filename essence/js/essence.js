@@ -409,6 +409,16 @@ class AppGetStarted extends React.Component {
 												<code>
 													git clone https://github.com/Evo-Forge/Essence-Templates.git
 												</code>
+												<div>or</div>
+												<code>
+												download the ZIP archive from <a target='_blank' href='https://github.com/Evo-Forge/Essence-Templates'>Git Essence-Templates</a>
+												</code>
+											</pre>
+
+											<pre className={'e-background-grey-100 e-text-black'}>
+												<code>
+													cd Essence-Templates
+												</code>
 											</pre>
 
 											<pre className={'e-background-grey-100 e-text-black'}>
@@ -419,19 +429,18 @@ class AppGetStarted extends React.Component {
 
 											<pre className={'e-background-grey-100 e-text-black'}>
 												<code>
-													npm run <strong>template:essence</strong>
+													npm run <strong>template:dev</strong>
 												</code>
+												<div>or</div>
 											</pre>
 
-											<div>or</div>
 
 											<pre className={'e-background-grey-100 e-text-black'}>
 												<code>
 													npm run <strong>template:custom</strong>
 												</code>
+												<div>or</div>
 											</pre>
-
-											<div>or</div>
 
 											<pre className={'e-background-grey-100 e-text-black'}>
 												<code>

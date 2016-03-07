@@ -7,8 +7,8 @@
   "author": "Hetmann W. Iohan <iohan@getessece.io>",
   "license": "MIT",
   "scripts": {
-    "template:test": "webpack-dev-server --devtool eval --hot --progress --colors --optimize-minimize --config essence/js/webpack.config.js --port 8080 --host 0.0.0.0 --content-base essence/",
-    "template:essence": "NODE_ENV=production webpack -p --optimize-minimize --config essence/js/webpack.config.js && http-server ./essence/ -p 8080 -a 0.0.0.0 -o",
+    "template:dev": "webpack-dev-server --devtool eval --hot --progress --colors --optimize-minimize --config essence/js/webpack.config.js --port 8080 --host 0.0.0.0 --content-base essence/",
+    "template:essence": "webpack -p --optimize-minimize --config essence/js/webpack.config.js && http-server ./essence/ -p 8080 -a 0.0.0.0 -o",
     "template:custom": "webpack-dev-server --devtool eval --hot --progress --colors --config custom/js/webpack.config.js --port 8080 --host 0.0.0.0 --content-base custom/"
   },
   "babel": {

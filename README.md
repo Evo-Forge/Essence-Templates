@@ -4,15 +4,22 @@
 ```bash
 git clone https://github.com/Evo-Forge/Essence-Templates.git
 ```
+or
+
+download the ZIP archive from [Git Essence-Templates](https://github.com/Evo-Forge/Essence-Templates)
 
 ### Install all dependencies
+```bash
+cd Essence-Templates
+```
+
 ```bash
 npm install
 ```
 
 ### How to use
 ```
-npm run template:essence
+npm run template:dev
 or
 npm run template:custom
 ```
