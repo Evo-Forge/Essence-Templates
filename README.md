@@ -2,11 +2,7 @@
 
 ### Installation
 ```bash
-<<<<<<< HEAD
-git clone https://github.com/Evo-Forge/Essence.git
-=======
 git clone https://github.com/Evo-Forge/Essence-Templates.git
->>>>>>> c8a4a50159d6d61970d6541532c5bf9d3771cab6
 ```
 
 ### Install all dependencies
