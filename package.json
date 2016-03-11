@@ -1,14 +1,14 @@
 {
   "name": "essence-templates",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "description": "React Essence Templates - based on Essence Material Design Framework",
   "homepage": "http://getessence.io/",
   "repository": "git://github.com/Evo-Forge/Essence-Templates",
   "author": "Hetmann W. Iohan <iohan@getessece.io>",
   "license": "MIT",
   "scripts": {
-    "template:test": "webpack-dev-server --devtool eval --hot --progress --colors --optimize-minimize --config essence/js/webpack.config.js --port 8080 --host 0.0.0.0 --content-base essence/",
-    "template:essence": "NODE_ENV=production webpack -p --optimize-minimize --config essence/js/webpack.config.js && http-server ./essence/ -p 8080 -a 0.0.0.0 -o",
+    "template:dev": "webpack-dev-server --devtool eval --hot --progress --colors --optimize-minimize --config essence/js/webpack.config.js --port 8080 --host 0.0.0.0 --content-base essence/",
+    "template:essence": "webpack -p --optimize-minimize --config essence/js/webpack.config.js && http-server ./essence/ -p 8080 -a 0.0.0.0 -o",
     "template:custom": "webpack-dev-server --devtool eval --hot --progress --colors --config custom/js/webpack.config.js --port 8080 --host 0.0.0.0 --content-base custom/"
   },
   "babel": {
@@ -36,25 +36,27 @@
     "react-essence": "^1.x"
   },
   "devDependencies": {
-    "babel-core": "^6.3.15",
-    "babel-loader": "^6.2.0",
-    "babel-preset-es2015": "^6.3.13",
-    "babel-preset-react": "^6.3.13",
-    "css-loader": "^0.23.0",
-    "extract-text-webpack-plugin": "^0.9.1",
-    "gulp-less": "^3.0.5",
-    "less": "^2.5.3",
-    "less-loader": "^2.2.2",
+    "babel-core": "^6.3.x",
+    "babel-loader": "^6.2.x",
+    "babel-preset-es2015": "^6.3.x",
+    "babel-preset-react": "^6.3.x",
+    "css-loader": "^0.23.x",
+    "extract-text-webpack-plugin": "^0.9.x",
+    "gulp-less": "^3.0.x",
+    "file-loader": "^0.8.x",
+    "less": "^2.5.x",
+    "less-loader": "^2.2.x",
     "lodash": "^4.3.0",
     "classnames": "^2.2.x",
+    "react": "^0.14.x",
     "react-dom": "^0.14.x",
     "react-addons-css-transition-group": "^0.14.x",
     "react-addons-transition-group": "^0.14.x",
     "react-addons-update": "^0.14.x",
-    "react-hot-loader": "^1.3.0",
-    "style-loader": "^0.13.0",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.14.0"
+    "react-hot-loader": "^1.3.x",
+    "style-loader": "^0.13.x",
+    "url-loader": "^0.5.x",
+    "webpack": "^1.12.x",
+    "webpack-dev-server": "^1.14.x"
   }
 }
