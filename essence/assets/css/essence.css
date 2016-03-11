@@ -105,3 +105,17 @@ pre {
 	height: 100%;
 	padding-bottom: 70px;
 }
+
+.properties {	
+	padding: 10px;
+	margin-top: 13px;
+}
+
+.properties table {
+	width: 100%;
+}
+
+.properties table thead, .properties table tr {
+	line-height: 30px;
+	border-bottom: 1px solid #e0e0e0;
+} 
