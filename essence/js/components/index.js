@@ -24,6 +24,7 @@ var {AppSwitch} = require('./switch.js');
 var {AppToast} = require('./toast.js');
 var {AppTab} = require('./tab.js');
 var {AppTouchPad} = require('./touchpad.js');
+var {AppToolBar} = require('./toolbar.js');
 var {AppTooltip} = require('./tooltip.js');
 
 exports.Components = Components;
@@ -50,5 +51,6 @@ exports.AppStepper = AppStepper;
 exports.AppSwitch = AppSwitch;
 exports.AppTab = AppTab;
 exports.AppToast = AppToast;
+exports.AppToolBar = AppToolBar;
 exports.AppTooltip = AppTooltip;
 exports.AppTouchPad = AppTouchPad;
