@@ -4,7 +4,8 @@ import ClassNames from 'classnames';
 
 import Tab from 'essence-tab';
 import Btn from 'essence-button';
-import {Block, Divider, Text} from 'essence-core';
+import {Text, Divider} from 'essence-core';
+import Block from '../../../../Essence/components/essence-core/src/block/block.jsx';
 import {Card, CardHeader, CardContent, CardFooter} from 'essence-card';
 
 class AppCoreGridSystem extends React.Component {
@@ -38,34 +39,34 @@ class AppCoreGridSystem extends React.Component {
 										When it comes to organizing content, grids come in handy. Take a look at the examples below to pick the best system for your content.
 									</Text>
 									
-									<Block className={'e-row e-text-center e-body1 e-text-grey-700 e-padding-top-15'}>
-										<Block classes={'brick brick-12 e-background-grey-300'}>
+									<Block className={'e-row e-body1 e-text-grey-700 e-padding-top-15'}>
+										<Block classes={'brick brick-12 e-background-grey-300 e-h-center e-v-center'}>
 											brick-12
 										</Block>
 									</Block>
 
-									<Block className={'e-row e-text-center e-body1 e-text-grey-700 e-padding-top-15'}>
-										<Block classes={'brick brick-6 e-background-grey-300'}>
+									<Block className={'e-row e-body1 e-text-grey-700 e-padding-top-15'}>
+										<Block classes={'brick brick-6 e-background-grey-300 e-h-end e-v-end'}>
 											brick-6
 										</Block>
-										<Block classes={'brick brick-6 e-background-grey-300'}>
+										<Block classes={'brick brick-6 e-background-grey-300 e-h-start e-v-end'}>
 											brick-6
 										</Block>
 									</Block>
 
-									<Block className={'e-row e-text-center e-body1 e-text-grey-700 e-padding-top-15'}>
-										<Block classes={'brick brick-4 e-background-grey-300'}>
+									<Block className={'e-row e-body1 e-text-grey-700 e-padding-top-15'}>
+										<Block classes={'brick brick-4 e-background-grey-300 e-h-start e-v-center'}>
 											brick-4
 										</Block>
-										<Block classes={'brick brick-4 e-background-grey-300'}>
+										<Block classes={'brick brick-4 e-background-grey-300 e-h-center e-v-center'}>
 											brick-4
 										</Block>
-										<Block classes={'brick brick-4 e-background-grey-300'}>
+										<Block classes={'brick brick-4 e-background-grey-300 e-h-end e-v-center'}>
 											brick-4
 										</Block>
 									</Block>
 									
-									<Block className={'e-row e-text-center e-body1 e-text-grey-700 e-padding-top-15 e-padding-bottom-15'}>
+									<Block className={'e-row e-body1 e-text-grey-700 e-padding-top-15 e-padding-bottom-15'}>
 										<Block classes={'brick brick-3 e-background-grey-300'}>
 											brick-3
 										</Block>
@@ -77,7 +78,7 @@ class AppCoreGridSystem extends React.Component {
 										</Block>
 										<Block classes={'brick brick-3 e-background-grey-300'}>
 											brick-3
-										</Block>
+										</Block>									
 									</Block>
 
 			        				<Text type={'h4'} classes={'e-text-indigo-400'}>HOW TO USE:</Text>
@@ -87,14 +88,7 @@ class AppCoreGridSystem extends React.Component {
 				        				<code>
 											npm install <strong>essence-core</strong>
 				        				</code>
-			        				</pre>
-
-			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
-										Core: Block component has the following option:
-										<br />
-										<br />
-										1. <strong>type</strong>: default <u>div</u> or from the list: <u>span</u>, <u>header</u>, <u>footer</u>, <u>section</u>, <u>ul</u>, <u>li</u>, <u>hr</u>, <u>br</u>
-									</Text>
+			        				</pre>			        				
 
 			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Create a new ReactJS file with the code bellow.
@@ -105,20 +99,34 @@ class AppCoreGridSystem extends React.Component {
 											import &#123;Block&#125; from 'essence-core';
 											<br />
 											<br />
-											&lt;Block classes=&#123;'brick brick-12'&#125;&gt;brick-12&lt;/Block&gt;
+											&lt;Block classes=&#123;'e-row'&#125;&gt;
+											<br />
+												&lt;Block classes=&#123;'brick brick-12 e-h-center e-v-center'&#125;&gt;brick-12&lt;/Block&gt;
+											<br />
+											&lt;/Block&gt;
 											<br />
 											<br />
-											&lt;Block classes=&#123;'brick brick-6'&#125;&gt;brick-6&lt;/Block&gt;
+											&lt;Block classes=&#123;'e-row'&#125;&gt;
 											<br />
-											&lt;Block classes=&#123;'brick brick-6'&#125;&gt;brick-6&lt;/Block&gt;
+											&lt;Block classes=&#123;'brick brick-6 e-h-end e-v-end'&#125;&gt;brick-6&lt;/Block&gt;
+											<br />
+											&lt;Block classes=&#123;'brick brick-6 e-h-start e-v-end'&#125;&gt;brick-6&lt;/Block&gt;
+											<br />
+											&lt;/Block&gt;
 											<br />
 											<br />
-											&lt;Block classes=&#123;'brick brick-4'&#125;&gt;brick-4&lt;/Block&gt;
+											&lt;Block classes=&#123;'e-row'&#125;&gt;
 											<br />
-											&lt;Block classes=&#123;'brick brick-4'&#125;&gt;brick-4&lt;/Block&gt;
+											&lt;Block classes=&#123;'brick brick-4 e-h-start e-v-center'&#125;&gt;brick-4&lt;/Block&gt;
 											<br />
-											&lt;Block classes=&#123;'brick brick-4'&#125;&gt;brick-4&lt;/Block&gt;
+											&lt;Block classes=&#123;'brick brick-4 e-h-center e-v-center'&#125;&gt;brick-4&lt;/Block&gt;
 											<br />
+											&lt;Block classes=&#123;'brick brick-4 e-h-end e-v-center'&#125;&gt;brick-4&lt;/Block&gt;
+											<br />
+											&lt;/Block&gt;
+											<br />
+											<br />
+											&lt;Block classes=&#123;'e-row'&#125;&gt;
 											<br />
 											&lt;Block classes=&#123;'brick brick-3'&#125;&gt;brick-3&lt;/Block&gt;
 											<br />
@@ -127,10 +135,64 @@ class AppCoreGridSystem extends React.Component {
 											&lt;Block classes=&#123;'brick brick-3'&#125;&gt;brick-3&lt;/Block&gt;
 											<br />
 											&lt;Block classes=&#123;'brick brick-3'&#125;&gt;brick-3&lt;/Block&gt;
+											<br />
+											&lt;/Block&gt;
 											<br />
 											<br />
 											... more bricks on the wall ...
 					    				</code>
+									</pre>
+									<Text type={'h4'} classes={'e-text-indigo-400 e-padding-top-15'}>Properties:</Text>
+									<Divider classes={'thin short e-background-indigo-400 '} />
+									<pre className={'e-background-grey-100 e-text-black properties e-text-left'}>
+										<code>
+											<table>
+												<thead>
+													<tr>
+													<th colSpan="2">Name</th>
+													<th colSpan="2">Default</th>
+													<th colSpan="6">Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td colSpan="2">type</td>
+														<td colSpan="2">div</td>
+														<td colSpan="6">or from the list: span, header, footer, section, ul, li, hr, br</td>
+													</tr>
+													<tr>
+														<td colSpan="2">e-h-start</td>
+														<td colSpan="2">classes=&#123;'e-h-start'&#125;</td>
+														<td colSpan="6">horizontal position: at the bigining of the row</td>
+													</tr>
+													<tr>
+														<td colSpan="2">e-h-center</td>
+														<td colSpan="2">classes=&#123;'e-h-center'&#125;</td>
+														<td colSpan="6">horizontal position: at the middle of the row</td>
+													</tr>
+													<tr>
+														<td colSpan="2">e-h-end</td>
+														<td colSpan="2">classes=&#123;'e-h-end'&#125;</td>
+														<td colSpan="6">horizontal position: at the end of the row</td>
+													</tr>
+													<tr>
+														<td colSpan="2">e-v-start</td>
+														<td colSpan="2">classes=&#123;'e-v-start'&#125;</td>
+														<td colSpan="6">vertical position: at the top of the row</td>
+													</tr>
+													<tr>
+														<td colSpan="2">e-v-center</td>
+														<td colSpan="2">classes=&#123;'e-v-center'&#125;</td>
+														<td colSpan="6">vertical position: at the middle of the row</td>
+													</tr>
+													<tr>
+														<td colSpan="2">e-v-end</td>
+														<td colSpan="2">classes=&#123;'e-v-end'&#125;</td>
+														<td colSpan="6">vertical position: at the bottom of the row</td>
+													</tr>
+												</tbody>
+											</table>
+										</code>
 									</pre>
 			        			</Block>
 			        		</CardContent>
@@ -739,7 +801,7 @@ class AppCoreUtilities extends React.Component {
 											&#125;
 											<br />
 					    				</code>
-									</pre>
+									</pre>									
 								</Block>
 							</CardContent>
 			        	</Card>
