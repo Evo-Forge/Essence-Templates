@@ -4,8 +4,7 @@ import ClassNames from 'classnames';
 
 import Tab from 'essence-tab';
 import Btn from 'essence-button';
-import {Text, Divider} from 'essence-core';
-import Block from '../../../../Essence/components/essence-core/src/block/block.jsx';
+import {Block, Text, Divider} from 'essence-core';
 import {Card, CardHeader, CardContent, CardFooter} from 'essence-card';
 
 class AppCoreGridSystem extends React.Component {
