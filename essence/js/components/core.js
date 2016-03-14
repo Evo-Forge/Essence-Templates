@@ -343,7 +343,7 @@ class AppCoreDivider extends React.Component {
 													</tr>
 													<tr>
 														<td colSpan="2">thickest</td>
-														<td colSpan="2">cla:7pxsses=&#123;'thickest'&#125;</td>
+														<td colSpan="2">classes=&#123;'thickest'&#125;</td>
 														<td colSpan="6">Divider thickness:7px</td>
 													</tr>
 													<tr>
