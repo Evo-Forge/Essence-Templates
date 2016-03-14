@@ -144,10 +144,10 @@ class AppCoreGridSystem extends React.Component {
 									</pre>
 									<Text type={'h4'} classes={'e-text-indigo-400 e-padding-top-15'}>Properties:</Text>
 									<Divider classes={'thin short e-background-indigo-400 '} />
-									<pre className={'e-background-grey-100 e-text-black properties e-text-left'}>
+									<pre className={'e-text-black properties e-text-left'}>
 										<code>
 											<table>
-												<thead>
+												<thead className={'e-background-grey-100 '}>
 													<tr>
 													<th colSpan="2">Name</th>
 													<th colSpan="2">Default</th>
@@ -237,11 +237,15 @@ class AppCoreDivider extends React.Component {
 									</Text>
 
 									<Block className={'e-padding-top-15 e-text-blue-grey-700'}>
-										Thin short
+										Thin & short
 										<Divider classes={'thin short e-background-indigo-400'} />
 									</Block>
 									<Block className={'e-padding-top-15 e-text-blue-grey-700'}>
-										Thin long
+										Thin & medium
+										<Divider classes={'thin medium e-background-indigo-400'} />
+									</Block>
+									<Block className={'e-padding-top-15 e-text-blue-grey-700'}>
+										Thin & long
 										<Divider classes={'thin long e-background-indigo-400'} />
 									</Block>
 									<Block className={'e-padding-top-15 e-text-blue-grey-700'}>
@@ -250,11 +254,15 @@ class AppCoreDivider extends React.Component {
 									</Block>
 									
 									<Block className={'e-padding-top-15 e-text-blue-grey-700'}>
-										Thick short
+										Thick & short
 										<Divider classes={'thick short e-background-indigo-400'} />
 									</Block>
 									<Block className={'e-padding-top-15 e-text-blue-grey-700'}>
-										Thick long
+										Thick & medium
+										<Divider classes={'thick medium e-background-indigo-400'} />
+									</Block>
+									<Block className={'e-padding-top-15 e-text-blue-grey-700'}>
+										Thick & long
 										<Divider classes={'thick long e-background-indigo-400'} />
 									</Block>
 									<Block className={'e-padding-top-15 e-text-blue-grey-700'}>
@@ -272,14 +280,7 @@ class AppCoreDivider extends React.Component {
 					    				<code>
 											npm install <strong>essence-core</strong>
 					    				</code>
-									</pre>
-
-			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
-										Core: Divider component has the following option:
-										<br />
-										<br />
-										1. <strong>classes</strong>: className from the list: <u>thinnest</u>, <u>thin</u>, <u>regular</u>, <u>thick</u>, <u>thickest</u>, <u>short</u>, <u>medium</u>, <u>long</u>
-									</Text>
+									</pre>			        				
 
 									<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Create a new ReactJS file with the code bellow.
@@ -290,19 +291,81 @@ class AppCoreDivider extends React.Component {
 											import &#123;Divider&#125; from 'essence-core';
 											<br />
 											<br />
-											&lt;Divider classes=&#123;'thick short e-background-indigo-400'&#125; /&gt;
+											&lt;Divider classes=&#123;'thin short e-background-indigo-400'&#125; /&gt;
 											<br />
-											&lt;Divider classes=&#123;'thick long e-background-indigo-400'&#125; /&gt;
-											<br />
-											&lt;Divider classes=&#123;'thick short e-background-indigo-400'&#125; /&gt;
+											&lt;Divider classes=&#123;'thin medium e-background-indigo-400'&#125; /&gt;
 											<br />
 											&lt;Divider classes=&#123;'thin long e-background-indigo-400'&#125; /&gt;
 											<br />
-											&lt;Divider classes=&#123;'thick e-background-indigo-400'&#125; /&gt;
-											<br />
 											&lt;Divider classes=&#123;'thin e-background-indigo-400'&#125; /&gt;
 											<br />
+											&lt;Divider classes=&#123;'thick short e-background-indigo-400'&#125; /&gt;
+											<br />
+											&lt;Divider classes=&#123;'thick medium e-background-indigo-400'&#125; /&gt;
+											<br />
+											&lt;Divider classes=&#123;'thick long e-background-indigo-400'&#125; /&gt;
+											<br />
+											&lt;Divider classes=&#123;'thick e-background-indigo-400'&#125; /&gt;
+											<br />
 					    				</code>
+									</pre>
+									<Text type={'h4'} classes={'e-text-indigo-400 e-padding-top-15'}>Properties:</Text>
+									<Divider classes={'thin short e-background-indigo-400 '} />
+									<pre className={'e-text-black properties e-text-left'}>
+										<code>
+											<table>
+												<thead className={'e-background-grey-100 '}>
+													<tr>
+													<th colSpan="2">Name</th>
+													<th colSpan="2">Default</th>
+													<th colSpan="6">Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td colSpan="2">thinnest</td>
+														<td colSpan="2">classes=&#123;'thinnest'&#125;</td>
+														<td colSpan="6">Divider thickness:1px</td>
+													</tr>
+													<tr>
+														<td colSpan="2">thin</td>
+														<td colSpan="2">classes=&#123;'thin'&#125;</td>
+														<td colSpan="6">Divider thickness:2px</td>
+													</tr>
+													<tr>
+														<td colSpan="2">regular</td>
+														<td colSpan="2">classes=&#123;'regular'&#125;</td>
+														<td colSpan="6">Divider thickness:3px</td>
+													</tr>
+													<tr>
+														<td colSpan="2">thick</td>
+														<td colSpan="2">classes=&#123;'thick'&#125;</td>
+														<td colSpan="6">Divider thickness:5px</td>
+													</tr>
+													<tr>
+														<td colSpan="2">thickest</td>
+														<td colSpan="2">cla:7pxsses=&#123;'thickest'&#125;</td>
+														<td colSpan="6">Divider thickness:7px</td>
+													</tr>
+													<tr>
+														<td colSpan="2">short</td>
+														<td colSpan="2">classes=&#123;'short'&#125;</td>
+														<td colSpan="6">Divider widht:5%</td>
+													</tr>
+													<tr>
+														<td colSpan="2">medium</td>
+														<td colSpan="2">classes=&#123;'medium'&#125;</td>
+														<td colSpan="6">Divider widht:25%</td>
+													</tr>
+													<tr>
+														<td colSpan="2">long</td>
+														<td colSpan="2">classes=&#123;'long'&#125;</td>
+														<td colSpan="6">Divider widht: 50%</td>
+													</tr>
+													
+												</tbody>
+											</table>
+										</code>
 									</pre>
 								</Block>
 			        		</CardContent>
@@ -363,16 +426,7 @@ class AppCoreRippleInk extends React.Component {
 					    				<code>
 											npm install <strong>essence-core</strong>
 					    				</code>
-									</pre>
-
-			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
-										Core: RippleInk component has the following options:
-										<br />
-										<br />
-										1. <strong>position</strong>: object with <u>x</u> for <strong>left</strong> position in px & <u>y</u> for <strong>top</strong> position in px 
-										<br />
-										2. <strong>color</strong>: for <u>backgroundColor</u>
-									</Text>
+									</pre>			        				
 
 									<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Include the RippleInk component inside an element container where style position must be 'relative'.
@@ -397,6 +451,33 @@ class AppCoreRippleInk extends React.Component {
 											<br />
 											&lt;RippleInk color=&#123;color&#125; position=&#123;position&#125;/&gt;
 					    				</code>
+									</pre>
+									<Text type={'h4'} classes={'e-text-indigo-400 e-padding-top-15'}>Properties:</Text>
+									<Divider classes={'thin short e-background-indigo-400 '} />
+									<pre className={'e-text-black properties e-text-left'}>
+										<code>
+											<table>
+												<thead className={'e-background-grey-100 '}>
+													<tr>
+													<th colSpan="2">Name</th>
+													<th colSpan="2">Default</th>
+													<th colSpan="6">Description</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td colSpan="2">position</td>
+														<td colSpan="2">&#123;x:0, y:0&#125;</td>
+														<td colSpan="6">object with x for left position in px & y for top position in px</td>
+													</tr>
+													<tr>
+														<td colSpan="2">color</td>
+														<td colSpan="2">#FFFFFF</td>
+														<td colSpan="6">for backgroundColor</td>
+													</tr>													
+												</tbody>
+											</table>
+										</code>
 									</pre>
 								</Block>
 							</CardContent>

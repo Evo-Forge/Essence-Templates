@@ -138,10 +138,11 @@ class AppHome extends React.Component {
 									<Block classes={'brick brick-1'}>&nbsp;</Block>
 								</Block>
 
-								<Block className={'e-row'}>
-									<Text type={'h3'} classes={'e-display-1 e-text-indigo-400 e-text-uppercase e-margin-bottom-15'}>
-										Distilled with
-									</Text>
+								<Text type={'h3'} classes={'e-display-1 e-text-indigo-400 e-text-uppercase e-margin-bottom-15'}>
+									Distilled with
+								</Text>
+
+								<Block className={'e-row'}>									
 									<Block classes={'brick brick-6 e-text-center'}>
 										<Image className={'e-img-rsp'} src={'./assets/img/less.png'} alt={'Less'} />
 									</Block>								
@@ -261,7 +262,7 @@ class AppAbout extends React.Component {
 											<Block className={'brick brick-4'}>
 												<Image src={'./assets/img/visual-1.png'} className={'e-img-rsp'} />
 											</Block>
-											<Block className={'brick brick-8 e-text-left e-padding-top-25'}>
+											<Block className={'brick brick-8 e-text-left'}>
 												<Text type={'p'} classes={'e-headline line-height-15 e-text-uppercase e-text-indigo-400'}>
 													GOOGLE DEFINED, CRAFTED WITH ESSENCE
 												</Text>
@@ -283,7 +284,7 @@ class AppAbout extends React.Component {
 											<Block className={'brick brick-4'}>
 												<Image src={'./assets/img/visual-2.png'} className={'e-img-rsp'} />
 											</Block>
-											<Block className={'brick brick-8 e-text-left e-padding-top-25'}>
+											<Block className={'brick brick-8 e-text-left'}>
 												<Text type={'p'} classes={'e-headline line-height-15 e-text-uppercase e-text-indigo-400'}>
 													INHERENTLY NATURAL FEEL
 												</Text>
@@ -305,7 +306,7 @@ class AppAbout extends React.Component {
 											<Block className={'brick brick-4'}>
 												<Image src={'./assets/img/visual-3.png'} className={'e-img-rsp'} />
 											</Block>
-											<Block className={'brick brick-8 e-text-left e-padding-top-25'}>
+											<Block className={'brick brick-8 e-text-left'}>
 												<Text type={'p'} classes={'e-headline line-height-15 e-text-uppercase e-text-indigo-400'}>
 													MOVEMENT DEFINES FLOW
 												</Text>
