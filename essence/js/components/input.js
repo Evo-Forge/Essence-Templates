@@ -131,7 +131,7 @@ class AppInput extends React.Component {
 
 			        				<pre className={'e-background-grey-100 e-text-black'}>
 				        				<code>
-											import Image from 'essence-input';
+											import Input from 'essence-input';
 											<br />
 											<br />
 											&lt;Input classes=&#123;'has-success'&#125; type=&#123;'text'&#125; name=&#123;'label'&#125; placeholder=&#123;'Input + Placeholder and has-success'&#125;/&gt;

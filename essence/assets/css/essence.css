@@ -107,7 +107,7 @@ pre {
 }
 
 .properties {	
-	padding: 10px;
+	padding:0 !important; 
 	margin-top: 13px;
 }
 
@@ -119,3 +119,7 @@ pre {
 	line-height: 30px;
 	border-bottom: 1px solid #e0e0e0;
 } 
+
+.zIndex1 {
+	z-index: 1 !important;
+}

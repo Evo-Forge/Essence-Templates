@@ -90,7 +90,7 @@ class AppProgress extends React.Component {
 											<br />
 											&lt;Progress type=&#123;'circle'&#125; />
 											<br />
-											&lt;Progress type=&#123;'circle'&#125; small=&#123;true&gt; />
+											&lt;Progress type=&#123;'circle'&#125; small=&#123;true&#125; />
 											<br />
 											&lt;Progress type=&#123;'dots'&#125; />
 											<br />

@@ -47,7 +47,7 @@ class AppBarComponent extends React.Component {
 
 									<AppBar 
 										style={this.state.AppBarStyle}
-										className={'e-background-indigo-400 e-text-white e-margin-top-25 e-margin-bottom-25'}>
+										className={'e-background-indigo-400 e-text-white e-margin-top-25 e-margin-bottom-25 zIndex1'}>
 										
 										<Menu type={'cover'} icon={'navigation-more-vert'} classes={'e-left'}>
 											<Text className={'e-text-black'}>
