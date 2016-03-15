@@ -1,14 +1,16 @@
-# essence-electron
+# Electron Essence
+A Electron starter with Essence Template
 
-## To Use
 
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+### Setup
 
-```bash
-# Clone this repository
-git clone https://github.com/atom/electron-quick-start
-# Go into the repository
-cd electron-quick-start
-# Install dependencies and run the app
-npm install && npm run build && npm start
 ```
+
+1) git clone -b electron --single-branch https://github.com/Evo-Forge/Essence-Templates.git electron-demo
+2) npm install
+3) npm run build-dev
+In another terminal:
+4) npm start
+
+```
+
