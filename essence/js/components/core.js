@@ -148,46 +148,46 @@ class AppCoreGridSystem extends React.Component {
 											<table>
 												<thead className={'e-background-grey-100 '}>
 													<tr>
-													<th colSpan="2">Name</th>
-													<th colSpan="2">Default</th>
-													<th colSpan="6">Description</th>
+													<th>Name</th>
+													<th>Default</th>
+													<th>Description</th>
 													</tr>
 												</thead>
 												<tbody>
 													<tr>
-														<td colSpan="2">type</td>
-														<td colSpan="2">div</td>
-														<td colSpan="6">or from the list: span, header, footer, section, ul, li, hr, br</td>
+														<td>type</td>
+														<td>div</td>
+														<td>or from the list: span, header, footer, section, ul, li, hr, br</td>
 													</tr>
 													<tr>
-														<td colSpan="2">e-h-start</td>
-														<td colSpan="2">classes=&#123;'e-h-start'&#125;</td>
-														<td colSpan="6">horizontal position: at the bigining of the row</td>
+														<td>e-h-start</td>
+														<td>classes=&#123;'e-h-start'&#125;</td>
+														<td>horizontal position: at the bigining of the row</td>
 													</tr>
 													<tr>
-														<td colSpan="2">e-h-center</td>
-														<td colSpan="2">classes=&#123;'e-h-center'&#125;</td>
-														<td colSpan="6">horizontal position: at the middle of the row</td>
+														<td>e-h-center</td>
+														<td>classes=&#123;'e-h-center'&#125;</td>
+														<td>horizontal position: at the middle of the row</td>
 													</tr>
 													<tr>
-														<td colSpan="2">e-h-end</td>
-														<td colSpan="2">classes=&#123;'e-h-end'&#125;</td>
-														<td colSpan="6">horizontal position: at the end of the row</td>
+														<td>e-h-end</td>
+														<td>classes=&#123;'e-h-end'&#125;</td>
+														<td>horizontal position: at the end of the row</td>
 													</tr>
 													<tr>
-														<td colSpan="2">e-v-start</td>
-														<td colSpan="2">classes=&#123;'e-v-start'&#125;</td>
-														<td colSpan="6">vertical position: at the top of the row</td>
+														<td>e-v-start</td>
+														<td>classes=&#123;'e-v-start'&#125;</td>
+														<td>vertical position: at the top of the row</td>
 													</tr>
 													<tr>
-														<td colSpan="2">e-v-center</td>
-														<td colSpan="2">classes=&#123;'e-v-center'&#125;</td>
-														<td colSpan="6">vertical position: at the middle of the row</td>
+														<td>e-v-center</td>
+														<td>classes=&#123;'e-v-center'&#125;</td>
+														<td>vertical position: at the middle of the row</td>
 													</tr>
 													<tr>
-														<td colSpan="2">e-v-end</td>
-														<td colSpan="2">classes=&#123;'e-v-end'&#125;</td>
-														<td colSpan="6">vertical position: at the bottom of the row</td>
+														<td>e-v-end</td>
+														<td>classes=&#123;'e-v-end'&#125;</td>
+														<td>vertical position: at the bottom of the row</td>
 													</tr>
 												</tbody>
 											</table>
@@ -315,51 +315,51 @@ class AppCoreDivider extends React.Component {
 											<table>
 												<thead className={'e-background-grey-100 '}>
 													<tr>
-													<th colSpan="2">Name</th>
-													<th colSpan="2">Default</th>
-													<th colSpan="6">Description</th>
+													<th>Name</th>
+													<th>Default</th>
+													<th>Description</th>
 													</tr>
 												</thead>
 												<tbody>
 													<tr>
-														<td colSpan="2">thinnest</td>
-														<td colSpan="2">classes=&#123;'thinnest'&#125;</td>
-														<td colSpan="6">Divider thickness:1px</td>
+														<td>thinnest</td>
+														<td>classes=&#123;'thinnest'&#125;</td>
+														<td>Divider thickness:1px</td>
 													</tr>
 													<tr>
-														<td colSpan="2">thin</td>
-														<td colSpan="2">classes=&#123;'thin'&#125;</td>
-														<td colSpan="6">Divider thickness:2px</td>
+														<td>thin</td>
+														<td>classes=&#123;'thin'&#125;</td>
+														<td>Divider thickness:2px</td>
 													</tr>
 													<tr>
-														<td colSpan="2">regular</td>
-														<td colSpan="2">classes=&#123;'regular'&#125;</td>
-														<td colSpan="6">Divider thickness:3px</td>
+														<td>regular</td>
+														<td>classes=&#123;'regular'&#125;</td>
+														<td>Divider thickness:3px</td>
 													</tr>
 													<tr>
-														<td colSpan="2">thick</td>
-														<td colSpan="2">classes=&#123;'thick'&#125;</td>
-														<td colSpan="6">Divider thickness:5px</td>
+														<td>thick</td>
+														<td>classes=&#123;'thick'&#125;</td>
+														<td>Divider thickness:5px</td>
 													</tr>
 													<tr>
-														<td colSpan="2">thickest</td>
-														<td colSpan="2">classes=&#123;'thickest'&#125;</td>
-														<td colSpan="6">Divider thickness:7px</td>
+														<td>thickest</td>
+														<td>classes=&#123;'thickest'&#125;</td>
+														<td>Divider thickness:7px</td>
 													</tr>
 													<tr>
-														<td colSpan="2">short</td>
-														<td colSpan="2">classes=&#123;'short'&#125;</td>
-														<td colSpan="6">Divider widht:5%</td>
+														<td>short</td>
+														<td>classes=&#123;'short'&#125;</td>
+														<td>Divider widht:5%</td>
 													</tr>
 													<tr>
-														<td colSpan="2">medium</td>
-														<td colSpan="2">classes=&#123;'medium'&#125;</td>
-														<td colSpan="6">Divider widht:25%</td>
+														<td>medium</td>
+														<td>classes=&#123;'medium'&#125;</td>
+														<td>Divider widht:25%</td>
 													</tr>
 													<tr>
-														<td colSpan="2">long</td>
-														<td colSpan="2">classes=&#123;'long'&#125;</td>
-														<td colSpan="6">Divider widht: 50%</td>
+														<td>long</td>
+														<td>classes=&#123;'long'&#125;</td>
+														<td>Divider widht: 50%</td>
 													</tr>
 													
 												</tbody>
@@ -458,21 +458,21 @@ class AppCoreRippleInk extends React.Component {
 											<table>
 												<thead className={'e-background-grey-100 '}>
 													<tr>
-													<th colSpan="2">Name</th>
-													<th colSpan="2">Default</th>
-													<th colSpan="6">Description</th>
+													<th>Name</th>
+													<th>Default</th>
+													<th>Description</th>
 													</tr>
 												</thead>
 												<tbody>
 													<tr>
-														<td colSpan="2">position</td>
-														<td colSpan="2">&#123;x:0, y:0&#125;</td>
-														<td colSpan="6">object with x for left position in px & y for top position in px</td>
+														<td>position</td>
+														<td>&#123;x:0, y:0&#125;</td>
+														<td>object with x for left position in px & y for top position in px</td>
 													</tr>
 													<tr>
-														<td colSpan="2">color</td>
-														<td colSpan="2">#FFFFFF</td>
-														<td colSpan="6">for backgroundColor</td>
+														<td>color</td>
+														<td>#FFFFFF</td>
+														<td>for backgroundColor</td>
 													</tr>													
 												</tbody>
 											</table>
