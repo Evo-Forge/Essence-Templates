@@ -123,3 +123,7 @@ pre {
 .zIndex1 {
 	z-index: 1 !important;
 }
+
+.custom-height {
+	min-height: 60px;
+}

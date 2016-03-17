@@ -39,43 +39,43 @@ class AppCoreGridSystem extends React.Component {
 									</Text>
 									
 									<Block className={'e-row e-body1 e-text-grey-700 e-padding-top-15'}>
-										<Block classes={'brick brick-12 e-background-grey-300 e-h-center e-v-center'}>
+										<Block classes={'brick brick-12 e-background-grey-300 e-h-center e-v-center custom-height'}>
 											brick-12
 										</Block>
 									</Block>
 
 									<Block className={'e-row e-body1 e-text-grey-700 e-padding-top-15'}>
-										<Block classes={'brick brick-6 e-background-grey-300 e-h-end e-v-end'}>
+										<Block classes={'brick brick-6 e-background-grey-300 e-h-end e-v-end custom-height'}>
 											brick-6
 										</Block>
-										<Block classes={'brick brick-6 e-background-grey-300 e-h-start e-v-end'}>
+										<Block classes={'brick brick-6 e-background-grey-300 e-h-start e-v-end custom-height'}>
 											brick-6
 										</Block>
 									</Block>
 
 									<Block className={'e-row e-body1 e-text-grey-700 e-padding-top-15'}>
-										<Block classes={'brick brick-4 e-background-grey-300 e-h-start e-v-center'}>
+										<Block classes={'brick brick-4 e-background-grey-300 e-h-start e-v-center custom-height'}>
 											brick-4
 										</Block>
-										<Block classes={'brick brick-4 e-background-grey-300 e-h-center e-v-center'}>
+										<Block classes={'brick brick-4 e-background-grey-300 e-h-center e-v-center custom-height'}>
 											brick-4
 										</Block>
-										<Block classes={'brick brick-4 e-background-grey-300 e-h-end e-v-center'}>
+										<Block classes={'brick brick-4 e-background-grey-300 e-h-end e-v-center custom-height'}>
 											brick-4
 										</Block>
 									</Block>
 									
 									<Block className={'e-row e-body1 e-text-grey-700 e-padding-top-15 e-padding-bottom-15'}>
-										<Block classes={'brick brick-3 e-background-grey-300'}>
+										<Block classes={'brick brick-3 e-background-grey-300 custom-height'}>
 											brick-3
 										</Block>
-										<Block classes={'brick brick-3 e-background-grey-300'}>
+										<Block classes={'brick brick-3 e-background-grey-300 custom-height'}>
 											brick-3
 										</Block>
-										<Block classes={'brick brick-3 e-background-grey-300'}>
+										<Block classes={'brick brick-3 e-background-grey-300 custom-height'}>
 											brick-3
 										</Block>
-										<Block classes={'brick brick-3 e-background-grey-300'}>
+										<Block classes={'brick brick-3 e-background-grey-300 custom-height'}>
 											brick-3
 										</Block>									
 									</Block>
