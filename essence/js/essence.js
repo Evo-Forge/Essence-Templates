@@ -17,7 +17,7 @@ import {Card, CardHeader, CardContent, CardFooter} from 'essence-card';
 
 // Components list
 import {
-	Components, 
+	Components,
 	AppBarComponent,
 	AppBottomSheet,
 	AppButton,
@@ -40,6 +40,7 @@ import {
 	AppSwitch,
 	AppTab,
 	AppToast,
+	AppToolBar,
 	AppTooltip,
 	AppTouchPad,
 } from './components/';
@@ -142,10 +143,10 @@ class AppHome extends React.Component {
 									Distilled with
 								</Text>
 
-								<Block className={'e-row'}>									
+								<Block className={'e-row'}>
 									<Block classes={'brick brick-6 e-text-center'}>
 										<Image className={'e-img-rsp'} src={'./assets/img/less.png'} alt={'Less'} />
-									</Block>								
+									</Block>
 									<Block classes={'brick brick-6 e-text-center'}>
 										<Image className={'e-img-rsp'} src={'./assets/img/react.png'} alt={'ReactJS'} />
 									</Block>
@@ -187,8 +188,8 @@ class AppHome extends React.Component {
 							<Block classes={'brick brick-12 e-text-center e-text-indigo-100 e-background-indigo-400 e-padding-top-25 e-padding-bottom-25 e-no-margin'} style={{width: '100%'}}>
 								<Text type={'p'} classes={'e-title e-text-indigo-100'}>
 									<Text>Join us on </Text>
-									<Text type={'a'} className={'e-text-white'} href={'https://twitter.com/Essence_MD'}>Twitter </Text> 
-									<Text type={'a'} className={'e-text-white'} href={'https://www.facebook.com/getEssence/'}>Facebook </Text> 
+									<Text type={'a'} className={'e-text-white'} href={'https://twitter.com/Essence_MD'}>Twitter </Text>
+									<Text type={'a'} className={'e-text-white'} href={'https://www.facebook.com/getEssence/'}>Facebook </Text>
 									<Text type={'a'} className={'e-text-white'} href={'https://github.com/Evo-Forge/Essence'}>GitHub </Text>
 								</Text>
 								<Text type={'small'} classes={'e-text-indigo-100'}>
@@ -199,7 +200,7 @@ class AppHome extends React.Component {
 					</Block>
 				</Block>
 			</Block>
-		); 
+		);
     }
 }
 
@@ -226,7 +227,7 @@ class AppAbout extends React.Component {
 						</Text>
 
 			        	<Card>
-			        		<CardContent>			        			
+			        		<CardContent>
 		        				<Block className={'e-row'}>
 				        			<Block className={'brick-12'}>
 				        				<Text type={'blockquote'} className={'e-text-indigo-400'} style={{marginLeft: '90px', marginTop: '60px'}}>
@@ -243,7 +244,7 @@ class AppAbout extends React.Component {
 				        				</Text>
 				        			</Block>
 			        			</Block>
-								
+
 								<Divider className={'thinnest e-background-grey-300'} />
 
 
@@ -255,7 +256,7 @@ class AppAbout extends React.Component {
 										</Block>
 									</Block>
 								</Block>
-								
+
 								<Block className={'e-row'}>
 				        			<Block className={'brick-12'}>
 				        				<Block className={'e-row'}>
@@ -277,7 +278,7 @@ class AppAbout extends React.Component {
 				        				</Block>
 				        			</Block>
 				        		</Block>
-			        			
+
 			        			<Block className={'e-row'}>
 				        			<Block className={'brick-12'}>
 				        				<Block className={'e-row'}>
@@ -320,7 +321,7 @@ class AppAbout extends React.Component {
 											</Block>
 				        				</Block>
 				        			</Block>
-				        		</Block>								
+				        		</Block>
 			        		</CardContent>
 						</Card>
 					</Block>
@@ -375,7 +376,7 @@ class AppGetStarted extends React.Component {
 										<Block>
 											<Text type={'h4'} classes={'e-text-indigo-400'}>USE COMPONENTS:</Text>
 											<Divider classes={'thin short e-background-indigo-400'} />
-											
+
 											<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 												To install individual components please see the side menu. Each component has a live example and a "How To Use" instructions.
 											</Text>
@@ -394,7 +395,7 @@ class AppGetStarted extends React.Component {
 										<Block className={'e-padding-bottom-15'}>
 											<Text type={'h4'} classes={'e-text-indigo-400'}>MAKE A TEMPLATE:</Text>
 											<Divider classes={'thin short e-background-indigo-400'} />
-											
+
 											<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 												1. create a copy of the boilerplate template
 												<br />
@@ -530,7 +531,7 @@ class AppContact extends React.Component {
 			let errors = [
 				(<li key={'error-title'} style={{listStyleType:'none'}}>
 					Your message has NOT been sent!
-				</li>)				
+				</li>)
 			];
 
 			self.setState({
@@ -559,7 +560,7 @@ class AppContact extends React.Component {
 							        	<Block className={'e-padding-bottom-15'}>
 											<Text type={'h4'} classes={'e-text-indigo-400'}>CONTACT:</Text>
 											<Divider classes={'thin short e-background-indigo-400'} />
-											
+
 											<Toast classes={'e-text-green-500'} visible={this.state.visibleOK} delay={3000}>
 												{this.state.message}
 											</Toast>
@@ -611,7 +612,7 @@ class AppNavigationMenu extends React.Component {
 		let self = this;
 		let renderComponents = [];
 
-		Object.keys(EssenceMenu).forEach(function(key) { 
+		Object.keys(EssenceMenu).forEach(function(key) {
 			var component = EssenceMenu[key];
 			renderComponents.push(
 				(
@@ -619,13 +620,13 @@ class AppNavigationMenu extends React.Component {
 						<Text type={'a'} href={'#'+key}>
 							<Block classes={'content e-left'}>
 								<Text type={'small'}>{component.title}</Text>
-							</Block>	
+							</Block>
 						</Text>
 					</li>
 				)
-			); 
+			);
 		});
-		
+
 		return renderComponents;
     }
 
@@ -633,7 +634,7 @@ class AppNavigationMenu extends React.Component {
 		let self = this;
 		let renderComponents = [];
 
-		Object.keys(EssenceCoreMenu).forEach(function(key) { 
+		Object.keys(EssenceCoreMenu).forEach(function(key) {
 			var component = EssenceCoreMenu[key];
 			renderComponents.push(
 				(
@@ -641,13 +642,13 @@ class AppNavigationMenu extends React.Component {
 						<Text type={'a'} href={'#'+key}>
 							<Block classes={'content e-left'}>
 								<Text type={'small'}>{component.title}</Text>
-							</Block>	
+							</Block>
 						</Text>
 					</li>
 				)
-			); 
+			);
 		});
-		
+
 		return renderComponents;
     }
 
@@ -656,7 +657,7 @@ class AppNavigationMenu extends React.Component {
 		let renderComponents = [];
     	let componentHash = window.location.hash.replace('#', '');
 
-		Object.keys(Components).forEach(function(key) { 
+		Object.keys(Components).forEach(function(key) {
 			var component = Components[key];
 			renderComponents.push(
 				(
@@ -664,13 +665,13 @@ class AppNavigationMenu extends React.Component {
 						<Text type={'a'} href={'#'+key}>
 							<Block classes={'content e-left'}>
 								<Text type={'small'}>{component.title}</Text>
-							</Block>	
+							</Block>
 						</Text>
 					</ListItem>
 				)
-			); 
+			);
 		});
-		
+
 		return renderComponents;
     }
 
@@ -680,10 +681,10 @@ class AppNavigationMenu extends React.Component {
 				<Block classes={'e-navigation-wrapper'} id={'navigationMenu'}>
 					<Block type={'header'} className={'e-nav-header'} style={{lineHeight: '52px'}}>
 						<Text type={'a'} href={'#home'}>
-							<Image 
-								width={'40px'} 
-								height={'40px'} 
-								style={{ verticalAlign: 'middle'}} 
+							<Image
+								width={'40px'}
+								height={'40px'}
+								style={{ verticalAlign: 'middle'}}
 								src={'./assets/img/essence_icon.png'} />
 							<Text type={'h2'} classes={'e-text-indigo-400 e-right'} style={{width: '74%', lineHeight: '45px'}}>
 								<Text>essence</Text>
@@ -776,6 +777,7 @@ class App extends React.Component {
 				'switch',
 				'tab',
 				'toast',
+				'toolbar',
 				'tooltip',
 				'touchpad',
 			],
@@ -862,9 +864,9 @@ class App extends React.Component {
     	}
 
     	return (
-    		<Button 
-    			onClick={this.showSideBar.bind(this)} 
-    			className={'flat e-background-indigo-400 e-text-white e-left'} 
+    		<Button
+    			onClick={this.showSideBar.bind(this)}
+    			className={'flat e-background-indigo-400 e-text-white e-left'}
     			icon={'navigation-menu'}
     			type={'primary'} />
     	);
@@ -959,6 +961,9 @@ class App extends React.Component {
     		case 'touchpad':
     			componentContent = <AppTouchPad />;
     			break;
+    		case 'toolbar':
+    			componentContent = <AppToolBar />;
+    			break;
     		case 'tooltip':
     			componentContent = <AppTooltip />;
     			break;
@@ -997,12 +1002,12 @@ class App extends React.Component {
 				<AppBar classes={'e-background-indigo-400'} style={{overflow: 'inherit'}}>
 					{this.renderSideBarButton()}
 					<Text className={'e-text-white'}>{this.state.AppBarTitle || 'Material Design Framework'}</Text>
-					
+
 					{this.props.children}
 				</AppBar>
 
-				<AppNavigationMenu 
-					visible={this.state.showSideBar} 
+				<AppNavigationMenu
+					visible={this.state.showSideBar}
 					callback={this.loadComponent.bind(this)}/>
 
 				{this.renderContent()}
