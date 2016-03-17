@@ -143,7 +143,7 @@ class AppHome extends React.Component {
 									Distilled with
 								</Text>
 
-								<Block className={'e-row'}>									
+								<Block className={'e-row'}>
 									<Block classes={'brick brick-6 e-text-center'}>
 										<Image className={'e-img-rsp'} src={'./assets/img/less.png'} alt={'Less'} />
 									</Block>
