@@ -127,3 +127,17 @@ pre {
 .custom-height {
 	min-height: 60px;
 }
+
+.live-container {
+	width: 100%;
+	overflow: hidden;
+}
+
+.min-height {
+	min-height: 270px;
+}
+
+.min-height .e-tabs-list {
+    display: inline-block;
+}
+

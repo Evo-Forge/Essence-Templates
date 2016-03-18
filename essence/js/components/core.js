@@ -141,7 +141,7 @@ class AppCoreGridSystem extends React.Component {
 											... more bricks on the wall ...
 					    				</code>
 									</pre>
-									<Text type={'h4'} classes={'e-text-indigo-400 e-padding-top-15'}>Properties:</Text>
+									<Text type={'h4'} classes={'e-text-indigo-400 e-padding-top-15 e-text-uppercase'}>Properties:</Text>
 									<Divider classes={'thin short e-background-indigo-400 '} />
 									<pre className={'e-text-black properties e-text-left'}>
 										<code>
@@ -308,7 +308,7 @@ class AppCoreDivider extends React.Component {
 											<br />
 					    				</code>
 									</pre>
-									<Text type={'h4'} classes={'e-text-indigo-400 e-padding-top-15'}>Properties:</Text>
+									<Text type={'h4'} classes={'e-text-indigo-400 e-padding-top-15 e-text-uppercase'}>Properties:</Text>
 									<Divider classes={'thin short e-background-indigo-400 '} />
 									<pre className={'e-text-black properties e-text-left'}>
 										<code>
@@ -451,7 +451,7 @@ class AppCoreRippleInk extends React.Component {
 											&lt;RippleInk color=&#123;color&#125; position=&#123;position&#125;/&gt;
 					    				</code>
 									</pre>
-									<Text type={'h4'} classes={'e-text-indigo-400 e-padding-top-15'}>Properties:</Text>
+									<Text type={'h4'} classes={'e-text-indigo-400 e-padding-top-15 e-text-uppercase'}>Properties:</Text>
 									<Divider classes={'thin short e-background-indigo-400 '} />
 									<pre className={'e-text-black properties e-text-left'}>
 										<code>
@@ -622,14 +622,12 @@ class AppCoreTextTypography extends React.Component {
 									<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
 										Typography is such an important part of a catchy website, so you must use it carefully. You are just a few classes away of doing it! To do that, we are here helping you with predefined classes.
 									</Text>
-
+									
 									<Block className={'e-row'}>
-										<Block className={'brick brick-5'}>
+										<Block className={'brick brick-5'}>	
 											<Text type={'h4'} classes={'e-text-indigo-400'}>LIVE EXAMPLE:</Text>
-											<Divider classes={'thin short e-background-indigo-400'} />
-											<Block className={'e-padding-bottom-100'} />
-
-											<Block className={'e-background-grey-100 e-text-center e-padding-top-15 e-padding-bottom-15 e-body1'}>
+											<Divider classes={'thin short e-background-indigo-400'} />										
+											<Block className={'e-background-grey-100 e-text-center e-padding-top-15 e-padding-bottom-15 e-body1 live-container'}>
 												<Block
 													classes={''}>
 													&lt;Text type=&#123;'{this.state.textType}'&#125; classes=&#123;'{ClassNames(this.state.textPosition, this.state.textTypography)}'&#125;&gt;
@@ -637,94 +635,42 @@ class AppCoreTextTypography extends React.Component {
 														target={'_blank'}
 														type={this.state.textType}
 														href={'http://getessence.io'}
-														classes={ClassNames('e-text-grey-600', this.state.textPosition, this.state.textTypography)}>
-														Text Typography Example
+														classes={ClassNames('e-text-grey-600', this.state.textPosition, this.state.textTypography)}
+														style={{display:'block'}}>
+														Text Example														
 													</Text>
 													&lt;/Text&gt;
 
 												</Block>
 											</Block>
 										</Block>
-										<Block className={'brick brick-7'}>
-											<Text type={'h4'} classes={'e-text-indigo-400'}>HOW TO USE:</Text>
-											<Divider classes={'thin short e-background-indigo-400'} />
+										<Block className={'brick brick-7 min-height'}>	
+											<Text type={'h4'} classes={'e-text-indigo-400'}>CHOOSE TEXT STYLING:</Text>
+											<Divider classes={'thin short e-background-indigo-400'} />									
 
-											<pre className={'e-background-grey-100 e-text-black'}>
-							    				<code>
-													npm install <strong>essence-core</strong>
-							    				</code>
-											</pre>
-
-					        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
-												Core: Text component has the following option:
-												<br />
-												<br />
-												1. <strong>type</strong>: string from the list explained below
-												<br />
-												2. <strong>badge</strong>: for <u>data-badge</u> option with a maximum lenght of 3 chars
-											</Text>
-
-											<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
-												There are a list of available types that can be used as in the list bellow: 
-												<br />
-												<Text classes={'e-caption'}>
-													- a, 
-													p, 
-													label, 
-													strong, 
-													small, 
-													caption, 
-													h1, 
-													h2, 
-													h3, 
-													h4, 
-													h5, 
-													h6, 
-													sup, 
-													sub, 
-													em
-												</Text>
-												<br />
-												<br />
-											</Text>
-
-											<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
-												For typography styling there are a list of available options:
-												<br />
-												<Text classes={'e-caption'}>
-													- e-text-left, &nbsp;
-													e-text-right, &nbsp;
-													e-text-center, &nbsp;
-													e-text-justify, &nbsp;
-													e-text-uppercase, &nbsp;
-													e-text-capitalize, &nbsp;
-													e-text-lowercase
-													<br />
-													- e-display-4, &nbsp; 
-													e-display-3, &nbsp; 
-													e-display-2, &nbsp; 
-													e-display-1, &nbsp; 
-													e-headline, &nbsp; 
-													e-title, &nbsp; 
-													e-subhead, &nbsp; 
-													e-body2, &nbsp; 
-													e-body1, &nbsp; 
-													e-caption, &nbsp; 
-													e-button
-												</Text>
-											</Text>
-
-											<pre className={'e-background-grey-100 e-text-black'}>
-							    				<code>
-													import &#123;Text&#125; from 'essence-core';
-													<br />
-													<br />
-													&lt;Text type=&#123;a&#125; href=&#123;'http://getessence.io'&#125; target=&#123;'_blank'&#125;&gt;
-														Discover Essence
-													&lt;Text/&gt;
-													<br />
-							    				</code>
-											</pre>
+											<Tab data={{
+												'header': [{
+														'context': (<Text>Type</Text>)
+													},{
+														'context': (<Text>Position</Text>)
+													},{
+														'context': (<Text>Typography</Text>)
+													}
+												],
+												'rows': [ 
+													(
+														<Block>{this.renderType()}</Block>
+													),
+													(
+														<Block>{this.renderPosition()}</Block>
+													),
+													(
+														<Block>{this.renderTypography()}</Block>
+													)
+												]
+											}}
+											classes={'e-background-indigo-400 e-text-grey-50'}
+											indicator={'e-background-grey-50'}/>
 										</Block>
 									</Block>																		
 								</Block>
@@ -732,34 +678,63 @@ class AppCoreTextTypography extends React.Component {
 						</Card>
 
 						<Block className={'e-padding-bottom-25'}>
+							<Text type={'h4'} classes={'e-text-indigo-400'}>HOW TO USE:</Text>
+							<Divider classes={'thin short e-background-indigo-400'} />
 
-										<Text type={'h4'} classes={'e-text-indigo-400'}>CHOOSE TEXT STYLING:</Text>
-										<Divider classes={'thin short e-background-indigo-400'} />
+							<pre className={'e-background-grey-100 e-text-black'}>
+			    				<code>
+									npm install <strong>essence-core</strong>
 
-										<Tab data={{
-											'header': [{
-													'context': (<Text>Type</Text>)
-												},{
-													'context': (<Text>Position</Text>)
-												},{
-													'context': (<Text>Typography</Text>)
-												}
-											],
-											'rows': [ 
-												(
-													<Block>{this.renderType()}</Block>
-												),
-												(
-													<Block>{this.renderPosition()}</Block>
-												),
-												(
-													<Block>{this.renderTypography()}</Block>
-												)
-											]
-										}}
-										classes={'e-background-indigo-400 e-text-grey-50'}
-										indicator={'e-background-grey-50'}/>
-									</Block>
+			    					<br/>
+			    					<br/>
+
+									import &#123;Text&#125; from 'essence-core';
+									<br />
+									<br />
+									&lt;Text type=&#123;a&#125; href=&#123;'http://getessence.io'&#125; target=&#123;'_blank'&#125;&gt;
+										Discover Essence
+									&lt;Text/&gt;
+									<br />
+			    				</code>
+							</pre>
+							<Text type={'h4'} classes={'e-text-indigo-400 e-padding-top-15 e-text-uppercase'}>Properties:</Text>
+							<Divider classes={'thin short e-background-indigo-400 '} />
+							<pre className={'e-text-black properties e-text-left'}>
+								<code>
+									<table>
+										<thead className={'e-background-grey-100 '}>
+											<tr>
+											<th>Name</th>
+											<th>Default</th>
+											<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>type</td>
+												<td style={{paddingLeft:'10px',paddingRight:'10px'}}>span</td>
+												<td>Select one from the list: a, p, label, strong, small, caption, h1, h2, h3, h4, h5, h6, sup, sub, em</td>
+											</tr>
+											<tr>
+												<td>position</td>
+												<td style={{paddingLeft:'10px',paddingRight:'10px'}}>e-text-left</td>
+												<td>Use classes from the list: e-text-left, e-text-right, e-text-center, e-text-justify, e-text-uppercase, e-text-capitalize, e-text-lowercase</td>
+											</tr>	
+											<tr>
+												<td>typography</td>
+												<td style={{paddingLeft:'10px',paddingRight:'10px'}}>e-body1</td>
+												<td>Use classes from the list: e-display-4,  e-display-3,  e-display-2,  e-display-1,  e-headline,  e-title,  e-subhead,  e-body2,  e-body1,  e-caption</td>
+											</tr>	
+											<tr>
+												<td>badge</td>
+												<td style={{paddingLeft:'10px',paddingRight:'10px'}}>data-badge</td>
+												<td>Option with a maximum lenght of 3 chars </td>
+											</tr>																						
+										</tbody>
+									</table>
+								</code>
+							</pre>
+						</Block>
 					</Block>
 				</Block>
 			</Block>
