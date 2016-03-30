@@ -23,7 +23,7 @@ class AppHome extends React.Component {
             <Block classes={'e-row'}>
               <Block classes={'brick brick-12 e-text-center e-background-indigo-400 e-padding-top-50 e-padding-bottom-50 e-no-margin'} style={{width: '100%'}}>
                 <Block>
-                  <Image className={'e-img-rsp'} src={'./assets/img/ess-logo.png'} alt={'Essence'} />
+                  <Image className={'e-img-rsp'} src={'/assets/img/ess-logo.png'} alt={'Essence'} />
                   <Text type={'h5'} classes={'e-display-4 e-text-white'}>
                     essence
                   </Text>
@@ -45,7 +45,7 @@ class AppHome extends React.Component {
                   <Text type={'h3'} classes={'e-display-1 e-text-indigo-400 e-text-uppercase e-margin-top-25 e-margin-bottom-100'}>
                     Build it on one, use it on all!
                   </Text>
-                  <Image className={'e-img-rsp'} src={'./assets/img/essence_responsive_banner.png'} alt={'Essence'} />
+                  <Image className={'e-img-rsp'} src={'/assets/img/essence_responsive_banner.png'} alt={'Essence'} />
                 </Block>
 
                 <Block className={'e-row e-padding-top-15 e-padding-bottom-15'}>
@@ -62,10 +62,10 @@ class AppHome extends React.Component {
 
                 <Block className={'e-row'}>
                   <Block classes={'brick brick-6 e-text-center'}>
-                    <Image className={'e-img-rsp'} src={'./assets/img/less.png'} alt={'Less'} />
+                    <Image className={'e-img-rsp'} src={'/assets/img/less.png'} alt={'Less'} />
                   </Block>
                   <Block classes={'brick brick-6 e-text-center'}>
-                    <Image className={'e-img-rsp'} src={'./assets/img/react.png'} alt={'ReactJS'} />
+                    <Image className={'e-img-rsp'} src={'/assets/img/react.png'} alt={'ReactJS'} />
                   </Block>
                 </Block>
 
@@ -79,7 +79,7 @@ class AppHome extends React.Component {
 
                 <Block className={'e-row'}>
                   <Block classes={'brick brick-6 e-text-center'}>
-                    <Image className={'e-img-rsp'} src={'./assets/img/focus.png'} alt={'Fully focused'} />
+                    <Image className={'e-img-rsp'} src={'/assets/img/focus.png'} alt={'Fully focused'} />
                     <Text type={'p'} classes={'e-title line-height-12 e-text-indigo-400 e-text-uppercase'}>
                       Fully focused
                     </Text>
@@ -89,7 +89,7 @@ class AppHome extends React.Component {
                     </Text>
                   </Block>
                   <Block classes={'brick brick-6 e-text-center'}>
-                    <Image className={'e-img-rsp'} src={'./assets/img/document.png'} alt={'Fully documented'} />
+                    <Image className={'e-img-rsp'} src={'/assets/img/document.png'} alt={'Fully documented'} />
                     <Text type={'p'} classes={'e-title line-height-12 e-text-indigo-400 e-text-uppercase'}>
                       Fully documented
                     </Text>

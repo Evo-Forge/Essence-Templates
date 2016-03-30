@@ -56,8 +56,8 @@ let EssenceMenu = {
 	'home': {
 		title: 'Home'
 	},
-	'about': {
-		title: 'About'
+	'about-essence': {
+		title: 'About Essence'
 	},
 	'get-started': {
 		title: 'Getting started'
@@ -68,19 +68,19 @@ let EssenceMenu = {
 };
 
 let EssenceCoreMenu = {
-	'core-grid-system': {
+	'grid-system': {
 		title: 'Grid System'
 	},
-	'core-divider': {
+	'divider': {
 		title: 'Divider'
 	},
-	'core-ripple-ink': {
+	'ripple-ink': {
 		title: 'Ripple Ink'
 	},
-	'core-text-typography': {
+	'text-typography': {
 		title: 'Text Typography'
 	},
-	'core-utilities': {
+	'utilities': {
 		title: 'Utilities'
 	},
 };
@@ -127,7 +127,7 @@ class AppNavigationMenu extends React.Component {
 			renderComponents.push(
 				(
 					<li key={'component-'+key}>
-						<Link to={'/' + key}>
+						<Link to={'/core/' + key}>
 							<Block classes={'content e-left'}>
 								<Text type={'small'}>{component.title}</Text>
 							</Block>
@@ -149,7 +149,7 @@ class AppNavigationMenu extends React.Component {
 				renderComponents.push(
 					(
 						<ListItem key={'component-'+key}>
-							<Link to={'/' + key}>
+							<Link to={'/react-component/' + key}>
 								<Block classes={'content e-left'}>
 									<Text type={'small'}>{component.title}</Text>
 								</Block>
@@ -167,12 +167,12 @@ class AppNavigationMenu extends React.Component {
   			<Navigation visible={this.props.visible}>
   				<Block classes={'e-navigation-wrapper'} id={'navigationMenu'}>
   					<Block type={'header'} className={'e-nav-header'} style={{lineHeight: '52px'}}>
-  						<Text type={'a'} href={'#home'}>
+  						<Text type={'a'} href={'/'}>
   							<Image
   								width={'40px'}
   								height={'40px'}
   								style={{ verticalAlign: 'middle'}}
-  								src={'./assets/img/essence_icon.png'} />
+  								src={'/assets/img/essence_icon.png'} />
   							<Text type={'h2'} classes={'e-text-indigo-400 e-right'} style={{width: '74%', lineHeight: '45px'}}>
   								<Text>essence</Text>
   							</Text>
@@ -181,7 +181,7 @@ class AppNavigationMenu extends React.Component {
   					<List type={'navigation'} classes={'e-background-white'}>
   						<ListItem key={'component-md'}>
   							<Block classes={'group-list-title'}>
-  								<Image src={'./assets/img/material-design.png'} height={'24px'} alt={'Material Design'} />
+  								<Image src={'/assets/img/material-design.png'} height={'24px'} alt={'Material Design'} />
   								&nbsp;
   								<Text type={'small'}>
   									Material Design
@@ -194,7 +194,7 @@ class AppNavigationMenu extends React.Component {
 
   						<ListItem key={'component-core'}>
   							<Block classes={'group-list-title'}>
-  								<Image src={'./assets/img/styles-b.png'} height={'24px'} alt={'Essence Core'} />
+  								<Image src={'/assets/img/styles-b.png'} height={'24px'} alt={'Essence Core'} />
   								&nbsp;
   								<Text type={'small'}>
   									Essence Core
@@ -207,7 +207,7 @@ class AppNavigationMenu extends React.Component {
 
   						<ListItem key={'component-components'}>
   							<Block classes={'group-list-title'}>
-  								<Image src={'./assets/img/components.png'} height={'24px'} alt={'Components'} />
+  								<Image src={'/assets/img/components.png'} height={'24px'} alt={'Components'} />
   								&nbsp;
   								<Text type={'small'}>
   									Components
@@ -241,17 +241,39 @@ class App extends React.Component {
     };
   }
 
-  changeTitle(string) {
+  changeTitle(string, page = null) {
+    // set head title & description
+    let title = document.querySelector('head title');
+    let description = document.querySelector('head meta[name=description]');
+
+    title.innerHTML = 'Essence - ' + string.toString();
+    description.setAttribute('content', 'Essence - ' + string.toString());
+
   	this.setState({
   		AppBarTitle: string.toString()
   	});
   }
 
+  componentWillReceiveProps(nextProps) {
+    let componentPath = nextProps.location.pathname;
+    let componentPage = componentPath.split('/').filter(n => n.length);
+    let componentKey = componentPath.split('/').filter(n => n.length).join('-');
+    let componentTitle = this.state.essenceComponents[componentKey]['title'];
+
+    this.changeTitle(componentTitle, componentPage);
+  }
+
   componentDidMount() {
   	let essenceComponents = this.state.essenceComponents;
-		for (var objKey in EssenceMenu) { essenceComponents[objKey] = EssenceMenu[objKey]; }
-		for (var objKey in EssenceCoreMenu) { essenceComponents[objKey] = EssenceCoreMenu[objKey]; }
-		for (var objKey in Components) { essenceComponents[objKey] = Components[objKey]; }
+		for (var objKey in EssenceMenu) {
+      essenceComponents[objKey] = EssenceMenu[objKey];
+    }
+		for (var objKey in EssenceCoreMenu) {
+      essenceComponents['core-' + objKey] = EssenceCoreMenu[objKey];
+    }
+		for (var objKey in Components) {
+      essenceComponents['react-component-' + objKey] = Components[objKey];
+    }
 
 		this.setState({
 			essenceComponents: essenceComponents
@@ -309,40 +331,42 @@ const routes = {
   component: App,
   indexRoute: { component: AppHome },
   childRoutes: [
-    { path: 'home', component: AppHome },
-    { path: 'about', component: AppAbout },
-    { path: 'contact', component: AppContact },
-    { path: 'get-started', component: AppGetStarted },
-    { path: 'icons', component: AppIcons },
-    { path: 'colors', component: AppColors },
-    { path: 'appbar', component: AppBarComponent },
-    { path: 'bottomsheet', component: AppBottomSheet },
-    { path: 'button', component: AppButton },
-    { path: 'card', component: AppCard },
-    { path: 'chip', component: AppChip },
-    { path: 'core-grid-system', component: AppCoreGridSystem },
-    { path: 'core-divider', component: AppCoreDivider },
-    { path: 'core-ripple-ink', component: AppCoreRippleInk },
-    { path: 'core-text-typography', component: AppCoreTextTypography },
-    { path: 'core-utilities', component: AppCoreUtilities },
-    { path: 'dialog', component: AppDialog },
-    { path: 'datatable', component: AppDataTable },
-    { path: 'image', component: AppImage },
-    { path: 'input', component: AppInput },
-    { path: 'list', component: AppList },
-    { path: 'menu', component: AppMenu },
-    { path: 'navigation', component: AppNavigation },
-    { path: 'paper', component: AppPaper },
-    { path: 'progress', component: AppProgress },
-    { path: 'slider', component: AppSlider },
-    { path: 'snackbar', component: AppSnackBar },
-    { path: 'stepper', component: AppStepper },
-    { path: 'switch', component: AppSwitch },
-    { path: 'toast', component: AppToast },
-    { path: 'tab', component: AppTab },
-    { path: 'touchpad', component: AppTouchPad },
-    { path: 'toolbar', component: AppToolBar },
-    { path: 'tooltip', component: AppTooltip },
+    { path: '/home', component: AppHome },
+    { path: '/about-essence', component: AppAbout },
+    { path: '/contact', component: AppContact },
+    { path: '/get-started', component: AppGetStarted },
+
+    { path: '/core/grid-system', component: AppCoreGridSystem },
+    { path: '/core/divider', component: AppCoreDivider },
+    { path: '/core/ripple-ink', component: AppCoreRippleInk },
+    { path: '/core/text-typography', component: AppCoreTextTypography },
+    { path: '/core/utilities', component: AppCoreUtilities },
+
+    { path: '/react-component/icons', component: AppIcons },
+    { path: '/react-component/colors', component: AppColors },
+    { path: '/react-component/appbar', component: AppBarComponent },
+    { path: '/react-component/bottomsheet', component: AppBottomSheet },
+    { path: '/react-component/button', component: AppButton },
+    { path: '/react-component/card', component: AppCard },
+    { path: '/react-component/chip', component: AppChip },
+    { path: '/react-component/dialog', component: AppDialog },
+    { path: '/react-component/data-table', component: AppDataTable },
+    { path: '/react-component/image', component: AppImage },
+    { path: '/react-component/input', component: AppInput },
+    { path: '/react-component/list', component: AppList },
+    { path: '/react-component/menu', component: AppMenu },
+    { path: '/react-component/navigation', component: AppNavigation },
+    { path: '/react-component/paper', component: AppPaper },
+    { path: '/react-component/progress', component: AppProgress },
+    { path: '/react-component/slider', component: AppSlider },
+    { path: '/react-component/snackbar', component: AppSnackBar },
+    { path: '/react-component/stepper', component: AppStepper },
+    { path: '/react-component/switch', component: AppSwitch },
+    { path: '/react-component/toast', component: AppToast },
+    { path: '/react-component/tab', component: AppTab },
+    { path: '/react-component/touchpad', component: AppTouchPad },
+    { path: '/react-component/toolbar', component: AppToolBar },
+    { path: '/react-component/tooltip', component: AppTooltip },
   ]
 }
 

@@ -16,5 +16,9 @@ app.all('/:page', function(req, res) {
   res.sendFile(path.resolve(__dirname, '../','index.html'));
 });
 
+app.all('/core|react-component/:page', function(req, res) {
+  res.sendFile(path.resolve(__dirname, '../','index.html'));
+});
+
 app.listen(PORT);
 console.log('Essence Server on PORT:', PORT);

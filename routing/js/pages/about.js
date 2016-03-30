@@ -62,7 +62,7 @@ class AppAbout extends React.Component {
                       <Block className={'brick-12'}>
                         <Block className={'e-row'}>
                       <Block className={'brick brick-4'}>
-                        <Image src={'./assets/img/visual-1.png'} className={'e-img-rsp'} />
+                        <Image src={'/assets/img/visual-1.png'} className={'e-img-rsp'} />
                       </Block>
                       <Block className={'brick brick-8 e-text-left'}>
                         <Text type={'p'} classes={'e-headline line-height-15 e-text-uppercase e-text-indigo-400'}>
@@ -84,7 +84,7 @@ class AppAbout extends React.Component {
                       <Block className={'brick-12'}>
                         <Block className={'e-row'}>
                       <Block className={'brick brick-4'}>
-                        <Image src={'./assets/img/visual-2.png'} className={'e-img-rsp'} />
+                        <Image src={'/assets/img/visual-2.png'} className={'e-img-rsp'} />
                       </Block>
                       <Block className={'brick brick-8 e-text-left'}>
                         <Text type={'p'} classes={'e-headline line-height-15 e-text-uppercase e-text-indigo-400'}>
@@ -106,7 +106,7 @@ class AppAbout extends React.Component {
                       <Block className={'brick-12'}>
                         <Block className={'e-row'}>
                       <Block className={'brick brick-4'}>
-                        <Image src={'./assets/img/visual-3.png'} className={'e-img-rsp'} />
+                        <Image src={'/assets/img/visual-3.png'} className={'e-img-rsp'} />
                       </Block>
                       <Block className={'brick brick-8 e-text-left'}>
                         <Text type={'p'} classes={'e-headline line-height-15 e-text-uppercase e-text-indigo-400'}>
