@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "template:dev": "webpack-dev-server --devtool eval --hot --progress --colors --optimize-minimize --config essence/js/webpack.config.js --port 8080 --host 0.0.0.0 --content-base essence/",
+    "template:essence-new": "webpack-dev-server --devtool eval --hot --progress --colors --optimize-minimize --config essence-new/js/webpack.config.js --port 8080 --host 0.0.0.0 --content-base essence-new/",
     "template:routing": "webpack -p --optimize-minimize --config routing/js/webpack.config.js && nodemon routing/js/server.js",
     "template:routing:dev": "webpack-dev-server --devtool eval --hot --progress --colors --optimize-minimize --config routing/js/webpack.config.js --port 8080 --host 0.0.0.0 --content-base routing/",
     "template:essence": "webpack -p --optimize-minimize --config essence/js/webpack.config.js && http-server ./essence/ -p 8080 -a 0.0.0.0 -o",
@@ -19,7 +20,7 @@
       "react"
     ]
   },
-  "keywords": [
+  "keywords": [ 
     "essence",
     "react",
     "react-essence",
