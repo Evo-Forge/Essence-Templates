@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ClassNames from 'classnames';
-
+import Image from 'essence-image';
+import NavigationMenu from '../partials/navigation-menu';
 import Btn from 'essence-button';
 import Icon from 'essence-icon';
 import {List, ListItem} from 'essence-list';
@@ -62,14 +63,29 @@ class AppBottomSheet extends React.Component {
 
     render() {
         return (
-			<Block classes={ClassNames('e-container e-padding-top-25', this.state.classes)}>
+			<Block classes={ClassNames('with-navigation', this.state.classes)}>
+        		<NavigationMenu />
+
+        		<Block classes={'e-background-indigo-500'}>
+		          <Block className={'e-container '}>
+		            <Block className={'e-row'}>
+		              <Block classes={'brick brick-6 e-padding-top-25 '}>
+		                <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>BOTTOM SHEETS</Text>
+		                    <Divider classes={'thick medium e-background-white'} />
+		                <Text type={'p'} classes={'e-body1 e-text-white e-padding-top-15 e-padding-bottom-25'} style={{fontSize:'16px'}}>
+		                    You know those cool looking sheets that pop-up from the bottom of the screen? Yeah, we have those too. Depending on how you want information to be displayed, aligned or arranged, use the appropriate code. Here are some examples to get you started.
+		                </Text>
+		              </Block>
+		              <Block classes={'brick brick-6 e-no-padding'}>
+		                <Image className={'e-img-rsp'} src={'./assets/img/footer.png'} alt={'footer'} />
+		              </Block>
+		            </Block>
+		          </Block>
+		        </Block>
+
+
 				<Block classes={'e-row'}>
-					<Block classes={'brick brick-12'}>
-						<Text type={'h3'} classes={'e-text-indigo-400'}>BOTTOM SHEETS</Text>
-						<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 e-padding-top-25 e-padding-bottom-25'} style={{fontSize:'14px'}}>
-							You know those cool looking sheets that pop-up from the bottom of the screen? Yeah, we have those too. Depending on how you want information to be displayed, aligned or arranged, use the appropriate code. Here are some examples to get you started.
-						</Text>
+					<Block classes={'brick brick-12'}>						
 
 			        	<Card>
 			        		<CardContent>

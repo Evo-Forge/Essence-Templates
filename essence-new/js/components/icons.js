@@ -2,7 +2,8 @@ import _ from 'lodash/collection';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ClassNames from 'classnames';
-
+import Image from 'essence-image';
+import NavigationMenu from '../partials/navigation-menu';
 import Tab from 'essence-tab';
 import Icon from 'essence-icon';
 import Input from 'essence-input';
@@ -2983,7 +2984,7 @@ class AppIcons extends React.Component {
 	constructor(props) {
         super(props);
         this.state = {
-        	color: 'e-text-indigo-400',
+        	color: 'e-text-indigo-500',
         	icon: {
         		'name': 'e-icon-navigation-apps',
         		'title': 'Navigation Apps'
@@ -3100,43 +3101,63 @@ class AppIcons extends React.Component {
     	let iconColor = this.state.color;
 
         return (
-			<Block classes={ClassNames('e-container e-padding-top-25', this.state.classes)}>
+			<Block classes={ClassNames('with-navigation', this.state.classes)}>
+        		<NavigationMenu />
+
+        		<Block classes={'e-background-indigo-500'}>
+		          <Block className={'e-container '}>
+		            <Block className={'e-row'}>
+		              <Block classes={'brick brick-6 e-padding-top-25 '}>
+		                <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>ICONS</Text>
+		                    <Divider classes={'thick medium e-background-white'} />
+		                <Text type={'p'} classes={'e-body1 e-text-white e-padding-top-15 e-padding-bottom-25'} style={{fontSize:'16px'}}>
+		                    We’ve included hundreds of icons that you can freely use for whatever your mind can conceive.
+		                </Text>
+		              </Block>
+		              <Block classes={'brick brick-6 e-no-padding'}>
+		                <Image className={'e-img-rsp'} src={'./assets/img/footer.png'} alt={'footer'} />
+		              </Block>
+		            </Block>
+		          </Block>
+		        </Block> 
 	        	
-	        	<Block classes={'e-row'}>
-	        		<Block classes={'brick brick-12'}>
-		        		<Text type={'h3'} classes={'e-text-indigo-400'}>ICONS</Text>
-						<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 e-padding-top-25 e-padding-bottom-25'} style={{fontSize:'14px'}}> 
-							We’ve included hundreds of icons that you can freely use for whatever your mind can conceive.
-						</Text>
+	        	<Block className={'e-container'}>
+		        	<Block className={'e-row e-margin-top-25'}>
+		        		<Block classes={'brick brick-4'} style={{overflow:'hidden'}}>	
+							<Text type={'h4'} classes={'e-text-indigo-500'}>LIVE EXAMPLE</Text>
+		    				<Divider classes={'thick short e-background-indigo-500'} />							
+											    	
+							<Block className={'e-row e-body1 e-text-grey-700 e-padding-top-15'}>
+								<Block className={'e-text-grey-900 brick brick-12 e-no-margin e-h-center'}>
+									<Block className={'e-text-center'}>
+										{this.renderIcon()}
+									</Block>
+								</Block>						
+							</Block>								
+						</Block>
+						<Block classes={'brick brick-8'}>
+							<Text type={'h4'} classes={'e-text-indigo-500'}>USE COMPONENTS</Text>
+	        				<Divider classes={'thick short e-background-indigo-500 e-margin-bottom-25'} />		        						        				
 
-	        			<Card style={{marginBottom: '0'}}>
-			        		<CardContent style={{padding: '0'}}>
-			        			<Block>
-			        				<Block className={'e-row'}>
-										<Block className={'brick brick-5'} style={{paddingLeft:'16px', paddingTop:'16px'}}>
-				    						<Text type={'h4'} classes={'e-text-indigo-400'}>LIVE EXAMPLE:</Text>
-				    						<Divider classes={'thin short e-background-indigo-400'} />
+	        				<Text type={'p'} classes={'e-body1 e-text-grey-900 padding-top-bottom-10 e-no-margin'}>
+								Icon component has the following option:
+								<br />
+								<br />
+								1. <strong>name</strong>: string from the icons list
+							</Text>
 
-											<Block className={'e-text-center'}>
-												{this.renderIcon()}
-											</Block>
-										</Block>
-										<Block className={'brick brick-7'} style={{paddingRight:'16px', paddingTop:'16px'}}>
-											     
-										</Block>
-			        				</Block>
-				        		</Block>
-			        		</CardContent>
-						</Card>
-	        		</Block>
-	        	</Block>
-
-				<Block classes={'e-row'}>
-					<Block classes={'brick brick-12'}>
-						<Block className={'e-padding-bottom-25'}>
-			        		<Text type={'h4'} classes={'e-text-indigo-400'}>CHOOSE YOUR ICON:</Text>
-			        		<Divider classes={'thin short e-background-indigo-400'} />
+							<pre className={'e-background-orange-100 e-text-black e-no-margin'} style={{border:'1px solid #FFB74D', lineHeight:'20px'}}>
+			    				<code>
+									import Icon from 'essence-icon';
+									<br />
+									<br />
+									&lt;Icon name=&#123;"{iconName}"&#125; className=&#123;"{iconColor}"&#125; /&gt;
+			    				</code>
+							</pre>
+						</Block>
+						<Block className={'brick brick-12'}>
+							<Text type={'h4'} classes={'e-text-indigo-500'}>CHOOSE YOUR ICON:</Text>
+			        		<Divider classes={'thin short e-background-indigo-500'} />
 							
 							<Tab 
 								data={{
@@ -3162,11 +3183,49 @@ class AppIcons extends React.Component {
 										)
 									]
 								}}
-								classes={'e-background-indigo-400 e-text-grey-50'}
+								classes={'e-background-indigo-500 e-text-grey-50'}
 								indicator={'e-background-grey-50'}/>
-			        	</Block>
-					</Block>
-				</Block>
+	        			</Block>
+	        			<Block classes={'brick brick-12 properties e-margin-bottom-25'}>	
+							<Text type={'h4'} classes={'e-text-indigo-500 e-margin-top-15'}>PROPERTIES</Text>
+	        				<Divider classes={'thick short e-background-indigo-500 e-margin-bottom-25'} />
+
+	        				<Block classes={'e-row tabel-header no-resize e-body1 e-no-margin'}>	
+	        					<Block classes={'brick brick-3 e-no-margin e-text-grey-700'}>	
+	        						Name
+	        					</Block>
+	        					<Block classes={'brick brick-3 e-no-margin e-text-grey-700'}>	
+	        						Default
+	        					</Block>
+	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-700'}>	
+									Description
+	        					</Block>
+	        				</Block>
+	        				<Block classes={'e-row tabel-line no-resize e-body1 e-no-margin'}>	
+	        					<Block classes={'brick brick-3 e-no-margin e-text-indigo-700'}>	
+	        						name
+	        					</Block>
+	        					<Block classes={'brick brick-3 e-no-margin e-text-orange-700'}>	
+	        						classes=&#123;'  '&#125;
+	        					</Block>
+	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-900'}>	
+									String for icon name
+	        					</Block>
+	        				</Block>	
+	        				<Block classes={'e-row tabel-line no-resize e-body1 e-no-margin'}>	
+	        					<Block classes={'brick brick-3 e-no-margin e-text-indigo-700'}>	
+	        						color
+	        					</Block>
+	        					<Block classes={'brick brick-3 e-no-margin e-text-orange-700'}>	
+	        						classes=&#123;'e-text-black'&#125;
+	        					</Block>
+	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-900'}>	
+									For backgroundColor 
+	        					</Block>
+	        				</Block>        						        				
+						</Block>
+	        		</Block>
+	        	</Block>				
 			</Block>
 		);
     }

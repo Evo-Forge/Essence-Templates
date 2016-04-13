@@ -1,11 +1,12 @@
 import React from 'react';
 import ClassNames from 'classnames';
-
-import Toast from 'essence-toast';
+import {List, ListItem} from 'essence-list';
 import Input from 'essence-input';
 import Button from 'essence-button';
+import Toast from 'essence-toast';
+import Image from 'essence-image';
 import {Block, Text, Divider} from 'essence-core';
-import {Card, CardHeader, CardContent, CardFooter} from 'essence-card';
+import NavigationMenu from '../partials/navigation-menu';
 
 class AppContact extends React.Component {
   constructor(props) {
@@ -86,48 +87,79 @@ class AppContact extends React.Component {
 
   render() {
     return (
-      <Block classes={'e-container e-padding-top-25'}>
-        <Block className={'e-row'}>
-          <Block classes={'brick brick-12'}>
-            <Text type={'h3'} classes={'e-text-indigo-400 e-text-uppercase'}>GET IN TOUCH WITH US HERE</Text>
-                <Divider classes={'thick medium e-background-indigo-400'} />
-            <Text type={'p'} classes={'e-body1 e-text-blue-grey-700 e-padding-top-25 e-padding-bottom-25'} style={{fontSize:'14px'}}>
-              Let us know what you think about Essence Project, write us any suggestion or idea that can help improve Essence.
-            </Text>
-
-                <Card>
-                  <CardContent>
-                    <Block className={'e-row'}>
-                      <Block className={'brick-12'}>
-                        <Block className={'e-padding-bottom-15'}>
-                      <Text type={'h4'} classes={'e-text-indigo-400'}>CONTACT:</Text>
-                      <Divider classes={'thin short e-background-indigo-400'} />
-
-                      <Toast classes={'e-text-green-500'} visible={this.state.visibleOK} delay={3000}>
-                        {this.state.message}
-                      </Toast>
-                      <Toast classes={'e-text-white'} visible={this.state.visibleFailed} delay={8000}>
-                        {this.state.message}
-                      </Toast>
-
-                      <Block classes={'e-body1'}>
-                        <Block className={'e-padding-top-15'}>
-                          <Input type={'email'} ref={(ref) => this.contactEmail = ref} name={'email'} label={'Email address'} />
-                        </Block>
-                        <Block className={'e-padding-top-15'}>
-                          <Input type={'text'} ref={(ref) => this.contactSubject = ref} name={'subject'} label={'Message subject'} />
-                        </Block>
-                        <Block className={'e-padding-top-15'}>
-                          <Input type={'textarea'} ref={(ref) => this.contactMessage = ref} name={'message'} label={'Your message for us'} />
-                        </Block>
-                        <Button label={'SEND MESSAGE'} type={'succes'} className={'raised e-background-indigo-600'} onClick={this.sendMessage.bind(this)} />
-                      </Block>
-                    </Block>
-                  </Block>
-                </Block>
-                  </CardContent>
-            </Card>
+      <Block className={'with-navigation'}>
+        <NavigationMenu />
+        <Block classes={'e-background-indigo-500'}>
+          <Block className={'e-container '}>
+            <Block className={'e-row'}>
+              <Block classes={'brick brick-6 e-padding-top-25 '}>
+                <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>GET IN TOUCH WITH US HERE</Text>
+                    <Divider classes={'thick medium e-background-white'} />
+                <Text type={'p'} classes={'e-body1 e-text-white e-padding-top-15 e-padding-bottom-25'} style={{fontSize:'16px'}}>
+                  We welcome feedback and we’re here if you happen to need some help with Essence.
+                </Text>
+              </Block>
+              <Block classes={'brick brick-6 e-no-padding'}>
+                <Image className={'e-img-rsp'} src={'./assets/img/footer.png'} alt={'footer'} />
+              </Block>
+            </Block>
           </Block>
+        </Block> 
+
+        <Block className={'e-container'}>
+         
+              
+                              
+              <Block className={'e-row contact e-margin-top-25'}>
+                <Block className={'brick brick-6'}>
+            
+                    <Text type={'h4'} classes={'e-text-indigo-500'} style={{fontSize:'18px'}}>HIRE US!</Text>
+                    <Divider classes={'thick short e-background-indigo-500'} />
+                    <Text type={'p'} classes={'e-body1 e-text-grey-900 e-padding-top-15'} style={{fontSize:'16px', lineHeight:'18px'}}>
+                      We're a team of passionate coders who believe React.JS and Material Design are amazing. We combined them into Essence as an open source project.  
+                      <br/>
+                      <br/>
+
+Feel free to say "Hi" or give us feedback & suggestions:<br/>
+Twitter: https://twitter.com/Essence_MD <br/>
+Facebook: https://www.facebook.com/getEssence/ <br/>
+Email: hello@getessence.io<br/>
+<br/>
+
+For specific questions we recommend using StackOverflow. Tag your questions with the “essence” tag and our team will offer support with getting started and using Essence: http://stackoverflow.com/questions/tagged/essence 
+<br/>
+<br/>
+If you need to build a custom interface, we're here to help; drop us a line at hello@getessence.io and let's talk the specifics of your project.
+                    </Text>
+                  </Block>
+                  <Block className={'brick brick-6'}>
+                    <Text type={'h4'} classes={'e-text-indigo-500'} style={{fontSize:'18px'}}>CONTACT</Text>
+                    <Divider classes={'thick short e-background-indigo-500'} />
+
+                    <Toast classes={'e-text-green-500'} visible={this.state.visibleOK} delay={3000}>
+                      {this.state.message}
+                    </Toast>
+                    <Toast classes={'e-text-white'} visible={this.state.visibleFailed} delay={8000}>
+                      {this.state.message}
+                    </Toast>
+
+                    <Block classes={'e-body1 e-padding-top-15'}>
+                      <Block className={'e-padding-top-15'}>
+                        <Input type={'email'} ref={(ref) => this.contactEmail = ref} name={'email'} label={'Email address'} />
+                      </Block>
+                      <Block className={'e-padding-top-15'}>
+                        <Input type={'text'} ref={(ref) => this.contactSubject = ref} name={'subject'} label={'Message subject'} />
+                      </Block>
+                      <Block className={'e-padding-top-15'}>
+                        <Input type={'textarea'} ref={(ref) => this.contactMessage = ref} name={'message'} label={'Your message for us'} />
+                      </Block>
+                      <Button label={'SEND MESSAGE'} type={'succes'} className={'raised e-background-indigo-500'} onClick={this.sendMessage.bind(this)} />
+                    </Block>
+                  
+                </Block>
+              </Block>
+                              
+          
         </Block>
       </Block>
     );

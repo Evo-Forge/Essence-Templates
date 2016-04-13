@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ClassNames from 'classnames';
-import { IndexRoute, Router, Route, Link, browserHistory } from 'react-router';
+import { IndexRoute, Router, Route, Link, browserHistory, hashHistory } from 'react-router';
 
 import Tab from 'essence-tab';
 import Icon from 'essence-icon';
@@ -55,9 +55,6 @@ import { AppHome, AppAbout, AppCore , AppContact, AppGetStarted, AppComponents ,
 let EssenceMenu = { 
 	'home': {
 		title: 'Home'
-	},
-	'about': {
-		title: 'About'
 	},
 	'get-started': {
 		title: 'Getting started'
@@ -173,7 +170,6 @@ class App extends React.Component {
     	content: <AppHome />,
   		components: [
   			'home',
-  			'about',
   			'get-started',
   			'contact',
   			'icons',
@@ -296,7 +292,7 @@ class App extends React.Component {
   	return (
   		<Button
   			onClick={this.showSideBar.bind(this)}
-  			className={'flat e-background-deep-purple-900 e-text-white e-left'}
+  			className={'flat e-background-indigo-700 e-text-white e-left'}
   			icon={'navigation-menu'}
   			type={'primary'} />
   	);
@@ -403,9 +399,6 @@ class App extends React.Component {
   		case 'contact':
   			componentContent = <AppContact />;
   			break;
-  		case 'about':
-  			componentContent = <AppAbout />;
-  			break;
   		case 'home':
   		default:
   			componentContent = <AppHome />;
@@ -428,20 +421,15 @@ class App extends React.Component {
   render() {
     return(
     	<div>
-				<AppBar classes={'e-background-deep-purple-900'} style={{overflow: 'hidden'}}>				
-          <Link className={'e-text-white e-left'} to={'templates'}>
+				<AppBar classes={'e-background-indigo-700'} style={{overflow: 'hidden'}}>				
+          <Link className={'e-text-white e-left'} to={'home'}>
             <Image src={'../assets/img/Logo Essence.png'} />
-          </Link>
-          <Text type={'a'} href={'#'} className={'e-text-white e-right'}>
-            <Icon name={"action-search"} className={"e-text-white"} />         
-          </Text>          
-					<Link className={'e-text-white e-right'} to={'contact'}>Hire Us</Link>
-          <Text type={'a'} href={'https://blog.getessence.io/'} target={'_blank'} className={'e-text-white e-right'}>Blog</Text>
-          <Link className={'e-text-white e-right'} to={'templates'}>Templates</Link>
-          <Link className={'e-text-white e-right'} to={'components'}>Components</Link>
-          <Link className={'e-text-white e-right'} to={'core'}>Essence Core</Link>          
-          <Link className={'e-text-white e-right'} to={'get-started'}>Getting Started</Link>
-          <Link className={'e-text-white e-right'} to={'about'}>About</Link>
+          </Link>                 
+					<Link className={'e-text-white e-right'} to={'contact'} style={{fontWeight:'300'}}>Contact</Link>
+          <Text type={'a'} href={'https://blog.getessence.io/'} target={'_blank'} className={'e-text-white e-right'} style={{fontWeight:'300'}}>Blog</Text>
+          <Link className={'e-text-white e-right'} to={'components'} style={{fontWeight:'300'}}>Components</Link>
+          <Link className={'e-text-white e-right'} to={'core'} style={{fontWeight:'300'}}>Essence Core</Link>          
+          <Link className={'e-text-white e-right'} to={'get-started'} style={{fontWeight:'300'}}>Getting Started</Link>
 				</AppBar>
 
 				{this.renderContent()}
@@ -455,8 +443,7 @@ const routes = {
   component: App,
   indexRoute: { component: AppHome },
   childRoutes: [
-    { path: 'home', component: AppHome },
-    { path: 'about', component: AppAbout },    
+    { path: 'home', component: AppHome },   
     { path: 'core', component: AppCore },
     { path: 'components', component: AppComponents },
     { path: 'templates', component: AppTemplates },
@@ -497,6 +484,6 @@ const routes = {
 }
 
 ReactDOM.render(
-	<Router history={browserHistory} routes={routes} />,
+	<Router history={hashHistory} routes={routes} />,
 	document.querySelector('.app')
 );

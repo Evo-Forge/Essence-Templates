@@ -1,9 +1,18 @@
 html,
-body {
+body {	
 	width: 100% !important;
 }
 
+body {
+	overflow-y: scroll; 
+} 
+
+.brick-1, .brick-2, .brick-3, .brick-4, .brick-5, .brick-6, .brick-7, .brick-8, .brick-9, .brick-10, .brick-11, .brick-12 {
+	flex:1 1 auto !important;
+}
+
 .e-appbar {
+	z-index: 7 !important;
 	background: #363166;
 }
 
@@ -34,8 +43,8 @@ pre {
 	border: 1px solid #999;
 	color: #999;
 }
-.e-nav-drawer nav .e-navigation-wrapper .e-nav-header {
-	padding: 6px 16px!important;
+.e-nav-drawer {
+	top:64px !important;
 }
 .e-nav-drawer nav .e-navigation-wrapper .e-list-navigation {
 	padding-top: 0!important;
@@ -45,6 +54,16 @@ pre {
 }
 .e-list-navigation > .e-list-navigation li:hover {
 	background: #e8e8e8!important;
+}
+
+.e-nav-drawer .link {
+	padding-left: 50px;
+	line-height: 48px;
+	font-size: 12px;
+}
+
+.e-nav-drawer .link:hover {
+	background: #eee;
 }
 
 .e-list-navigation .group-list-title {
@@ -61,6 +80,27 @@ pre {
 	vertical-align: middle;
 	opacity: .6;
 }
+
+.card-link {
+	display: block;
+	width: 100%;
+	height: 200px;
+	margin: 10px 10px 0 0 ;
+}
+
+.card-link span {
+	display: block;
+	padding: 20px 0 0 20px;
+	font-size: 30px;
+    font-weight: 100;
+}
+
+.card-link i {
+	line-height: 98px;
+	font-size: 120px;
+	padding: 20px 20px 20px 10px;
+}
+
 .e-search {
 	margin: 0!important;
 	width: 40%;
@@ -114,20 +154,52 @@ pre {
 	padding-bottom: 70px;
 }
 
-.properties {	
-	padding:0 !important; 
-	margin-top: 13px;
+.properties .e-row {
+	padding: 10px 0;
+	border-top: 1px solid #ccc;
 }
 
-.properties table {
-	width: 100%;
+.properties .e-row .tabel-header {
+	font-weight: 500;
 }
-
-.properties table thead, .properties table tr {
-	line-height: 30px;
-	border-bottom: 1px solid #e0e0e0;
-} 
 
 .zIndex1 {
 	z-index: 1 !important;
+}
+
+
+
+@media only screen and (max-width : 760px){
+
+
+	.no-resize .brick-3 {
+		width: 24% !important;
+	}
+	
+	.no-resize .brick-6 {
+		width: 49% !important;
+	}
+}
+
+
+@media (max-width: 768px) {
+	
+	body {
+		margin-top: 56px;
+	}
+}
+
+@media (min-width: 769px) {
+
+	body {
+		margin-top: 64px;
+	}
+	
+	.e-container {
+	    width: 98%;
+	}
+	
+	.with-navigation {
+		padding-left: 240px !important; 		
+	}
 }

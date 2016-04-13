@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ClassNames from 'classnames';
-
+import Image from 'essence-image';
+import NavigationMenu from '../partials/navigation-menu';
 import Tab from 'essence-tab';
 import Button from 'essence-button';
 import {Block, Text, Divider, Utils} from 'essence-core';
@@ -283,9 +284,9 @@ var colorList = {
 		"text": "e-text-indigo-300",
 		"title": "Color Indigo 300"
 	},
-	"e-background-indigo-400": {
-		"background": "e-background-indigo-400",
-		"text": "e-text-indigo-400",
+	"e-background-indigo-500": {
+		"background": "e-background-indigo-500",
+		"text": "e-text-indigo-500",
 		"title": "Color Indigo 400"
 	},
 	"e-background-indigo-500": {
@@ -1274,82 +1275,136 @@ class AppColors extends React.Component {
 
     render() {
         return (
-			<Block classes={ClassNames('e-container e-padding-top-25', this.state.classes)}>
-	        	<Block classes={'e-row'}>
-	        		<Block classes={'brick brick-12'}>
-		        		<Text type={'h3'} classes={'e-text-indigo-400'}>COLORS</Text>
-	        			<Divider classes={'thick short e-background-indigo-400'} />
-	        			<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 e-padding-top-25 e-padding-bottom-25'} style={{fontSize:'14px'}}>
-							Colors are pretty. And Essence has them all, powered by Google.
-						</Text>
+			<Block classes={ClassNames('with-navigation', this.state.classes)}>
+        		<NavigationMenu />
 
-	        			<Card style={{marginBottom: '0'}}>
-			        		<CardContent style={{padding: '0'}}>
-								<Block>
-				        			<Block className={'e-row'}>
-										<Block className={'brick brick-5'} style={{paddingLeft:'16px', paddingTop:'16px'}}>
-											<Text type={'h4'} classes={'e-text-indigo-400'}>LIVE EXAMPLE:</Text>
-											<Divider classes={'thin short e-background-indigo-400'} />
-											<br />
-				        					{this.renderColor()}
-										</Block>
-										<Block className={'brick brick-7'} style={{paddingRight:'16px', paddingTop:'16px'}}>
-											<Text type={'h4'} classes={'e-text-indigo-400'}>HOW TO USE:</Text>
-											<Divider classes={'thin short e-background-indigo-400'} />
+        		<Block classes={'e-background-indigo-500'}>
+		          <Block className={'e-container '}>
+		            <Block className={'e-row'}>
+		              <Block classes={'brick brick-6 e-padding-top-25 '}>
+		                <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>COLORS</Text>
+		                    <Divider classes={'thick medium e-background-white'} />
+		                <Text type={'p'} classes={'e-body1 e-text-white e-padding-top-15 e-padding-bottom-25'} style={{fontSize:'16px'}}>
+		                    Colors are pretty. And Essence has them all, powered by Google.
+		                </Text>
+		              </Block>
+		              <Block classes={'brick brick-6 e-no-padding'}>
+		                <Image className={'e-img-rsp'} src={'./assets/img/footer.png'} alt={'footer'} />
+		              </Block>
+		            </Block>
+		          </Block>
+		        </Block> 
 
-											<pre className={'e-background-grey-100 e-text-black'}>
-												<code>
-													import &#123;Block, Text&#125; from 'essence-core';
-													<br />
-													<br />
-													&lt;Block className=&#123;"{ClassNames(this.state.backgroundColor)}"&#125;&gt;
-													<br />
-													&nbsp;&nbsp;&lt;Text className=&#123;"{ClassNames(this.state.textColor)}"&#125;&gt;
-													<br />
-													&nbsp;&nbsp;&nbsp;&nbsp;This is your text to test the colors for background &amp; text.
-													<br />
-													&nbsp;&nbsp;&lt;/Text&gt;
-													<br />
-													&lt;/Block&gt;
-												</code>
-											</pre>
-										</Block>
-			        				</Block>
-								</Block>
-			        		</CardContent>
-						</Card>
-	        		</Block>
-	        	</Block>
+	        	<Block className={'e-container'}>
+		        	<Block className={'e-row e-margin-top-25'}>
+		        		<Block classes={'brick brick-4'} style={{overflow:'hidden'}}>	
+							<Text type={'h4'} classes={'e-text-indigo-500'}>LIVE EXAMPLE</Text>
+		    				<Divider classes={'thick short e-background-indigo-500'} />							
+											    	
+							<Block className={'e-row e-body1 e-text-grey-700 e-padding-top-100'}>
+								<Block className={'e-text-grey-900 brick brick-12 e-no-margin e-h-center'}>
+									<Block className={'e-text-center'}>
+										{this.renderColor()}
+									</Block>
+								</Block>						
+							</Block>								
+						</Block>
+						<Block classes={'brick brick-8'}>
+							<Text type={'h4'} classes={'e-text-indigo-500'}>USE COMPONENTS</Text>
+	        				<Divider classes={'thick short e-background-indigo-500 e-margin-bottom-25'} />		        						        				
 
-        		<Block classes={'e-row'}>
-        			<Block classes={'brick brick-12'}>
-        				<Block className={'e-padding-bottom-25'}>
-		        			<Text type={'h4'} classes={'e-text-indigo-400'}>CHOOSE YOUR COLOURS:</Text>
-		    				<Divider classes={'thin short e-background-indigo-400'} />
-			        		<Tab data={{
-									'header': [{
-											'context': (<Text>Text Color</Text>)
-										},{
-											'context': (<Text>Background Color</Text>)
-										}
-									],
-									'rows': [ 
-										(
-											<Block classes={'colors'}>
-												{this.renderTextColors()}
-											</Block>
-										),
-										(
-											<Block classes={'colors'}>
-												{this.renderBackgroundColors()}
-											</Block>
-										)
-									]
-								}}
-								classes={'e-background-indigo-400 e-text-grey-50'} 
-								indicator={'e-background-grey-50'}/>
-		    			</Block>
-        			</Block>
+	        				<Text type={'p'} classes={'e-body1 e-text-grey-900 padding-top-bottom-10 e-no-margin'}>
+								Icon component has the following option:
+								<br />
+								<br />
+								1. <strong>name</strong>: string from the icons list
+							</Text>
+
+							<pre className={'e-background-orange-100 e-text-black e-no-margin'} style={{border:'1px solid #FFB74D', lineHeight:'20px'}}>
+			    				<code>
+									import &#123;Block, Text&#125; from 'essence-core';
+									<br />
+									<br />
+									&lt;Block className=&#123;"{ClassNames(this.state.backgroundColor)}"&#125;&gt;
+									<br />
+									&nbsp;&nbsp;&lt;Text className=&#123;"{ClassNames(this.state.textColor)}"&#125;&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&nbsp;This is your text to test the colors for background &amp; text.
+									<br />
+									&nbsp;&nbsp;&lt;/Text&gt;
+									<br />
+									&lt;/Block&gt;								
+			    				</code>
+							</pre>
+						</Block>
+	      	        	
+	        			<Block classes={'brick brick-12'}>
+	        				<Block className={'e-padding-bottom-25'}>
+			        			<Text type={'h4'} classes={'e-text-indigo-500'}>CHOOSE YOUR COLOURS:</Text>
+			    				<Divider classes={'thin short e-background-indigo-500'} />
+				        		<Tab data={{
+										'header': [{
+												'context': (<Text>Text Color</Text>)
+											},{
+												'context': (<Text>Background Color</Text>)
+											}
+										],
+										'rows': [ 
+											(
+												<Block classes={'colors'}>
+													{this.renderTextColors()}
+												</Block>
+											),
+											(
+												<Block classes={'colors'}>
+													{this.renderBackgroundColors()}
+												</Block>
+											)
+										]
+									}}
+									classes={'e-background-indigo-500 e-text-grey-50'} 
+									indicator={'e-background-grey-50'}/>
+			    			</Block>
+	        			</Block>
+	        			<Block classes={'brick brick-12 properties e-margin-bottom-25'}>	
+							<Text type={'h4'} classes={'e-text-indigo-500 e-margin-top-15'}>PROPERTIES</Text>
+	        				<Divider classes={'thick short e-background-indigo-500 e-margin-bottom-25'} />
+
+	        				<Block classes={'e-row tabel-header no-resize e-body1 e-no-margin'}>	
+	        					<Block classes={'brick brick-3 e-no-margin e-text-grey-700'}>	
+	        						Name
+	        					</Block>
+	        					<Block classes={'brick brick-3 e-no-margin e-text-grey-700'}>	
+	        						Default
+	        					</Block>
+	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-700'}>	
+									Description
+	        					</Block>
+	        				</Block>
+	        				<Block classes={'e-row tabel-line no-resize e-body1 e-no-margin'}>	
+	        					<Block classes={'brick brick-3 e-no-margin e-text-indigo-700'}>	
+	        						text color
+	        					</Block>
+	        					<Block classes={'brick brick-3 e-no-margin e-text-orange-700'}>	
+	        						classes=&#123;'e-background-white'&#125;
+	        					</Block>
+	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-900'}>	
+									From backgroundColor tabel
+	        					</Block>
+	        				</Block>	
+	        				<Block classes={'e-row tabel-line no-resize e-body1 e-no-margin'}>	
+	        					<Block classes={'brick brick-3 e-no-margin e-text-indigo-700'}>	
+	        						background color
+	        					</Block>
+	        					<Block classes={'brick brick-3 e-no-margin e-text-orange-700'}>	
+	        						classes=&#123;'e-text-black'&#125;
+	        					</Block>
+	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-900'}>	
+									From textColor tabel 
+	        					</Block>
+	        				</Block>        						        				
+						</Block>
+					</Block>
         		</Block>
 			</Block>
 		);

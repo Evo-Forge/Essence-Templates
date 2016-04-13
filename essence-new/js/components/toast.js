@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ClassNames from 'classnames';
-
+import Image from 'essence-image';
+import NavigationMenu from '../partials/navigation-menu';
 import Btn from 'essence-button';
 import Input from 'essence-input';
 import Toast from 'essence-toast';
@@ -63,14 +64,30 @@ class AppToast extends React.Component {
 
     render() {
         return (
-			<Block classes={ClassNames('e-container e-padding-top-25', this.state.classes)}>
+			<Block classes={ClassNames('with-navigation', this.state.classes)}>
+        		<NavigationMenu />
+
+        		<Block classes={'e-background-indigo-500'}>
+		          <Block className={'e-container '}>
+		            <Block className={'e-row'}>
+		              <Block classes={'brick brick-6 e-padding-top-25 '}>
+		                <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>TOASTS</Text>
+		                    <Divider classes={'thick medium e-background-white'} />
+		                <Text type={'p'} classes={'e-body1 e-text-white e-padding-top-15 e-padding-bottom-25'} style={{fontSize:'16px'}}>
+		                   Remember those confirmation messages from long time ago? They’re now called snackbars and toasts and they come with rules. Head onto Google to check out how to use them. Then check out the below examples hot to integrate them from Essence.
+		                </Text>
+		              </Block>
+		              <Block classes={'brick brick-6 e-no-padding'}>
+		                <Image className={'e-img-rsp'} src={'./assets/img/footer.png'} alt={'footer'} />
+		              </Block>
+		            </Block>
+		          </Block>
+		        </Block>
+
+
 				<Block className={'e-row'}>
 					<Block classes={'brick brick-12'}>
-						<Text type={'h3'} classes={'e-text-indigo-400'}>TOASTS</Text>
-	        			<Divider classes={'thick short e-background-indigo-400'} />
-						<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 e-padding-top-25 e-padding-bottom-25'} style={{fontSize:'14px'}}>
-							Remember those confirmation messages from long time ago? They’re now called snackbars and toasts and they come with rules. Head onto Google to check out how to use them. Then check out the below examples hot to integrate them from Essence.
-						</Text>
+					
 
 			        	<Card>
 			        		<CardContent>

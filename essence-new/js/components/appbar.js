@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ClassNames from 'classnames';
-
+import Image from 'essence-image';
+import NavigationMenu from '../partials/navigation-menu';
 import Menu from 'essence-menu';
 import AppBar from 'essence-appbar';
 import {Block, Text, Divider} from 'essence-core';
@@ -28,15 +29,29 @@ class AppBarComponent extends React.Component {
 
     render() {
         return (
-			<Block classes={ClassNames('e-container e-padding-top-25', this.state.classes)}>
+			<Block classes={ClassNames('with-navigation', this.state.classes)}>
+        		<NavigationMenu />
+
+        		<Block classes={'e-background-indigo-500'}>
+		          <Block className={'e-container '}>
+		            <Block className={'e-row'}>
+		              <Block classes={'brick brick-6 e-padding-top-25 '}>
+		                <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>APPBAR</Text>
+		                    <Divider classes={'thick medium e-background-white'} />
+		                <Text type={'p'} classes={'e-body1 e-text-white e-padding-top-15 e-padding-bottom-25'} style={{fontSize:'16px'}}>
+		                    It’s never been more fun to create an appbar with button and navigation and whatever. Start with the .e-appbar class then add buttons, menus and whatever you need.
+		                </Text>
+		              </Block>
+		              <Block classes={'brick brick-6 e-no-padding'}>
+		                <Image className={'e-img-rsp'} src={'./assets/img/footer.png'} alt={'footer'} />
+		              </Block>
+		            </Block>
+		          </Block>
+		        </Block>
+
 				<Block classes={'e-row'}>
 					<Block classes={'brick brick-12'}>
-					<Text type={'h3'} classes={'e-text-indigo-400'}>APPBAR</Text>
-        			<Divider classes={'thick short e-background-indigo-400'} />
-					<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 e-padding-top-25 e-padding-bottom-25'} style={{fontSize:'14px'}}
-					>
-						It’s never been more fun to create an appbar with button and navigation and whatever. Start with the .e-appbar class then add buttons, menus and whatever you need.
-					</Text>
+					
 
 		        	<Card>
 		        		<CardContent>
