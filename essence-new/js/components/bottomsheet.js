@@ -95,7 +95,7 @@ class AppBottomSheet extends React.Component {
 									<Block className={'e-text-grey-900 brick brick-12 e-no-margin'}>
 										<Block className={'e-text-center'}>
 											<Btn 
-												type={'succes'} 
+												type={'success'} 
 												label={'Show Simple Bottom Sheets'}
 												onClick={this.showSimple.bind(this)} 
 												className={'flat e-background-indigo-600'} />										

@@ -570,7 +570,7 @@ class AppCoreRippleInk extends React.Component {
 									<Btn 
 										label={'Ripple Effect'}
 										ripple={true}
-										type={'succes'}
+										type={'success'}
 										className={'raised e-background-indigo-600'} />
 								</Block>						
 							</Block>								
@@ -716,7 +716,7 @@ class AppCoreTextTypography extends React.Component {
 			typeList.push(
 				<Btn 
 					label={type}
-					type={ (type === self.state.active.type) ? 'info' : 'succes' }
+					type={ (type === self.state.active.type) ? 'info' : 'success' }
 					ripple={false}
 					className={ClassNames('flat', (type === self.state.active.type) ? 'e-background-indigo-600' : 'e-background-indigo-500')}
 					key={'text-type-' + type}
@@ -738,7 +738,7 @@ class AppCoreTextTypography extends React.Component {
 			positionList.push(
 				<Btn 
 					label={position}
-					type={ (position === self.state.active.position) ? 'info' : 'succes'}
+					type={ (position === self.state.active.position) ? 'info' : 'success'}
 					ripple={false}
 					className={ClassNames('flat', (position === self.state.active.position) ? 'e-background-indigo-600' : 'e-background-indigo-500')}
 					key={'text-position-' + position.toLowerCase()}
@@ -760,7 +760,7 @@ class AppCoreTextTypography extends React.Component {
 			typographList.push(
 				<Btn 
 					label={typograph}
-					type={ (typograph === self.state.active.typo) ? 'info' : 'succes'}
+					type={ (typograph === self.state.active.typo) ? 'info' : 'success'}
 					ripple={false}
 					className={ClassNames('flat', (typograph === self.state.active.typo) ? 'e-background-indigo-600' : 'e-background-indigo-500')}
 					key={'text-typograph-' + typograph.toLowerCase()}

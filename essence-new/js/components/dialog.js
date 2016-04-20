@@ -13,7 +13,7 @@ class AppDialog extends React.Component {
         super(props);
         this.state = {
         	open: false,
-            classes: ClassNames(
+            classes: ClassNames( 
                 this.props.classes,
                 this.props.className
             )
@@ -77,16 +77,18 @@ class AppDialog extends React.Component {
                 						onClick={this.showDialog.bind(this)} 
                 						className={'flat e-background-indigo-600'} />
 
-									<Dialog dismissible={false} visible={this.state.open} onOpen={this.dialogOpened.bind(this)} onClose={this.dialogClosed.bind(this)}>
-										<DialogHeader className={'e-text-right'} style={{paddingBottom:'0', position:'relative'}}>
-											<Btn icon={'navigation-close'} onClick={this.hideDialog.bind(this)} className={'flat e-background-white'} style={{position:'absolute', right:'-24px', top:'-24px', zIndex:'1'}}/>
+                					<Dialog visible={this.state.open} onOpen={this.dialogOpened.bind(this)} onClose={this.dialogClosed.bind(this)}>
+										<DialogHeader className={'e-text-left'}>
+										  		Dialog Header with className=&#123;'e-text-left'&#125;
 										</DialogHeader>
-										<DialogContent>
-											This is the Dialog content
+
+										<DialogContent className={'e-text-center e-text-indigo-600'}>
+											 	Dialog content with className=&#123;'e-text-center e-text-indigo-600'&#125;
 										</DialogContent>
+
 										<DialogFooter>
-											<Btn type={'succes'} label={'OK'} className={'flat e-background-indigo-600'} />
-											<Btn type={'info'} label={'Cancel'} onClick={this.hideDialog.bind(this)}  className={'flat e-background-indigo-600'} />
+										  <Btn type={'success'} label={'OK'} onClick={this.hideDialog.bind(this)} className={'flat e-background-indigo-600'} />
+										  <Btn type={'info'} label={'Cancel'} onClick={this.hideDialog.bind(this)} className={'flat e-background-indigo-600'} />
 										</DialogFooter>
 									</Dialog>
 								</Block>						
@@ -147,25 +149,25 @@ class AppDialog extends React.Component {
 									&#125;
 									<br />
 									<br />
-									&lt;Dialog dismissible=&#123;false&#125; visible=&#123;this.state.open&#125; onOpen=&#123;this.dialogOpened.bind(this)&#125; onClose=&#123;this.dialogClosed.bind(this)&#125;&gt;
+									&lt;Dialog visible=&#123;this.state.open&#125; onOpen=&#123;this.dialogOpened.bind(this)&#125; onClose=&#123;this.dialogClosed.bind(this)&#125;&gt;
 									<br />
-									&nbsp;&lt;DialogHeader className=&#123;'e-text-right'&#125;&gt;
+									&nbsp;&lt;DialogHeader className=&#123;'e-text-left'&#125;&gt;
 									<br />
-									&nbsp;&nbsp;&lt;Btn icon=&#123;'navigation-close'&#125; onClick=&#123;this.hideDialog.bind(this)&#125; className=&#123;'flat e-background-white'&#125; /&gt;
+									&nbsp;&nbsp;Dialog Header with className=&#123;'e-text-left'&#125;
 									<br />
-									&nbsp;&lt;/DialogHeader&gt;
+									&nbsp;&lt;/DialogHeader className=&#123;'e-text-left'&#125;&gt;
 									<br />
 									<br />
 									&nbsp;&lt;DialogContent&gt;
 									<br />
-									&nbsp;&nbsp;This is the Dialog content
+									&nbsp;&nbsp;Dialog content with className=&#123;'e-text-center e-text-indigo-600'&#125;
 									<br />
 									&nbsp;&lt;/DialogContent&gt;
 									<br />
 									<br />
 									&nbsp;&lt;DialogFooter&gt;
 									<br />
-									&nbsp;&nbsp;&lt;Btn type=&#123;'succes'&#125; label=&#123;'OK'&#125; className=&#123;'flat'&#125; /&gt;
+									&nbsp;&nbsp;&lt;Btn type=&#123;'success'&#125; label=&#123;'OK'&#125; onClick=&#123;this.hideDialog.bind(this)&#125; className=&#123;'flat'&#125; /&gt;
 									<br />
 									&nbsp;&nbsp;&lt;Btn type=&#123;'info'&#125; label=&#123;'Cancel'&#125; onClick=&#123;this.hideDialog.bind(this)&#125; className=&#123;'flat'&#125; /&gt;
 									<br />

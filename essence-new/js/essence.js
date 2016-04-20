@@ -485,6 +485,6 @@ const routes = {
 }
 
 ReactDOM.render(
-	<Router history={browserHistory} routes={routes} />,
+	<Router history={hashHistory} routes={routes} />,
 	document.querySelector('.app')
 );

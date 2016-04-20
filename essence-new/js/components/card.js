@@ -60,7 +60,7 @@ class AppCard extends React.Component {
 											</Text>
 										</CardContent>
 										<CardFooter>
-											<Btn label={'OK'} type={'succes'} className={'flat e-left e-background-indigo-600'} />
+											<Btn label={'OK'} type={'success'} className={'flat e-left e-background-indigo-600'} />
 											<Btn label={'SKIP'} type={'info'} className={'flat e-right e-background-grey-700'} />
 										</CardFooter>
 									</Card>

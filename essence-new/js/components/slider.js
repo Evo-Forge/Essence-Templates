@@ -7,7 +7,6 @@ import ClassNames from 'classnames';
 import Footer from '../partials/footer';
 import {Block, Text, Divider} from 'essence-core';
 import NavigationMenu from '../partials/navigation-menu';
-import {Dialog, DialogHeader, DialogContent, DialogFooter} from 'essence-dialog';
 
 class AppSlider extends React.Component {
 	constructor(props) {
@@ -38,18 +37,6 @@ class AppSlider extends React.Component {
     	this.setState({
     		b: event.currentTarget.value.toString()
     	})
-    }
-
-    showDialog() {
-        this.setState({
-            open: true
-        });
-    }
-
-    hideDialog() {
-        this.setState({
-            open: false
-        });
     }
 
     renderRGB() {

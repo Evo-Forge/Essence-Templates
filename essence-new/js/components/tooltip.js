@@ -93,7 +93,7 @@ class AppTooltip extends React.Component {
 									<Block className={'e-text-center e-padding-top-50'}>
 										<Btn 
 											id={'tooltipButton'} 
-											type={'succes'} 
+											type={'success'} 
 											label={'Tooltip by ID'}
 											onMouseOver={this.showTooltipByID.bind(this)} 
 											onMouseOut={this.hideTooltipByID.bind(this)} 

@@ -13,7 +13,7 @@ class AppButton extends React.Component {
 	constructor(props) {
         super(props);
         this.state = {
-        	buttonType: 'succes',
+        	buttonType: 'success',
         	buttonColor: 'raised',
         	buttonRipple: false,
         	buttonDisabled: false,
@@ -51,11 +51,11 @@ class AppButton extends React.Component {
 				type={'primary'} />),
 			(<Btn 
 				key={'button-raised-success'}
-				onClick={this.changeButton.bind(this, {type: 'succes', color: 'raised'} )}
+				onClick={this.changeButton.bind(this, {type: 'success', color: 'raised'} )}
 				ripple={false}
 				className={'raised'} 
 				label={'SUCCESS'}
-				type={'succes'} />),
+				type={'success'} />),
 			(<Btn 
 				key={'button-raised-info'}
 				onClick={this.changeButton.bind(this, {type: 'info', color: 'raised'} )}
@@ -100,11 +100,11 @@ class AppButton extends React.Component {
 				type={'primary'} />),
 			(<Btn 
 				key={'button-flat-success'}
-				onClick={this.changeButton.bind(this, {type: 'succes', color: 'flat'} )}
+				onClick={this.changeButton.bind(this, {type: 'success', color: 'flat'} )}
 				ripple={false}
 				className={'flat'} 
 				label={'SUCCESS'}
-				type={'succes'} />),
+				type={'success'} />),
 			(<Btn 
 				key={'button-flat-info'}
 				onClick={this.changeButton.bind(this, {type: 'info', color: 'flat'} )}
