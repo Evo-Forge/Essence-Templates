@@ -1,8 +1,9 @@
 import React from 'react';
+import Image from 'essence-image';
 import ClassNames from 'classnames';
+import Footer from '../partials/footer';
 import {List, ListItem} from 'essence-list';
 import {Block, Text, Divider} from 'essence-core';
-import Image from 'essence-image';
 import NavigationMenu from '../partials/navigation-menu';
 
 class AppGetStarted extends React.Component {
@@ -28,7 +29,7 @@ class AppGetStarted extends React.Component {
                 <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>Get Started with Essence</Text>
                     <Divider classes={'thick medium e-background-white'} />
                 <Text type={'p'} classes={'e-body1 e-text-white e-padding-top-15 e-padding-bottom-25'} style={{fontSize:'14px'}}>
-                  Learn how to use Essence for your application
+                  Learn how to install & use Essence for your application.
                 </Text>
               </Block>
               <Block classes={'brick brick-6 e-no-padding'}>
@@ -44,7 +45,7 @@ class AppGetStarted extends React.Component {
               <Text type={'h4'} classes={'e-text-indigo-500'}>INSTALL:</Text>
               <Divider classes={'thin short e-background-indigo-500'} />
               <Text type={'p'} classes={'e-body1 e-text-grey-900 padding-top-bottom-10 e-no-margin'}>
-                To install all Essence components you can use the command bellow.
+                To install all Essence components, use the command bellow:
               </Text>
             </Block>
             <Block className={'brick brick-12'}>
@@ -60,7 +61,7 @@ class AppGetStarted extends React.Component {
               <Text type={'h4'} classes={'e-text-indigo-500'}>USE COMPONENTS:</Text>
               <Divider classes={'thin short e-background-indigo-500'} />
               <Text type={'p'} classes={'e-body1 e-text-grey-900 padding-top-bottom-10 e-no-margin'}>
-                To install individual components please see the side menu. Each component has a live example and a "How To Use" instructions.
+                To install individual components, please see the side menu. Each component has a live example and "How To Use" instructions.
               </Text>
             </Block>
             <Block className={'brick brick-12'}>
@@ -78,11 +79,11 @@ class AppGetStarted extends React.Component {
               <Text type={'p'} classes={'e-body1 e-text-grey-900 padding-top-bottom-10 e-no-margin'}>
                 1. create a copy of the boilerplate template
                 <br />
-                2. choose a unique name for the template
+                2. choose a unique name for your new template
                 <br />
-                3. use the Essence components & copy/paste the component code from "How to use"
+                3. install/import the Essence components, then use or customize them as you wish 
                 <br />
-                4. run the command bellow & replace the <u>your-template-name</u> with the name for the template
+                4. run the command bellow & replace the <em>your-template-name</em> with the name of your template
                 <br />
               </Text>
             </Block>
@@ -133,6 +134,7 @@ class AppGetStarted extends React.Component {
             </Block>
           </Block>          
         </Block>
+        <Footer />
       </Block>
     );
   }

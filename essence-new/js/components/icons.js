@@ -1,15 +1,15 @@
-import _ from 'lodash/collection';
 import React from 'react';
-import ReactDOM from 'react-dom';
-import ClassNames from 'classnames';
-import Image from 'essence-image';
-import NavigationMenu from '../partials/navigation-menu';
 import Tab from 'essence-tab';
 import Icon from 'essence-icon';
+import ReactDOM from 'react-dom';
+import _ from 'lodash/collection';
 import Input from 'essence-input';
+import Image from 'essence-image';
+import ClassNames from 'classnames';
 import Button from 'essence-button';
+import Footer from '../partials/footer';
+import NavigationMenu from '../partials/navigation-menu';
 import {Block, Text, Divider, Utils} from 'essence-core';
-import {Card, CardHeader, CardContent, CardFooter} from 'essence-card';
 
 import {colorList} from './colors.js';
 
@@ -3111,11 +3111,11 @@ class AppIcons extends React.Component {
 		                <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>ICONS</Text>
 		                    <Divider classes={'thick medium e-background-white'} />
 		                <Text type={'p'} classes={'e-body1 e-text-white e-padding-top-15 e-padding-bottom-25'} style={{fontSize:'16px'}}>
-		                    We’ve included hundreds of icons that you can freely use for whatever your mind can conceive.
+		                    In material design, icons are simple, modern, friendly and sometimes quirky.  Each icon is reduced to its minimal form, with every idea edited to its essence. Essence includes hundreds of icons that you can freely use so you can get creative.
 		                </Text>
 		              </Block>
 		              <Block classes={'brick brick-6 e-no-padding'}>
-		                <Image className={'e-img-rsp'} src={'./assets/img/footer.png'} alt={'footer'} />
+		                <Image className={'e-img-rsp'} src={'/assets/img/footer.png'} alt={'footer'} />
 		              </Block>
 		            </Block>
 		          </Block>
@@ -3127,7 +3127,7 @@ class AppIcons extends React.Component {
 							<Text type={'h4'} classes={'e-text-indigo-500'}>LIVE EXAMPLE</Text>
 		    				<Divider classes={'thick short e-background-indigo-500'} />							
 											    	
-							<Block className={'e-row e-body1 e-text-grey-700 e-padding-top-15'}>
+							<Block className={'e-row e-body1 e-text-grey-700'}>
 								<Block className={'e-text-grey-900 brick brick-12 e-no-margin e-h-center'}>
 									<Block className={'e-text-center'}>
 										{this.renderIcon()}
@@ -3140,10 +3140,7 @@ class AppIcons extends React.Component {
 	        				<Divider classes={'thick short e-background-indigo-500 e-margin-bottom-25'} />		        						        				
 
 	        				<Text type={'p'} classes={'e-body1 e-text-grey-900 padding-top-bottom-10 e-no-margin'}>
-								Icon component has the following option:
-								<br />
-								<br />
-								1. <strong>name</strong>: string from the icons list
+								Create a new ReactJS file with the code bellow.
 							</Text>
 
 							<pre className={'e-background-orange-100 e-text-black e-no-margin'} style={{border:'1px solid #FFB74D', lineHeight:'20px'}}>
@@ -3157,7 +3154,7 @@ class AppIcons extends React.Component {
 						</Block>
 						<Block className={'brick brick-12'}>
 							<Text type={'h4'} classes={'e-text-indigo-500'}>CHOOSE YOUR ICON:</Text>
-			        		<Divider classes={'thin short e-background-indigo-500'} />
+			        		<Divider classes={'thick short e-background-indigo-500'} />
 							
 							<Tab 
 								data={{
@@ -3206,7 +3203,7 @@ class AppIcons extends React.Component {
 	        						name
 	        					</Block>
 	        					<Block classes={'brick brick-3 e-no-margin e-text-orange-700'}>	
-	        						classes=&#123;'  '&#125;
+	        						null
 	        					</Block>
 	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-900'}>	
 									String for icon name
@@ -3217,15 +3214,16 @@ class AppIcons extends React.Component {
 	        						color
 	        					</Block>
 	        					<Block classes={'brick brick-3 e-no-margin e-text-orange-700'}>	
-	        						classes=&#123;'e-text-black'&#125;
+	        						null
 	        					</Block>
 	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-900'}>	
-									For backgroundColor 
+									For background color 
 	        					</Block>
 	        				</Block>        						        				
 						</Block>
 	        		</Block>
-	        	</Block>				
+	        	</Block>	
+	        	<Footer />			
 			</Block>
 		);
     }

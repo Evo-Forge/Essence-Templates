@@ -106,7 +106,7 @@ class AppHome extends React.Component {
               </Text> 
               <Divider classes={'thick short e-background-indigo-700  e-margin-bottom-15'}/>
               <Text type={'h3'} classes={'e-body-1 e-text-grey-600'} style={{fontSize:'16px', lineHeight:'18px'}}>
-                Scaling great design and bringing it to everyone is hard. The new Material Design philosophy makes it easier for developers to do the right thing, while still leaving freedom for designers to express their creativity. Essence implements Material Design principles and visual standards that bring a unified experience across platforms and device sizes, ratios and pixel densities.
+                Scaling great design and bringing it to everyone is hard. The new Material Design philosophy makes it easier for developers to do the right thing, while still leaving freedom for designers to express their creativity. Essence implements Material Design principles and visual standards to bring a unified experience across platforms and device sizes, ratios and pixel densities.
               </Text> 
               </Block>
             </Block>
@@ -206,7 +206,7 @@ class AppHome extends React.Component {
                    <Divider classes={'thin medium e-background-white  e-margin-bottom-15'}/>
                    <Link className={'e-text-white'} to={'get-started'} style={{display:'block', lineHeight:'30px' }}>Getting Started</Link>
                    <Link className={'e-text-white'} to={'core'} style={{display:'block', lineHeight:'30px'}}>Essence Core</Link>
-                   <Link className={'e-text-white'} to={'components'} style={{display:'block', lineHeight:'30px'}}>Components</Link>
+                   <Link className={'e-text-white'} to={'react-components'} style={{display:'block', lineHeight:'30px'}}>Components</Link>
                   </Block>
                   <Block classes={'brick brick-4'}>  
                    <Link className={'e-text-white e-text-uppercase'} to={'#'} style={{display:'block'}}>Support</Link>                       
@@ -231,7 +231,7 @@ class AppHome extends React.Component {
                       <Link className={'e-text-white'} to={'https://github.com/Evo-Forge/Essence'} target={'_blank'} style={{marginRight:'20px'}}>
                          <Image className={'e-img-rsp'} src={'./assets/img/s-github.png'} alt={'github'} />
                       </Link>
-                      <Link className={'e-text-white'} to={'https://blog.getessence.io/'} target={'_blank'} style={{marginRight:'20px'}}>
+                      <Link classes={'e-text-white'} to={'https://blog.getessence.io/'} target={'_blank'}>
                          <Image className={'e-img-rsp'} src={'./assets/img/s-medium.png'} alt={'medium'} />
                       </Link>
                     </Block>

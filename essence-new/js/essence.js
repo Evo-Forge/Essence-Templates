@@ -422,14 +422,14 @@ class App extends React.Component {
     return(
     	<div>
 				<AppBar classes={'e-background-indigo-700'} style={{overflow: 'hidden'}}>				
-          <Link className={'e-text-white e-left'} to={'home'}>
-            <Image src={'../assets/img/Logo Essence.png'} />
+          <Link className={'e-text-white e-left'} to={'/home'}>
+            <Image src={'/assets/img/Logo Essence.png'} />
           </Link>                 
-					<Link className={'e-text-white e-right'} to={'contact'} style={{fontWeight:'300'}}>Contact</Link>
+					<Link className={'e-text-white e-right'} to={'/contact'} style={{fontWeight:'300'}}>Contact</Link>
           <Text type={'a'} href={'https://blog.getessence.io/'} target={'_blank'} className={'e-text-white e-right'} style={{fontWeight:'300'}}>Blog</Text>
-          <Link className={'e-text-white e-right'} to={'components'} style={{fontWeight:'300'}}>Components</Link>
-          <Link className={'e-text-white e-right'} to={'core'} style={{fontWeight:'300'}}>Essence Core</Link>          
-          <Link className={'e-text-white e-right'} to={'get-started'} style={{fontWeight:'300'}}>Getting Started</Link>
+          <Link className={'e-text-white e-right'} to={'/react-components'} style={{fontWeight:'300'}}>Components</Link>
+          <Link className={'e-text-white e-right'} to={'/core'} style={{fontWeight:'300'}}>Essence Core</Link>          
+          <Link className={'e-text-white e-right'} to={'/get-started'} style={{fontWeight:'300'}}>Getting Started</Link>
 				</AppBar>
 
 				{this.renderContent()}
@@ -444,46 +444,47 @@ const routes = {
   indexRoute: { component: AppHome },
   childRoutes: [
     { path: 'home', component: AppHome },   
-    { path: 'core', component: AppCore },
-    { path: 'components', component: AppComponents },
-    { path: 'templates', component: AppTemplates },
-    { path: 'core', component: AppCore },
     { path: 'contact', component: AppContact },
     { path: 'get-started', component: AppGetStarted },    
-    { path: 'icons', component: AppIcons },
-    { path: 'colors', component: AppColors },
-    { path: 'appbar', component: AppBarComponent },
-    { path: 'bottomsheet', component: AppBottomSheet },
-    { path: 'button', component: AppButton },
-    { path: 'card', component: AppCard },
-    { path: 'chip', component: AppChip },
-    { path: 'core-grid-system', component: AppCoreGridSystem },
-    { path: 'core-divider', component: AppCoreDivider },
-    { path: 'core-ripple-ink', component: AppCoreRippleInk },
-    { path: 'core-text-typography', component: AppCoreTextTypography },
-    { path: 'core-utilities', component: AppCoreUtilities },
-    { path: 'dialog', component: AppDialog },
-    { path: 'datatable', component: AppDataTable },
-    { path: 'image', component: AppImage },
-    { path: 'input', component: AppInput },
-    { path: 'list', component: AppList },
-    { path: 'menu', component: AppMenu },
-    { path: 'navigation', component: AppNavigation },
-    { path: 'paper', component: AppPaper },
-    { path: 'progress', component: AppProgress },
-    { path: 'slider', component: AppSlider },
-    { path: 'snackbar', component: AppSnackBar },
-    { path: 'stepper', component: AppStepper },
-    { path: 'switch', component: AppSwitch },
-    { path: 'toast', component: AppToast },
-    { path: 'tab', component: AppTab },
-    { path: 'touchpad', component: AppTouchPad },
-    { path: 'toolbar', component: AppToolBar },
-    { path: 'tooltip', component: AppTooltip },
+    { path: 'templates', component: AppTemplates },
+    
+    { path: 'core', component: AppCore },
+    { path: 'core/grid-system', component: AppCoreGridSystem },
+    { path: 'core/divider', component: AppCoreDivider },
+    { path: 'core/ripple-ink', component: AppCoreRippleInk },
+    { path: 'core/text-typography', component: AppCoreTextTypography },
+    { path: 'core/utilities', component: AppCoreUtilities },
+
+    { path: 'react-components', component: AppComponents },
+    { path: 'react-component/icons', component: AppIcons },
+    { path: 'react-component/colors', component: AppColors },
+    { path: 'react-component/appbar', component: AppBarComponent },
+    { path: 'react-component/bottomsheets', component: AppBottomSheet },
+    { path: 'react-component/buttons', component: AppButton },
+    { path: 'react-component/cards', component: AppCard },
+    { path: 'react-component/chips', component: AppChip },
+    { path: 'react-component/dialogs', component: AppDialog },
+    { path: 'react-component/datatables', component: AppDataTable },
+    { path: 'react-component/images', component: AppImage },
+    { path: 'react-component/inputs', component: AppInput },
+    { path: 'react-component/lists', component: AppList },
+    { path: 'react-component/menus', component: AppMenu },
+    { path: 'react-component/navigation', component: AppNavigation },
+    { path: 'react-component/paper', component: AppPaper },
+    { path: 'react-component/progress', component: AppProgress },
+    { path: 'react-component/sliders', component: AppSlider },
+    { path: 'react-component/snackbars', component: AppSnackBar },
+    { path: 'react-component/steppers', component: AppStepper },
+    { path: 'react-component/switches', component: AppSwitch },
+    { path: 'react-component/toasts', component: AppToast },
+    { path: 'react-component/tabs', component: AppTab },
+    { path: 'react-component/touchpad', component: AppTouchPad },
+    { path: 'react-component/toolbars', component: AppToolBar },
+    { path: 'react-component/tooltips', component: AppTooltip },
   ]
 }
 
 ReactDOM.render(
-	<Router history={hashHistory} routes={routes} />,
+	<Router history={browserHistory} routes={routes} />,
 	document.querySelector('.app')
 );

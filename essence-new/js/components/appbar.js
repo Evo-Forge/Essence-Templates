@@ -1,12 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import ClassNames from 'classnames';
-import Image from 'essence-image';
-import NavigationMenu from '../partials/navigation-menu';
 import Menu from 'essence-menu';
+import ReactDOM from 'react-dom';
+import Image from 'essence-image';
 import AppBar from 'essence-appbar';
+import ClassNames from 'classnames';
+import Footer from '../partials/footer';
 import {Block, Text, Divider} from 'essence-core';
-import {Card, CardHeader, CardContent, CardFooter} from 'essence-card';
+import NavigationMenu from '../partials/navigation-menu';
 
 class AppBarComponent extends React.Component {
 	constructor(props) {
@@ -39,30 +39,27 @@ class AppBarComponent extends React.Component {
 		                <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>APPBAR</Text>
 		                    <Divider classes={'thick medium e-background-white'} />
 		                <Text type={'p'} classes={'e-body1 e-text-white e-padding-top-15 e-padding-bottom-25'} style={{fontSize:'16px'}}>
-		                    It’s never been more fun to create an appbar with button and navigation and whatever. Start with the .e-appbar class then add buttons, menus and whatever you need.
+		                    A special kind of toolbar that’s used for branding, navigation, search, and actions.
 		                </Text>
 		              </Block>
 		              <Block classes={'brick brick-6 e-no-padding'}>
-		                <Image className={'e-img-rsp'} src={'./assets/img/footer.png'} alt={'footer'} />
+		                <Image className={'e-img-rsp'} src={'/assets/img/footer.png'} alt={'footer'} />
 		              </Block>
 		            </Block>
 		          </Block>
 		        </Block>
 
-				<Block classes={'e-row'}>
-					<Block classes={'brick brick-12'}>
-					
-
-		        	<Card>
-		        		<CardContent>
-		        			<Block>
-			        			<Block>
-			        				<Text type={'h4'} classes={'e-text-indigo-400'}>LIVE EXAMPLE:</Text>
-			        				<Divider classes={'thin short e-background-indigo-400'} />
-
+				<Block className={'e-container'}>
+		        	<Block className={'e-row e-margin-top-25'}>
+			        	<Block classes={'brick brick-4'} style={{overflow:'hidden'}}>	
+							<Text type={'h4'} classes={'e-text-indigo-500'}>LIVE EXAMPLE</Text>
+		    				<Divider classes={'thick short e-background-indigo-500'} />							
+											    	
+							<Block className={'e-row e-body1 e-text-grey-700'}>
+								<Block className={'e-text-grey-900 brick brick-12 e-no-margin e-h-center'}>
 									<AppBar
 										style={this.state.AppBarStyle}
-										className={'e-background-indigo-400 e-text-white e-margin-top-25 e-margin-bottom-25 zIndex1'}>
+										className={'e-background-indigo-500 e-text-white e-margin-top-25 e-margin-bottom-25 zIndex1'}>
 
 										<Menu type={'cover'} icon={'navigation-more-vert'} classes={'e-left'}>
 											<Text className={'e-text-black'}>
@@ -107,114 +104,117 @@ class AppBarComponent extends React.Component {
 											</Menu>
 										</Block>
 									</AppBar>
-			        			</Block>
-			        			<Block>
-			        				<Text type={'h4'} classes={'e-text-indigo-400'}>HOW TO USE:</Text>
-			        				<Divider classes={'thin short e-background-indigo-400'} />
+								</Block>						
+							</Block>								
+						</Block>
+						<Block classes={'brick brick-8'}>
+							<Text type={'h4'} classes={'e-text-indigo-500'}>USE COMPONENTS</Text>
+		    				<Divider classes={'thick short e-background-indigo-500 e-margin-bottom-25'} />		        						        				
 
-			        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
-										See the Live Example from above and customize your own AppBar component with code below.
-									</Text>
+		    				<Text type={'p'} classes={'e-body1 e-text-grey-900 padding-top-bottom-10 e-no-margin'}>
+								See the Live Example and customize your own AppBar component with code below.
+								<br />
+								<br />								
+							</Text>
 
-			        				<pre className={'e-background-grey-100 e-text-black'}>
-				        				<code>
-											npm install <strong>essence-appbar</strong>
-				        				</code>
-			        				</pre>
+							<pre className={'e-background-orange-100 e-text-black e-no-margin'} style={{border:'1px solid #FFB74D', lineHeight:'20px'}}>
+			    				<code>		
+			    					npm install essence-appbar							
+			    				</code>
+			    			</pre>
+			    			<br />
+			    			<br />
+			    			<pre className={'e-background-orange-100 e-text-black e-no-margin e-margin-bottom-25'} style={{border:'1px solid #FFB74D', lineHeight:'20px'}}>
+			    				<code>
+									import Menu from 'essence-menu';
+									<br />
+									import AppBar from 'essence-appbar';
+									<br />
+									import &#123;Block, Text, Divider&#125; from 'essence-core';
+									<br />
+									<br />
 
-			        				<pre className={'e-background-grey-100 e-text-black'}>
-				        				<code>
-											import Menu from 'essence-menu';
-											<br />
-											import AppBar from 'essence-appbar';
-											<br />
-											import &#123;Block, Text, Divider&#125; from 'essence-core';
-											<br />
-											<br />
-
-											<br />
-											<br />
-											&lt;AppBar className=&#123;'e-background-indigo-400 e-text-white'&#125;&gt;
-											<br />
-											&nbsp;&lt;Menu type=&#123;'cover'&#125; icon=&#123;'navigation-more-vert'&#125; className=&#123;'e-left'&#125;&gt;
-											<br />
-											&nbsp;&nbsp;&lt;Text className=&#123;'e-text-black'&#125;&gt;
-											<br />
-											&nbsp;&nbsp;&nbsp;&lt;Text onClick=&#123;this.changeTitle.bind(this, 'Toasts')&#125;&gt;
-											<br />
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Text&gt;Change Title&lt;/Text&gt;
-											<br />
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Text type=&#123;'strong'&#125;&gt;Toasts&lt;/Text&gt;
-											<br />
-											&nbsp;&nbsp;&nbsp;&lt;/Text&gt;
-											<br />
-											&nbsp;&nbsp;&lt;/Text&gt;
-											<br />
-											&nbsp;&nbsp;&lt;Text className=&#123;'e-text-black'&#125;&gt;
-											<br />
-											&nbsp;&nbsp;&nbsp;&lt;Text onClick=&#123;this.changeTitle.bind(this, 'SnackBars')&#125;&gt;
-											<br />
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Text&gt;Change Title&lt;/Text&gt;
-											<br />
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Text type=&#123;'strong'&#125;&gt;SnackBars&lt;/Text&gt;
-											<br />
-											&nbsp;&nbsp;&nbsp;&lt;/Text&gt;
-											<br />
-											&nbsp;&nbsp;&lt;/Text&gt;
-											<br />
-											&nbsp;&nbsp;&lt;Text className=&#123;'e-text-black'&#125;&gt;
-											<br />
-											&nbsp;&nbsp;&nbsp;&lt;Text onClick=&#123;this.changeTitle.bind(this, 'Data Table')&#125;&gt;
-											<br />
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Text&gt;Change Title&lt;/Text&gt;
-											<br />
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Text type=&#123;'strong'&#125;&gt;Data Table&lt;/Text&gt;
-											<br />
-											&nbsp;&nbsp;&nbsp;&lt;/Text&gt;
-											<br />
-											&nbsp;&nbsp;&lt;/Text&gt;
-											<br />
-											&nbsp;&lt;/Menu&gt;
-											<br />
-											<br />
-											&nbsp;&lt;Text&gt;Essence - &#123;this.state.AppBarTitle || 'AppBar Example'&#125;&lt;/Text&gt;
-											<br />
-											<br />
-											&nbsp;&lt;Block className=&#123;'e-right'&#125;&gt;
-											<br />
-											&nbsp;&nbsp;&lt;Menu type=&#123;'cover'&#125; icon=&#123;'action-settings'&#125; className=&#123;'e-right'&#125;&gt;
-											<br />
-											&nbsp;&nbsp;&nbsp;&lt;Text className=&#123;'e-text-black'&#125;&gt;
-											<br />
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Text type=&#123;'a'&#125; href=&#123;'#icons'&#125;&gt;Link to: Icons&lt;/Text&gt;
-											<br />
-											&nbsp;&nbsp;&nbsp;&lt;/Text&gt;
-											<br />
-											&nbsp;&nbsp;&nbsp;&lt;Text className=&#123;'e-text-black'&#125;&gt;
-											<br />
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Text type=&#123;'a'&#125; href=&#123;'#button'&#125;&gt;Link to: Buttons&lt;/Text&gt;
-											<br />
-											&nbsp;&nbsp;&nbsp;&lt;/Text&gt;
-											<br />
-											&nbsp;&nbsp;&nbsp;&lt;Text className=&#123;'e-text-black'&#125;&gt;
-											<br />
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Text type=&#123;'a'&#125; href=&#123;'#core'&#125;&gt;Link to: Essence Core&lt;/Text&gt;
-											<br />
-											&nbsp;&nbsp;&nbsp;&lt;/Text&gt;
-											<br />
-											&nbsp;&nbsp;&lt;/Menu&gt;
-											<br />
-											&nbsp;&lt;/Block&gt;
-											<br />
-											&lt;/AppBar&gt;
-				        				</code>
-			        				</pre>
-			        			</Block>
-		        			</Block>
-		        		</CardContent>
-					</Card>
+									<br />
+									<br />
+									&lt;AppBar className=&#123;'e-background-indigo-500 e-text-white'&#125;&gt;
+									<br />
+									&nbsp;&lt;Menu type=&#123;'cover'&#125; icon=&#123;'navigation-more-vert'&#125; className=&#123;'e-left'&#125;&gt;
+									<br />
+									&nbsp;&nbsp;&lt;Text className=&#123;'e-text-black'&#125;&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&lt;Text onClick=&#123;this.changeTitle.bind(this, 'Toasts')&#125;&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Text&gt;Change Title&lt;/Text&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Text type=&#123;'strong'&#125;&gt;Toasts&lt;/Text&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&lt;/Text&gt;
+									<br />
+									&nbsp;&nbsp;&lt;/Text&gt;
+									<br />
+									&nbsp;&nbsp;&lt;Text className=&#123;'e-text-black'&#125;&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&lt;Text onClick=&#123;this.changeTitle.bind(this, 'SnackBars')&#125;&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Text&gt;Change Title&lt;/Text&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Text type=&#123;'strong'&#125;&gt;SnackBars&lt;/Text&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&lt;/Text&gt;
+									<br />
+									&nbsp;&nbsp;&lt;/Text&gt;
+									<br />
+									&nbsp;&nbsp;&lt;Text className=&#123;'e-text-black'&#125;&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&lt;Text onClick=&#123;this.changeTitle.bind(this, 'Data Table')&#125;&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Text&gt;Change Title&lt;/Text&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Text type=&#123;'strong'&#125;&gt;Data Table&lt;/Text&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&lt;/Text&gt;
+									<br />
+									&nbsp;&nbsp;&lt;/Text&gt;
+									<br />
+									&nbsp;&lt;/Menu&gt;
+									<br />
+									<br />
+									&nbsp;&lt;Text&gt;Essence - &#123;this.state.AppBarTitle || 'AppBar Example'&#125;&lt;/Text&gt;
+									<br />
+									<br />
+									&nbsp;&lt;Block className=&#123;'e-right'&#125;&gt;
+									<br />
+									&nbsp;&nbsp;&lt;Menu type=&#123;'cover'&#125; icon=&#123;'action-settings'&#125; className=&#123;'e-right'&#125;&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&lt;Text className=&#123;'e-text-black'&#125;&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Text type=&#123;'a'&#125; href=&#123;'#icons'&#125;&gt;Link to: Icons&lt;/Text&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&lt;/Text&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&lt;Text className=&#123;'e-text-black'&#125;&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Text type=&#123;'a'&#125; href=&#123;'#button'&#125;&gt;Link to: Buttons&lt;/Text&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&lt;/Text&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&lt;Text className=&#123;'e-text-black'&#125;&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Text type=&#123;'a'&#125; href=&#123;'#core'&#125;&gt;Link to: Essence Core&lt;/Text&gt;
+									<br />
+									&nbsp;&nbsp;&nbsp;&lt;/Text&gt;
+									<br />
+									&nbsp;&nbsp;&lt;/Menu&gt;
+									<br />
+									&nbsp;&lt;/Block&gt;
+									<br />
+									&lt;/AppBar&gt;				
+			    				</code>
+							</pre>
+						</Block>					
+					</Block>
 				</Block>
-				</Block>
+				<Footer />
 			</Block>
 		);
     }

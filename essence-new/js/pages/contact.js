@@ -1,10 +1,11 @@
 import React from 'react';
-import ClassNames from 'classnames';
-import {List, ListItem} from 'essence-list';
 import Input from 'essence-input';
-import Button from 'essence-button';
 import Toast from 'essence-toast';
 import Image from 'essence-image';
+import Button from 'essence-button';
+import ClassNames from 'classnames';
+import Footer from '../partials/footer';
+import {List, ListItem} from 'essence-list';
 import {Block, Text, Divider} from 'essence-core';
 import NavigationMenu from '../partials/navigation-menu';
 
@@ -48,22 +49,9 @@ class AppContact extends React.Component {
           });
         }
 
-        if (result.status === 403) {
-          let errors = [
-            (<li key={'error-title'} style={{listStyleType:'none'}}>
-              Your message has NOT been sent!
-            </li>),
-            (<li key={'error-separator'} style={{listStyleType:'none'}}>
-              &nbsp;
-            </li>)
-          ];
-
-          Object.keys(result.data.errors).map(function(error, index) {
-            errors.push(<li key={'error-'+index}>{result.data.errors[error]}</li>);
-          });
-
+        if (result.status === 403) {     
           self.setState({
-            message: (<ul style={{listStyleType:'circle'}}>{errors}</ul>),
+            message: 'Your message has not been sent!',
             visibleOK: false,
             visibleFailed: true,
           });
@@ -71,17 +59,11 @@ class AppContact extends React.Component {
       }.bind(self),
       'json'
     ).fail(function(error) {
-      let errors = [
-        (<li key={'error-title'} style={{listStyleType:'none'}}>
-          Your message has NOT been sent!
-        </li>)
-      ];
-
-      self.setState({
-        message: (<ul style={{listStyleType:'circle'}}>{errors}</ul>),
-        visibleOK: false,
-        visibleFailed: true,
-      });
+       self.setState({
+          message: 'Your message has not been sent!',
+          visibleOK: false,
+          visibleFailed: true,
+        });
     });
   }
 
@@ -95,7 +77,7 @@ class AppContact extends React.Component {
               <Block classes={'brick brick-6 e-padding-top-25 '}>
                 <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>GET IN TOUCH WITH US HERE</Text>
                     <Divider classes={'thick medium e-background-white'} />
-                <Text type={'p'} classes={'e-body1 e-text-white e-padding-top-15 e-padding-bottom-25'} style={{fontSize:'16px'}}>
+                <Text type={'h3'} classes={'e-body-1 e-text-white e-padding-top-15 e-padding-bottom-25'} style={{fontSize:'16px'}}>
                   We welcome feedback and we’re here if you happen to need some help with Essence.
                 </Text>
               </Block>
@@ -106,36 +88,33 @@ class AppContact extends React.Component {
           </Block>
         </Block> 
 
-        <Block className={'e-container'}>
-         
-              
-                              
+        <Block className={'e-container'} style={{minHeight:'calc(100vh - 348px)'}}>
               <Block className={'e-row contact e-margin-top-25'}>
                 <Block className={'brick brick-6'}>
             
-                    <Text type={'h4'} classes={'e-text-indigo-500'} style={{fontSize:'18px'}}>HIRE US!</Text>
+                    <Text type={'h4'} classes={'e-text-indigo-500'} style={{fontSize:'18px'}}>CONTACT</Text>
                     <Divider classes={'thick short e-background-indigo-500'} />
-                    <Text type={'p'} classes={'e-body1 e-text-grey-900 e-padding-top-15'} style={{fontSize:'16px', lineHeight:'18px'}}>
+                    <Text type={'p'} classes={'e-body-1 e-text-grey-900 e-padding-top-15'} style={{fontSize:'16px', lineHeight:'18px'}}>
                       We're a team of passionate coders who believe React.JS and Material Design are amazing. We combined them into Essence as an open source project.  
                       <br/>
                       <br/>
 
 Feel free to say "Hi" or give us feedback & suggestions:<br/>
-Twitter: https://twitter.com/Essence_MD <br/>
-Facebook: https://www.facebook.com/getEssence/ <br/>
-Email: hello@getessence.io<br/>
-<br/>
+</Text>
+Twitter: <Text type={'a'} href={'https://twitter.com/Essence_MD'} target={'_blank'} className={'e-text-indigo-700'} >https://twitter.com/Essence_MD</Text>  <br/>
+Facebook: <Text type={'a'} href={'https://www.facebook.com/getEssence/'} target={'_blank'} className={'e-text-indigo-700'} >https://www.facebook.com/getEssence/</Text>  <br/>
+Twitter: <Text type={'a'} href={'mailto:hello@getessence.io'} className={'e-text-indigo-700'} >hello@getessence.io</Text>  <br/>
 
-For specific questions we recommend using StackOverflow. Tag your questions with the “essence” tag and our team will offer support with getting started and using Essence: http://stackoverflow.com/questions/tagged/essence 
-<br/>
-<br/>
+<Text type={'p'} classes={'e-body-1 e-text-grey-900 e-padding-top-15'} style={{fontSize:'16px', lineHeight:'18px'}}>
+For specific questions we recommend using StackOverflow. Tag your questions with the “essence” tag and our team will offer support with getting started and using Essence:
+</Text>
+<Text type={'a'} href={'http://stackoverflow.com/questions/tagged/essence '} target={'_blank'} className={'e-text-indigo-700'} >http://stackoverflow.com/questions/tagged/essence </Text>  <br/>
+<Text type={'p'} classes={'e-body-1 e-text-grey-900 e-padding-top-15'} style={{fontSize:'16px', lineHeight:'18px'}}>
+
 If you need to build a custom interface, we're here to help; drop us a line at hello@getessence.io and let's talk the specifics of your project.
                     </Text>
                   </Block>
                   <Block className={'brick brick-6'}>
-                    <Text type={'h4'} classes={'e-text-indigo-500'} style={{fontSize:'18px'}}>CONTACT</Text>
-                    <Divider classes={'thick short e-background-indigo-500'} />
-
                     <Toast classes={'e-text-green-500'} visible={this.state.visibleOK} delay={3000}>
                       {this.state.message}
                     </Toast>
@@ -143,7 +122,7 @@ If you need to build a custom interface, we're here to help; drop us a line at h
                       {this.state.message}
                     </Toast>
 
-                    <Block classes={'e-body1 e-padding-top-15'}>
+                    <Block classes={'e-body-1 e-padding-top-15'}>
                       <Block className={'e-padding-top-15'}>
                         <Input type={'email'} ref={(ref) => this.contactEmail = ref} name={'email'} label={'Email address'} />
                       </Block>
@@ -158,9 +137,8 @@ If you need to build a custom interface, we're here to help; drop us a line at h
                   
                 </Block>
               </Block>
-                              
-          
         </Block>
+        <Footer />
       </Block>
     );
   }

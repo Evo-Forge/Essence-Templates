@@ -1,9 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import ClassNames from 'classnames';
-import Image from 'essence-image';
 import Tab from 'essence-tab';
+import ReactDOM from 'react-dom';
 import Btn from 'essence-button';
+import Image from 'essence-image';
+import { Link} from 'react-router';
+import ClassNames from 'classnames';
+import Footer from '../partials/footer';
 import {Block, Text, Divider} from 'essence-core';
 import NavigationMenu from '../partials/navigation-menu';
 
@@ -28,61 +30,53 @@ class AppCoreGridSystem extends React.Component {
 		          <Block className={'e-container '}>
 		            <Block className={'e-row'}>
 		              <Block classes={'brick brick-6 e-padding-top-25 '}>
-		                <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>ESSENCE CORE COMPONENTS</Text>
+		                <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>GRID SYSTEM</Text>
 		                    <Divider classes={'thick medium e-background-white'} />
 		                <Text type={'p'} classes={'e-body1 e-text-white e-padding-top-15 e-padding-bottom-25'} style={{fontSize:'16px'}}>
-		                    There are several components that are included in the Essence Core package.
-							Please review them bellow to understand how to use them.
+		                     Material design’s responsive UI is based on a 12-column grid layout. This grid creates visual consistency between layouts, while allowing flexibility across a wide variety of designs. Take a look at Essence's examples below to pick the best system for your content.
 		                </Text>
 		              </Block>
 		              <Block classes={'brick brick-6 e-no-padding'}>
-		                <Image className={'e-img-rsp'} src={'./assets/img/footer.png'} alt={'footer'} />
+		                <Image className={'e-img-rsp'} src={'/assets/img/footer.png'} alt={'footer'} />
 		              </Block>
 		            </Block>
 		          </Block>
 		        </Block> 
 
 		        <Block className={'e-container'}> 
-					<Block className={'e-row e-margin-top-25'}>
-						<Block classes={'brick brick-12'} style={{marginBottom:'0'}}>						    
-	        				<Text type={'h4'} classes={'e-text-indigo-500'}>GRID SYSTEM</Text>
-	        				<Divider classes={'thick short e-background-indigo-500'} />
-							<Text type={'p'} classes={'e-body1 e-text-grey-900 padding-top-bottom-10 e-no-margin'}>
-								When it comes to organizing content, grids come in handy. Take a look at the examples below to pick the best system for your content.
-							</Text>
-						</Block> 
+					<Block className={'e-row e-margin-top-25'}>						
 						<Block classes={'brick brick-12'}>	
 							<Text type={'h4'} classes={'e-text-indigo-500'}>LIVE EXAMPLE</Text>
 		    				<Divider classes={'thick short e-background-indigo-500'} />							
 											    	
 							<Block className={'e-row e-body1 e-text-grey-700 e-padding-top-15'}>
 								<Block classes={'brick brick-12 e-background-grey-300 e-h-center e-v-center'} style={{height:'60px'}}>
-									brick-12
+									brick-12 (e-h-center e-v-center)
 								</Block>
 							</Block>
 
-							<Block className={'e-row e-body1 e-text-grey-700 e-padding-top-15'}>
+							<Block className={'e-row e-body1 e-text-grey-700 '} style={{paddingTop:'6px'}}>
 								<Block classes={'brick brick-6 e-background-grey-300 e-h-end e-v-end'}  style={{height:'60px'}}>
-									brick-6
+									brick-6 (e-h-end e-v-end)
 								</Block>
 								<Block classes={'brick brick-6 e-background-grey-300 e-h-start e-v-end'}  style={{height:'60px'}}>
-									brick-6
+									brick-6 (e-h-start e-v-end)
 								</Block>
 							</Block>
 
-							<Block className={'e-row e-body1 e-text-grey-700 e-padding-top-15'}>
+							<Block className={'e-row e-body1 e-text-grey-700 '} style={{paddingTop:'6px'}}>
 								<Block classes={'brick brick-4 e-background-grey-300 e-h-start e-v-end'}  style={{height:'60px'}}>
-									brick-4
+									brick-4 (e-h-start e-v-end)
 								</Block>
 								<Block classes={'brick brick-4 e-background-grey-300 e-h-center e-v-center'}  style={{height:'60px'}}>
-									brick-4
+									brick-4 (e-h-center e-v-center)
 								</Block>
 								<Block classes={'brick brick-4 e-background-grey-300 e-h-end e-v-start'}  style={{height:'60px'}}>
-									brick-4
+									brick-4 (e-h-end e-v-start)
 								</Block>
 							</Block>
 							
-							<Block className={'e-row e-body1 e-text-grey-700 e-padding-top-15 e-padding-bottom-15'}>
+							<Block className={'e-row e-body1 e-text-grey-700'} style={{paddingTop:'6px'}}>
 								<Block classes={'brick brick-3 e-background-grey-300'}  style={{height:'60px'}}>
 									brick-3
 								</Block>
@@ -97,7 +91,7 @@ class AppCoreGridSystem extends React.Component {
 								</Block>									
 							</Block>
 
-							<Block className={'e-row e-body1 e-text-grey-700 e-padding-top-15 e-padding-bottom-15'}>
+							<Block className={'e-row e-body1 e-text-grey-700  e-padding-bottom-15'} style={{paddingTop:'6px'}}>
 								<Block classes={'brick brick-1 e-background-grey-300'}  style={{height:'60px'}}>
 									brick-1
 								</Block>
@@ -176,6 +170,25 @@ class AppCoreGridSystem extends React.Component {
 									&lt;Block classes=&#123;'brick brick-3'&#125;&gt;brick-3&lt;/Block&gt;
 									<br />
 									&lt;Block classes=&#123;'brick brick-3'&#125;&gt;brick-3&lt;/Block&gt;
+									<br />
+									&lt;/Block&gt;
+									<br />
+									<br />
+									&lt;Block classes=&#123;'e-row'&#125;&gt;
+									<br />
+									&lt;Block classes=&#123;'brick brick-1'&#125;&gt;brick-1&lt;/Block&gt;
+									<br />
+									&lt;Block classes=&#123;'brick brick-1'&#125;&gt;brick-1&lt;/Block&gt;
+									<br />
+									&lt;Block classes=&#123;'brick brick-1'&#125;&gt;brick-1&lt;/Block&gt;
+									<br />
+									&lt;Block classes=&#123;'brick brick-1'&#125;&gt;brick-1&lt;/Block&gt;
+									<br />
+									&lt;Block classes=&#123;'brick brick-1'&#125;&gt;brick-1&lt;/Block&gt;
+									<br />
+									&lt;Block classes=&#123;'brick brick-1'&#125;&gt;brick-1&lt;/Block&gt;
+									<br />
+									&lt;Block classes=&#123;'brick brick-6'&#125;&gt;brick-6&lt;/Block&gt;
 									<br />
 									&lt;/Block&gt;
 									<br />
@@ -280,6 +293,7 @@ class AppCoreGridSystem extends React.Component {
 						</Block>
 					</Block>
 				</Block>
+				<Footer />
 			</Block>
 		);
     }
@@ -305,30 +319,21 @@ class AppCoreDivider extends React.Component {
 		          <Block className={'e-container '}>
 		            <Block className={'e-row'}>
 		              <Block classes={'brick brick-6 e-padding-top-25 '}>
-		                <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>ESSENCE CORE COMPONENTS</Text>
+		                <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>DIVIDER</Text>
 		                    <Divider classes={'thick medium e-background-white'} />
 		                <Text type={'p'} classes={'e-body1 e-text-white e-padding-top-15 e-padding-bottom-25'} style={{fontSize:'14px'}}>
-		                    There are several components that are included in the Essence Core package.
-							Please review them bellow to understand how to use them.
+		                    Dividers help users understand how content is organized by establishing a rhythm and hierarchy on a page. They group and separate content within lists and page layouts. The divider is a thin rule, lightweight yet sufficient to distinguish content visually and spatially.
 		                </Text>
 		              </Block>
 		              <Block classes={'brick brick-6 e-no-padding'}>
-		                <Image className={'e-img-rsp'} src={'./assets/img/footer.png'} alt={'footer'} />
+		                <Image className={'e-img-rsp'} src={'/assets/img/footer.png'} alt={'footer'} />
 		              </Block>
 		            </Block>
 		          </Block>
 		        </Block> 
 
 			    <Block className={'e-container'}>
-	        		<Block className={'e-row e-margin-top-25'}>
-	        			<Block classes={'brick brick-12'} style={{marginBottom:'0'}}>						    
-	        				<Text type={'h4'} classes={'e-text-indigo-500'}>DIVIDER</Text>
-	        				<Divider classes={'thick short e-background-indigo-500'} />
-							<Text type={'p'} classes={'e-body1 e-text-grey-900 padding-top-bottom-10 e-no-margin'}>
-								According to our needs we created some dividers and stored them in a .less file called, you've guest it, dividers.										
-								We've created three values for width and five values for height. You can combine them as you please.
-							</Text>
-						</Block>
+	        		<Block className={'e-row e-margin-top-25'}>	        			
 
 						<Block classes={'brick brick-12'}>	
 							<Text type={'h4'} classes={'e-text-indigo-500'}>LIVE EXAMPLE</Text>
@@ -337,36 +342,36 @@ class AppCoreDivider extends React.Component {
 							<Block className={'e-row e-body1 e-text-grey-700 e-padding-top-15'}>
 								<Block className={'e-padding-top-15 e-text-grey-900 brick brick-12 e-no-margin'}>
 									Thin & short
-									<Divider classes={'thin short e-background-indigo-500'} />
+									<Divider classes={'thin short e-background-indigo-500'} style={{width:'5% !important'}}/>
 								</Block>
 								<Block className={'e-padding-top-15 e-text-grey-900 brick brick-12 e-no-margin'}>
 									Thin & medium
-									<Divider classes={'thin medium e-background-indigo-500'} />
+									<Divider classes={'thin medium e-background-indigo-500'} style={{width:'25% !important'}}/>
 								</Block>
 								<Block className={'e-padding-top-15 e-text-grey-900 brick brick-12 e-no-margin'}>
 									Thin & long
-									<Divider classes={'thin long e-background-indigo-500'} />
+									<Divider classes={'thin long e-background-indigo-500'} style={{width:'50% !important'}}/>
 								</Block>
 								<Block className={'e-padding-top-15 e-text-grey-900 brick brick-12 e-no-margin'}>
 									Thin
-									<Divider classes={'thin e-background-indigo-500'} />
+									<Divider classes={'thin e-background-indigo-500'} style={{width:'100% !important'}}/>
 								</Block>
 								
 								<Block className={'e-padding-top-15 e-text-grey-900 brick brick-12 e-no-margin'}>
 									Thick & short
-									<Divider classes={'thick short e-background-indigo-500'} />
+									<Divider classes={'thick short e-background-indigo-500'} style={{width:'5% !important'}}/>
 								</Block>
 								<Block className={'e-padding-top-15 e-text-grey-900 brick brick-12 e-no-margin'}>
 									Thick & medium
-									<Divider classes={'thick medium e-background-indigo-500'} />
+									<Divider classes={'thick medium e-background-indigo-500'} style={{width:'25% !important'}}/>
 								</Block>
 								<Block className={'e-padding-top-15 e-text-grey-900 brick brick-12 e-no-margin'}>
 									Thick & long
-									<Divider classes={'thick long e-background-indigo-500'} />
+									<Divider classes={'thick long e-background-indigo-500'} style={{width:'50% !important'}}/>
 								</Block>
 								<Block className={'e-padding-top-15 e-text-grey-900 brick brick-12 e-no-margin'}>
 									Thick
-									<Divider classes={'thick e-background-indigo-500'} />
+									<Divider classes={'thick e-background-indigo-500'} style={{width:'100% !important'}}/>
 								</Block>
 							</Block>								
 						</Block>
@@ -514,6 +519,7 @@ class AppCoreDivider extends React.Component {
 						</Block>
 	        		</Block>							
 				</Block>
+				<Footer />
 			</Block>
 		);
     }
@@ -539,15 +545,14 @@ class AppCoreRippleInk extends React.Component {
 		          <Block className={'e-container '}>
 		            <Block className={'e-row'}>
 		              <Block classes={'brick brick-6 e-padding-top-25 '}>
-		                <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>ESSENCE CORE COMPONENTS</Text>
+		                <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>RIPPLE INK</Text>
 		                    <Divider classes={'thick medium e-background-white'} />
 		                <Text type={'p'} classes={'e-body1 e-text-white e-padding-top-15 e-padding-bottom-25'} style={{fontSize:'14px'}}>
-		                    There are several components that are included in the Essence Core package.
-							Please review them bellow to understand how to use them.
+		                    Ripple Ink adds clarity to user input through visual reactions to user input. Radial action is the visual ripple of ink spreading outward from the point of input. A touch ripple indicates where and when a touch occurs and acknowledges that the touch input was received.
 		                </Text>
 		              </Block>
 		              <Block classes={'brick brick-6 e-no-padding'}>
-		                <Image className={'e-img-rsp'} src={'./assets/img/footer.png'} alt={'footer'} />
+		                <Image className={'e-img-rsp'} src={'/assets/img/footer.png'} alt={'footer'} />
 		              </Block>
 		            </Block>
 		          </Block>
@@ -555,14 +560,6 @@ class AppCoreRippleInk extends React.Component {
 
 		        <Block className={'e-container'}>
 		        	<Block className={'e-row e-margin-top-25'}>
-		        		<Block classes={'brick brick-12'} style={{marginBottom:'0'}}>						    
-	        				<Text type={'h4'} classes={'e-text-indigo-500'}>RIPPLE INK</Text>
-	        				<Divider classes={'thick short e-background-indigo-500'} />
-							<Text type={'p'} classes={'e-body1 e-text-grey-900 padding-top-bottom-10 e-no-margin'}>
-								This component is design for Btn component to simulate a color ripple effect on the background element.
-							</Text>
-						</Block>
-					
 
 						<Block classes={'brick brick-4'}>	
 							<Text type={'h4'} classes={'e-text-indigo-500'}>LIVE EXAMPLE</Text>
@@ -652,6 +649,7 @@ class AppCoreRippleInk extends React.Component {
 						</Block>
 					</Block>
 				</Block>
+				<Footer />
 			</Block>
 		);
     }
@@ -782,30 +780,21 @@ class AppCoreTextTypography extends React.Component {
 		          <Block className={'e-container '}>
 		            <Block className={'e-row'}>
 		              <Block classes={'brick brick-6 e-padding-top-25 '}>
-		                <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>ESSENCE CORE COMPONENTS</Text>
+		                <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>TEXT TYPOGRAPHY</Text>
 		                    <Divider classes={'thick medium e-background-white'} />
 		                <Text type={'p'} classes={'e-body1 e-text-white e-padding-top-15 e-padding-bottom-25'} style={{fontSize:'14px'}}>
-		                    There are several components that are included in the Essence Core package.
-							Please review them bellow to understand how to use them.
+		                    Typography is a critical part of a good UX. Essence is helping you with predefined classes that comply to the material design standard.
 		                </Text>
 		              </Block>
 		              <Block classes={'brick brick-6 e-no-padding'}>
-		                <Image className={'e-img-rsp'} src={'./assets/img/footer.png'} alt={'footer'} />
+		                <Image className={'e-img-rsp'} src={'/assets/img/footer.png'} alt={'footer'} />
 		              </Block>
 		            </Block>
 		          </Block>
 		        </Block> 
 
 		        <Block className={'e-container'}>
-		        	<Block className={'e-row e-margin-top-25'}>
-		        		<Block classes={'brick brick-12'} style={{marginBottom:'0'}}>						    
-	        				<Text type={'h4'} classes={'e-text-indigo-500'}>TEXT TYPOGRAPHY</Text>
-	        				<Divider classes={'thick short e-background-indigo-500'} />
-							<Text type={'p'} classes={'e-body1 e-text-grey-900 padding-top-bottom-10 e-no-margin'}>
-								Typography is such an important part of a catchy website, so you must use it carefully. You are just a few classes away of doing it! To do that, we are here helping you with predefined classes.
-							</Text>
-						</Block>
-
+		        	<Block className={'e-row e-margin-top-25'}>		        		
 						<Block classes={'brick brick-4'} style={{overflow:'hidden'}}>	
 							<Text type={'h4'} classes={'e-text-indigo-500'}>LIVE EXAMPLE</Text>
 		    				<Divider classes={'thick short e-background-indigo-500'} />							
@@ -853,7 +842,7 @@ class AppCoreTextTypography extends React.Component {
 
 						<Block className={'brick brick-12'}>
 							<Text type={'h4'} classes={'e-text-indigo-500'}>CHOOSE TEXT STYLING:</Text>
-							<Divider classes={'thin short e-background-indigo-500'} />
+							<Divider classes={'thick short e-background-indigo-500'} />
 
 							<Tab data={{
 								'header': [{
@@ -918,17 +907,6 @@ class AppCoreTextTypography extends React.Component {
 	        				</Block>
 	        				<Block classes={'e-row tabel-line no-resize e-body1 e-no-margin'}>	
 	        					<Block classes={'brick brick-3 e-no-margin e-text-indigo-700'}>	
-	        						typograpgy
-	        					</Block>
-	        					<Block classes={'brick brick-3 e-no-margin e-text-orange-700'}>	
-	        						
-	        					</Block>
-	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-900'}>	
-									e-display-4,   e-display-3,   e-display-2,   e-display-1,   e-headline,   e-title,   e-subhead,   e-body2,   e-body1,   e-caption,   e-button
-	        					</Block>
-	        				</Block>		        				 
-	        				<Block classes={'e-row tabel-line no-resize e-body1 e-no-margin'}>	
-	        					<Block classes={'brick brick-3 e-no-margin e-text-indigo-700'}>	
 	        						color
 	        					</Block>
 	        					<Block classes={'brick brick-3 e-no-margin e-text-orange-700'}>	
@@ -940,10 +918,21 @@ class AppCoreTextTypography extends React.Component {
 	        				</Block>
 	        				<Block classes={'e-row tabel-line no-resize e-body1 e-no-margin'}>	
 	        					<Block classes={'brick brick-3 e-no-margin e-text-indigo-700'}>	
+	        						typography
+	        					</Block>
+	        					<Block classes={'brick brick-3 e-no-margin e-text-orange-700'}>	
+	        						null
+	        					</Block>
+	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-900'}>	
+									e-display-4,   e-display-3,   e-display-2,   e-display-1,   e-headline,   e-title,   e-subhead,   e-body2,   e-body1,   e-caption,   e-button
+	        					</Block>
+	        				</Block>		        				 	        				
+	        				<Block classes={'e-row tabel-line no-resize e-body1 e-no-margin'}>	
+	        					<Block classes={'brick brick-3 e-no-margin e-text-indigo-700'}>	
 	        						badge
 	        					</Block>
 	        					<Block classes={'brick brick-3 e-no-margin e-text-orange-700'}>	
-	        						-
+	        						null
 	        					</Block>
 	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-900'}>	
 									For data-badge option with a maximum lenght of 3 chars
@@ -952,6 +941,7 @@ class AppCoreTextTypography extends React.Component {
 						</Block>
 		        	</Block> 
 		        </Block> 
+		        <Footer />
 			</Block>
 		);
     }
@@ -977,15 +967,14 @@ class AppCoreUtilities extends React.Component {
 		          <Block className={'e-container '}>
 		            <Block className={'e-row'}>
 		              <Block classes={'brick brick-6 e-padding-top-25 '}>
-		                <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>ESSENCE CORE COMPONENTS</Text>
+		                <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>UTILITIES</Text>
 		                    <Divider classes={'thick medium e-background-white'} />
 		                <Text type={'p'} classes={'e-body1 e-text-white e-padding-top-15 e-padding-bottom-25'} style={{fontSize:'14px'}}>
-		                    There are several components that are included in the Essence Core package.
-							Please review them bellow to understand how to use them.
+		                    Utilities are helpers for other components to achieve the desired functionality.
 		                </Text>
 		              </Block>
 		              <Block classes={'brick brick-6 e-no-padding'}>
-		                <Image className={'e-img-rsp'} src={'./assets/img/footer.png'} alt={'footer'} />
+		                <Image className={'e-img-rsp'} src={'/assets/img/footer.png'} alt={'footer'} />
 		              </Block>
 		            </Block>
 		          </Block>
@@ -993,13 +982,6 @@ class AppCoreUtilities extends React.Component {
 
         		<Block className={'e-container'}>
 		        	<Block className={'e-row e-margin-top-25'}>
-		        		<Block classes={'brick brick-12'} style={{marginBottom:'0'}}>						    
-	        				<Text type={'h4'} classes={'e-text-indigo-500'}>UTILITIES</Text>
-	        				<Divider classes={'thick short e-background-indigo-500'} />
-							<Text type={'p'} classes={'e-body1 e-text-grey-900 padding-top-bottom-10 e-no-margin'}>
-								Utilities are named 'Utils' and represent helpers for other components to maintain the desired functionality.
-							</Text>
-						</Block>
 						<Block classes={'brick brick-12'}>	
 							<Text type={'h4'} classes={'e-text-indigo-500'}>EXAMPLE</Text>
 		    				<Divider classes={'thick short e-background-indigo-500'} />							
@@ -1099,6 +1081,7 @@ class AppCoreUtilities extends React.Component {
 						</Block>
 					</Block>
 				</Block>
+				<Footer />
 			</Block>
 		);
     }

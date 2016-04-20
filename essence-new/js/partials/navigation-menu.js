@@ -26,7 +26,7 @@ class NavigationMenu extends React.Component {
 					<List type={'navigation'} classes={'e-background-white'} style={{paddingTop:'0'}}>
 						<ListItem key={'component-core'}>
 							<Block classes={'group-list-title e-text-indigo-500'}>
-								<Image src={'./assets/img/essence core icon-1.png'} height={'20px'} alt={'Essence Core'} />
+								<Image src={'/assets/img/essence core icon-1.png'} height={'20px'} alt={'Essence Core'} />
 								&nbsp;
 								<Text type={'small'}>
 									Essence Core
@@ -34,26 +34,26 @@ class NavigationMenu extends React.Component {
 							</Block>
 							<List type={'navigation'} style={{padding:'0'}}>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'core-grid-system'}>Grid System</Link>
+									<Link className={'e-text-grey-900 link'} to={'/core/grid-system'}>Grid System</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'core-divider'}>Divider</Link>
+									<Link className={'e-text-grey-900 link'} to={'/core/divider'}>Divider</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'core-ripple-ink'}>Ripple Ink</Link>
+									<Link className={'e-text-grey-900 link'} to={'/core/ripple-ink'}>Ripple Ink</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'core-text-typography'}>Text Typography</Link>
+									<Link className={'e-text-grey-900 link'} to={'/core/text-typography'}>Text Typography</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'core-utilities'}>Utilities</Link>
+									<Link className={'e-text-grey-900 link'} to={'/core/utilities'}>Utilities</Link>
 								</Block>
 							</List>
 						</ListItem>
 
 						<ListItem key={'component-components'}>
 							<Block classes={'group-list-title e-text-indigo-500'}>
-								<Image src={'./assets/img/components icon-1.png'} height={'20px'} alt={'Components'} />
+								<Image src={'/assets/img/components icon-1.png'} height={'20px'} alt={'Components'} />
 								&nbsp;
 								<Text type={'small'}>
 									Components
@@ -61,79 +61,79 @@ class NavigationMenu extends React.Component {
 							</Block>
 							<List type={'navigation'}>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'icons'}>Icons</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/icons'}>Icons</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'colors'}>Colors</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/colors'}>Colors</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'appbar'}>App Bar</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/appbar'}>App Bar</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'bottomsheet'}>Bottom Sheets</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/bottomsheets'}>Bottom Sheets</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'button'}>Button</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/buttons'}>Buttons</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'card'}>Card</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/cards'}>Cards</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'chip'}>Chip</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/chips'}>Chips</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'datatable'}>Data Table</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/datatables'}>Data Tables</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'dialog'}>Dialog</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/dialogs'}>Dialogs</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'image'}>Image</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/images'}>Images</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'input'}>Input</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/inputs'}>Inputs</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'list'}>List</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/lists'}>Lists</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'menu'}>Menu</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/menus'}>Menus</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'navigation'}>Navigation</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/navigation'}>Navigation</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'paper'}>Paper</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/paper'}>Paper</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'progress'}>Progress</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/progress'}>Progress</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'slider'}>Slider</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/sliders'}>Sliders</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'snackbar'}>Snackbar</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/snackbars'}>Snackbars</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'stepper'}>Steppers</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/steppers'}>Steppers</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'switch'}>Switch</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/switches'}>Switches</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'tab'}>Tab</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/tabs'}>Tabs</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'toast'}>Toast</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/toasts'}>Toasts</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'toolbar'}>ToolBar</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/toolbars'}>ToolBars</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'tooltip'}>Tooltip</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/tooltips'}>Tooltips</Link>
 								</Block>
 								<Block type={'li'}>
-									<Link className={'e-text-grey-900 link'} to={'touchpad'}>Touchpad</Link>
+									<Link className={'e-text-grey-900 link'} to={'/react-component/touchpad'}>Touchpad</Link>
 								</Block>
 							</List>
 						</ListItem>

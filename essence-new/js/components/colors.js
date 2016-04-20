@@ -1,12 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import ClassNames from 'classnames';
-import Image from 'essence-image';
-import NavigationMenu from '../partials/navigation-menu';
 import Tab from 'essence-tab';
+import ReactDOM from 'react-dom';
+import Image from 'essence-image';
+import ClassNames from 'classnames';
 import Button from 'essence-button';
+import Footer from '../partials/footer';
+import NavigationMenu from '../partials/navigation-menu';
 import {Block, Text, Divider, Utils} from 'essence-core';
-import {Card, CardHeader, CardContent, CardFooter} from 'essence-card';
 
 var colorList = {
 	"e-background-red-100": {
@@ -1285,11 +1285,11 @@ class AppColors extends React.Component {
 		                <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>COLORS</Text>
 		                    <Divider classes={'thick medium e-background-white'} />
 		                <Text type={'p'} classes={'e-body1 e-text-white e-padding-top-15 e-padding-bottom-25'} style={{fontSize:'16px'}}>
-		                    Colors are pretty. And Essence has them all, powered by Google.
+		                    Color in material design is inspired by bold hues, deep shadows, and bright highlights. Color should be unexpected and vibrant. Essence's color palette is material design compliant and includes all the colors and shades specified by Google.
 		                </Text>
 		              </Block>
 		              <Block classes={'brick brick-6 e-no-padding'}>
-		                <Image className={'e-img-rsp'} src={'./assets/img/footer.png'} alt={'footer'} />
+		                <Image className={'e-img-rsp'} src={'/assets/img/footer.png'} alt={'footer'} />
 		              </Block>
 		            </Block>
 		          </Block>
@@ -1301,7 +1301,7 @@ class AppColors extends React.Component {
 							<Text type={'h4'} classes={'e-text-indigo-500'}>LIVE EXAMPLE</Text>
 		    				<Divider classes={'thick short e-background-indigo-500'} />							
 											    	
-							<Block className={'e-row e-body1 e-text-grey-700 e-padding-top-100'}>
+							<Block className={'e-row e-body1 e-text-grey-700 e-padding-top-50'}>
 								<Block className={'e-text-grey-900 brick brick-12 e-no-margin e-h-center'}>
 									<Block className={'e-text-center'}>
 										{this.renderColor()}
@@ -1314,10 +1314,7 @@ class AppColors extends React.Component {
 	        				<Divider classes={'thick short e-background-indigo-500 e-margin-bottom-25'} />		        						        				
 
 	        				<Text type={'p'} classes={'e-body1 e-text-grey-900 padding-top-bottom-10 e-no-margin'}>
-								Icon component has the following option:
-								<br />
-								<br />
-								1. <strong>name</strong>: string from the icons list
+								Create a new ReactJS file with the code bellow.
 							</Text>
 
 							<pre className={'e-background-orange-100 e-text-black e-no-margin'} style={{border:'1px solid #FFB74D', lineHeight:'20px'}}>
@@ -1386,10 +1383,10 @@ class AppColors extends React.Component {
 	        						text color
 	        					</Block>
 	        					<Block classes={'brick brick-3 e-no-margin e-text-orange-700'}>	
-	        						classes=&#123;'e-background-white'&#125;
+	        						null
 	        					</Block>
 	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-900'}>	
-									From backgroundColor tabel
+									Background color from tabel above
 	        					</Block>
 	        				</Block>	
 	        				<Block classes={'e-row tabel-line no-resize e-body1 e-no-margin'}>	
@@ -1397,15 +1394,16 @@ class AppColors extends React.Component {
 	        						background color
 	        					</Block>
 	        					<Block classes={'brick brick-3 e-no-margin e-text-orange-700'}>	
-	        						classes=&#123;'e-text-black'&#125;
+	        						null
 	        					</Block>
 	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-900'}>	
-									From textColor tabel 
+									Text color from tabel above
 	        					</Block>
 	        				</Block>        						        				
 						</Block>
 					</Block>
         		</Block>
+        		<Footer />
 			</Block>
 		);
     }

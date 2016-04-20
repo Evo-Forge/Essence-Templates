@@ -1,13 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import ClassNames from 'classnames';
-import Image from 'essence-image';
-import NavigationMenu from '../partials/navigation-menu';
 import Menu from 'essence-menu';
-// import ToolBar from '../../../../Essence/components/essence-toolbar/src/toolbar.jsx';
+import ReactDOM from 'react-dom';
+import Image from 'essence-image';
+import ClassNames from 'classnames';
 import ToolBar from 'essence-toolbar';
+import Footer from '../partials/footer';
 import {Block, Text, Divider} from 'essence-core';
-import {Card, CardHeader, CardContent, CardFooter} from 'essence-card';
+import NavigationMenu from '../partials/navigation-menu';
 
 class AppToolBar extends React.Component {
 	constructor(props) {
@@ -39,29 +38,26 @@ class AppToolBar extends React.Component {
 		                <Text type={'h3'} classes={'e-text-white e-text-uppercase'}>TOOLBAR</Text>
 		                    <Divider classes={'thick medium e-background-white'} />
 		                <Text type={'p'} classes={'e-body1 e-text-white e-padding-top-15 e-padding-bottom-25'} style={{fontSize:'16px'}}>
-		                   It’s never been more fun to create an toolbar with button and navigation and whatever. Start with the .e-toolbar class then add buttons, menus and whatever you need.
+		                   Toolbars are versatile and can be used in many different ways.
 		                </Text>
 		              </Block>
 		              <Block classes={'brick brick-6 e-no-padding'}>
-		                <Image className={'e-img-rsp'} src={'./assets/img/footer.png'} alt={'footer'} />
+		                <Image className={'e-img-rsp'} src={'/assets/img/footer.png'} alt={'footer'} />
 		              </Block>
 		            </Block>
 		          </Block>
 		        </Block>
 
 
-				<Block classes={'e-row'}>
-					<Block classes={'brick brick-12'}>
-					
-
-		      <Card>
-        		<CardContent>
-        			<Block>
-	        			<Block>
-	        				<Text type={'h4'} classes={'e-text-indigo-400'}>LIVE EXAMPLE:</Text>
-	        				<Divider classes={'thin short e-background-indigo-400'} />
-									<ToolBar className={'e-margin-top-25 e-margin-bottom-25 clearfix'}>
-
+				<Block className={'e-container'}>
+		        	<Block className={'e-row e-margin-top-25'}>
+		        		<Block classes={'brick brick-4'} style={{overflow:'hidden'}}>	
+							<Text type={'h4'} classes={'e-text-indigo-500'}>LIVE EXAMPLE</Text>
+		    				<Divider classes={'thick short e-background-indigo-500'} />							
+											    	
+							<Block className={'e-row e-body1 e-text-grey-700'}>
+								<Block className={'e-text-grey-900 brick brick-12 e-no-margin'}>
+									<ToolBar className={' clearfix'} style={{margin:'85px 0 25px 0'}}>
 										<Menu type={'cover'} icon={'navigation-more-vert'} classes={'e-left'}>
 											<Text className={'e-text-black'}>
 												<Text
@@ -105,23 +101,28 @@ class AppToolBar extends React.Component {
 											</Menu>
 										</Block>
 									</ToolBar>
-	        			</Block>
-	        			<Block>
-	        				<Text type={'h4'} classes={'e-text-indigo-400'}>HOW TO USE:</Text>
-	        				<Divider classes={'thin short e-background-indigo-400'} />
+								</Block>						
+							</Block>								
+						</Block>
+						<Block classes={'brick brick-8'}>
+							<Text type={'h4'} classes={'e-text-indigo-500'}>USE COMPONENTS</Text>
+		    				<Divider classes={'thick short e-background-indigo-500 e-margin-bottom-25'} />		        						        				
 
-	        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
-								See the Live Example from above and customize your own ToolBar component with code below.
+		    				<Text type={'p'} classes={'e-body1 e-text-grey-900 padding-top-bottom-10 e-no-margin'}>
+								See the Live Example and customize your own AppBar component with code below.
+								<br />
+								<br />								
 							</Text>
 
-	        				<pre className={'e-background-grey-100 e-text-black'}>
-		        				<code>
-									npm install <strong>essence-toolbar</strong>
-		        				</code>
-	        				</pre>
-
-	        				<pre className={'e-background-grey-100 e-text-black'}>
-		        				<code>
+							<pre className={'e-background-orange-100 e-text-black e-no-margin'} style={{border:'1px solid #FFB74D', lineHeight:'20px'}}>
+			    				<code>		
+			    					npm install essence-toolbar							
+			    				</code>
+			    			</pre>
+			    			<br />
+			    			<br />
+			    			<pre className={'e-background-orange-100 e-text-black e-no-margin e-margin-bottom-25'} style={{border:'1px solid #FFB74D', lineHeight:'20px'}}>
+			    				<code>
 									import Menu from 'essence-menu';
 									<br />
 									import ToolBar from 'essence-toolbar';
@@ -132,7 +133,7 @@ class AppToolBar extends React.Component {
 
 									<br />
 									<br />
-									&lt;ToolBar className=&#123;'e-background-indigo-400 e-text-white'&#125;&gt;
+									&lt;ToolBar className=&#123;'e-background-white e-text-black'&#125;&gt;
 									<br />
 									&nbsp;&lt;Menu type=&#123;'cover'&#125; icon=&#123;'navigation-more-vert'&#125; className=&#123;'e-left'&#125;&gt;
 									<br />
@@ -204,15 +205,62 @@ class AppToolBar extends React.Component {
 									<br />
 									&nbsp;&lt;/Block&gt;
 									<br />
-									&lt;/ToolBar&gt;
-		        				</code>
-	        				</pre>
-	        			</Block>
-        			</Block>
-        		</CardContent>
-					</Card>
+									&lt;/ToolBar&gt;			
+			    				</code>
+							</pre>
+						</Block>
+						<Block classes={'brick brick-12 properties e-margin-bottom-25'}>	
+							<Text type={'h4'} classes={'e-text-indigo-500 e-margin-top-15'}>PROPERTIES</Text>
+	        				<Divider classes={'thick short e-background-indigo-500 e-margin-bottom-25'} />
+
+	        				<Block classes={'e-row tabel-header no-resize e-body1 e-no-margin'}>	
+	        					<Block classes={'brick brick-3 e-no-margin e-text-grey-700'}>	
+	        						Name
+	        					</Block>
+	        					<Block classes={'brick brick-3 e-no-margin e-text-grey-700'}>	
+	        						Default
+	        					</Block>
+	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-700'}>	
+									Description
+	        					</Block>
+	        				</Block>
+	        				<Block classes={'e-row tabel-line no-resize e-body1 e-no-margin'}>	
+	        					<Block classes={'brick brick-3 e-no-margin e-text-indigo-700'}>	
+	        						floating
+	        					</Block>
+	        					<Block classes={'brick brick-3 e-no-margin e-text-orange-700'}>	
+	        						floating=&#123;false&#125;
+	        					</Block>
+	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-900'}>	
+									Boolean true or false, add a className <u>floating</u> to component classes
+	        					</Block>
+	        				</Block>	
+	        				<Block classes={'e-row tabel-line no-resize e-body1 e-no-margin'}>	
+	        					<Block classes={'brick brick-3 e-no-margin e-text-indigo-700'}>	
+	        						bottom
+	        					</Block>
+	        					<Block classes={'brick brick-3 e-no-margin e-text-orange-700'}>	
+	        						bottom=&#123;false&#125;
+	        					</Block>
+	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-900'}>	
+									Boolean true or false, add a className <u>bottom</u> to component classes
+	        					</Block>
+	        				</Block>
+	        				<Block classes={'e-row tabel-line no-resize e-body1 e-no-margin'}>	
+	        					<Block classes={'brick brick-3 e-no-margin e-text-indigo-700'}>	
+	        						noShadow
+	        					</Block>
+	        					<Block classes={'brick brick-3 e-no-margin e-text-orange-700'}>	
+	        						noShadow=&#123;false&#125;
+	        					</Block>
+	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-900'}>	
+									Boolean true or false, add a className <u>no-shadow</u> to component classes
+	        					</Block>
+	        				</Block>		        				      						        				
+						</Block>			
+					</Block>
 				</Block>
-				</Block>
+				<Footer />
 			</Block>
 		);
   }

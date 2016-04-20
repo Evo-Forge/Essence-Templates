@@ -7,6 +7,10 @@ body {
 	overflow-y: scroll; 
 } 
 
+.e-divider {
+	width: 50px !important;
+}
+
 .brick-1, .brick-2, .brick-3, .brick-4, .brick-5, .brick-6, .brick-7, .brick-8, .brick-9, .brick-10, .brick-11, .brick-12 {
 	flex:1 1 auto !important;
 }
@@ -95,10 +99,8 @@ pre {
     font-weight: 100;
 }
 
-.card-link i {
-	line-height: 98px;
-	font-size: 120px;
-	padding: 20px 20px 20px 10px;
+.card-link img {	
+	padding-left: 10px;
 }
 
 .e-search {
@@ -167,7 +169,10 @@ pre {
 	z-index: 1 !important;
 }
 
-
+.toast-message ul {
+	padding: 0;
+	margin: 0;
+}
 
 @media only screen and (max-width : 760px){
 

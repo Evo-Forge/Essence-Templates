@@ -1,13 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import ClassNames from 'classnames';
-import Image from 'essence-image';
-import NavigationMenu from '../partials/navigation-menu';
 import Tab from 'essence-tab';
 import Btn from 'essence-button';
+import ReactDOM from 'react-dom';
+import Image from 'essence-image';
 import Switch from 'essence-switch';
+import ClassNames from 'classnames';
+import Footer from '../partials/footer';
 import {Block, Text, Divider, Utils} from 'essence-core';
-import {Card, CardHeader, CardContent, CardFooter} from 'essence-card';
+import NavigationMenu from '../partials/navigation-menu';
 
 class AppButton extends React.Component {
 	constructor(props) {
@@ -198,132 +198,195 @@ class AppButton extends React.Component {
 		                </Text>
 		              </Block>
 		              <Block classes={'brick brick-6 e-no-padding'}>
-		                <Image className={'e-img-rsp'} src={'./assets/img/footer.png'} alt={'footer'} />
+		                <Image className={'e-img-rsp'} src={'/assets/img/footer.png'} alt={'footer'} />
 		              </Block>
 		            </Block>
 		          </Block>
 		        </Block>
 
+				<Block className={'e-container'}>
+		        	<Block className={'e-row e-margin-top-25'}>
+		        		<Block classes={'brick brick-4'} style={{overflow:'hidden'}}>	
+							<Text type={'h4'} classes={'e-text-indigo-500'}>LIVE EXAMPLE</Text>
+		    				<Divider classes={'thick short e-background-indigo-500'} />							
+											    	
+							<Block className={'e-row e-body1 e-text-grey-700 e-padding-top-50'}>
+								<Block className={'e-text-grey-900 brick brick-12 e-no-margin e-h-center'}>
+									<Btn
+										type={this.state.buttonType}
+										ripple={this.state.buttonRipple === true ? true : false}
+										label={'Button Example'}
+										isDisabled={this.state.buttonDisabled === true ? true : false}
+										className={ClassNames(this.state.buttonColor)} />
+								</Block>						
+							</Block>								
+						</Block>
+						<Block classes={'brick brick-8'}>
+							<Text type={'h4'} classes={'e-text-indigo-500'}>USE COMPONENTS</Text>
+	        				<Divider classes={'thick short e-background-indigo-500 e-margin-bottom-25'} />		        						        				
 
-				<Block classes={'e-row'}>
-					<Block classes={'brick brick-12'}>
-						
+	        				<Text type={'p'} classes={'e-body1 e-text-grey-900 padding-top-bottom-10 e-no-margin'}>
+								Steps for using the component:
+							</Text>
 
-			        	<Card>
-			        		<CardContent>
-			        			<Block className={'e-row'}>
-									<Block className={'brick brick-5'} style={{paddingLeft:'0', paddingTop:'0'}}>
-										<Text type={'h4'} classes={'e-text-indigo-400'}>LIVE EXAMPLE:</Text>
-										<Divider classes={'thin short e-background-indigo-400'} />
-										<Block className={'e-text-center e-padding-top-15'}>
-				        					<Btn
-												type={this.state.buttonType}
-												ripple={this.state.buttonRipple === true ? true : false}
-												label={'Button Example'}
-												isDisabled={this.state.buttonDisabled === true ? true : false}
-												className={ClassNames(this.state.buttonColor)} />
-										</Block>
-									</Block>
-									<Block className={'brick brick-7'} style={{paddingRight:'0', paddingTop:'0'}}> 
-										<Text type={'h4'} classes={'e-text-indigo-400'}>HOW TO USE:</Text>
-										<Divider classes={'thin short e-background-indigo-400'} />
+							<pre className={'e-background-orange-100 e-text-black e-no-margin'} style={{border:'1px solid #FFB74D', lineHeight:'20px'}}>
+			    				<code>
+									import Btn from 'essence-button';
+									<br />
+									<br />
+									&lt;Btn
+									label=&#123;'Button Example'&#125; 
+									ripple=&#123;{this.state.buttonRipple.toString()}&#125; 
+									type=&#123;'{this.state.buttonType}'&#125; 
+									className=&#123;'{ClassNames(this.state.buttonColor)}'&#125; /&gt; 
+								</code>
+							</pre>
+						</Block>
 
-				        				<Text type={'p'} classes={'e-body1 e-text-blue-grey-700 padding-top-bottom-10'}>
-											Button component has the following options:
-											<br />
-											<br />
-											1. <strong>icon</strong>: name of icon
-											<br />
-											2. <strong>label</strong>: the text of the button
-											<br />
-											3. <strong>type</strong>: type of button from the list: <u>raised</u>, <u>flat</u> or <u>fab</u>
-											<br />
-											4. <strong>submit</strong>: <u>false</u> (<strong>default</strong>) or <u>true</u> - set type to <u>submit</u> or <u>button</u>
-											<br />
-											5. <strong>onClick</strong>: callback function on click event
-											<br />
-											6. <strong>ripple</strong>: <u>true</u> (<strong>default</strong>) - enable ripple effect & <u>false</u> - disable ripple effect
-											<br />
-											<br />
-										</Text>
-
-										<pre className={'e-background-grey-100 e-text-black'}>
-											<code>
-												import Btn from 'essence-button';
-												<br />
-												<br />
-												&lt;Btn
-												label=&#123;'Button Example'&#125; 
-												ripple=&#123;{this.state.buttonRipple.toString()}&#125; 
-												type=&#123;'{this.state.buttonType}'&#125; 
-												className=&#123;'{ClassNames(this.state.buttonColor)}'&#125; /&gt; 
-											</code>
-										</pre>
-									</Block>
-		        				</Block>
-			        		</CardContent>
-						</Card>
-
-		        		<Block className={'e-padding-bottom-25'}>
-							<Text type={'h4'} classes={'e-text-indigo-400'}>CHOOSE BUTTON TYPE</Text>
-							<Divider classes={'thin short e-background-indigo-400'} />
-
-		        			<Tab data={{
-								'header': [{
-										'context': (<Text>Raised</Text>)
-									},{
-										'context': (<Text>Flat</Text>)
-									},{
-										'context': (<Text>Fab</Text>)
-									},{
-										'context': (<Text>Options</Text>)
-									}
-								],
-								'rows': [ 
-									(
-										<Block className={'e-text-center e-padding-top-75 e-padding-bottom-75'}>
-											{this.renderRaised()}
-										</Block>
-									),
-									(
-										<Block className={'e-text-center e-padding-top-75 e-padding-bottom-75'}>
-											{this.renderFlat()}
-										</Block>
-									),
-									(
-										<Block className={'e-text-center e-padding-top-75 e-padding-bottom-75'}>
-											{this.renderFab()}
-										</Block>
-									),
-									(
-										<Block className={'e-text-center'}>
-											<Block className={'e-padding-top-25'}>
-												<Text type={'p'}>Switch ON or OFF the option for <strong>Ripple Effect</strong></Text>
-												<Switch 
-													type={'switches'} 
-													afterText={'ON'} 
-													beforeText={'OFF'} 
-													name={'switch-ripple'} 
-													onClick={this.changeButton.bind(this, {ripple: !this.state.buttonRipple} )}/>
+						<Block classes={'brick brick-12'}>
+	        				<Block className={'e-padding-bottom-25'}>
+			        			<Text type={'h4'} classes={'e-text-indigo-500'}>CHOOSE BUTTON TYPE</Text>
+			    				<Divider classes={'thick short e-background-indigo-500'} />
+				        		<Tab data={{
+									'header': [{
+											'context': (<Text>Raised</Text>)
+										},{
+											'context': (<Text>Flat</Text>)
+										},{
+											'context': (<Text>Fab</Text>)
+										},{
+											'context': (<Text>Options</Text>)
+										}
+									],
+									'rows': [ 
+										(
+											<Block className={'e-text-center e-padding-top-75 e-padding-bottom-75'}>
+												{this.renderRaised()}
 											</Block>
-											<Block className={'e-padding-top-25 e-padding-bottom-25'}>
-												<Text type={'p'}>Switch ON or OFF the option for <strong>Disabled</strong> option</Text>
-												<Switch 
-													type={'switches'} 
-													afterText={'ON'} 
-													beforeText={'OFF'} 
-													name={'switch-disable'}
-													onClick={this.changeButton.bind(this, {disabled: !this.state.buttonDisabled} )}/>
+										),
+										(
+											<Block className={'e-text-center e-padding-top-75 e-padding-bottom-75'}>
+												{this.renderFlat()}
 											</Block>
-										</Block>
-									)
-								]
-							}}
-							classes={'e-background-indigo-400 e-text-grey-50'} 
-							indicator={'e-background-grey-50'}/>
-		        		</Block>
+										),
+										(
+											<Block className={'e-text-center e-padding-top-75 e-padding-bottom-75'}>
+												{this.renderFab()}
+											</Block>
+										),
+										(
+											<Block className={'e-text-center'}>
+												<Block className={'e-padding-top-25'}>
+													<Text type={'p'}>Switch ON or OFF the option for <strong>Ripple Effect</strong></Text>
+													<Switch 
+														type={'switches'} 
+														afterText={'ON'} 
+														beforeText={'OFF'} 
+														name={'switch-ripple'} 
+														onClick={this.changeButton.bind(this, {ripple: !this.state.buttonRipple} )}/>
+												</Block>
+												<Block className={'e-padding-top-25 e-padding-bottom-25'}>
+													<Text type={'p'}>Switch ON or OFF the option for <strong>Disabled</strong> option</Text>
+													<Switch 
+														type={'switches'} 
+														afterText={'ON'} 
+														beforeText={'OFF'} 
+														name={'switch-disable'}
+														onClick={this.changeButton.bind(this, {disabled: !this.state.buttonDisabled} )}/>
+												</Block>
+											</Block>
+										)
+									]
+								}}
+								classes={'e-background-indigo-700 e-text-grey-50'} 
+								indicator={'e-background-grey-50'}/>
+			    			</Block>
+	        			</Block>
+	        			<Block classes={'brick brick-12 properties e-margin-bottom-25'}>	
+							<Text type={'h4'} classes={'e-text-indigo-500 e-margin-top-15'}>PROPERTIES</Text>
+	        				<Divider classes={'thick short e-background-indigo-500 e-margin-bottom-25'} />
+
+	        				<Block classes={'e-row tabel-header no-resize e-body1 e-no-margin'}>	
+	        					<Block classes={'brick brick-3 e-no-margin e-text-grey-700'}>	
+	        						Name
+	        					</Block>
+	        					<Block classes={'brick brick-3 e-no-margin e-text-grey-700'}>	
+	        						Default
+	        					</Block>
+	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-700'}>	
+									Description
+	        					</Block>
+	        				</Block>
+	        				<Block classes={'e-row tabel-line no-resize e-body1 e-no-margin'}>	
+	        					<Block classes={'brick brick-3 e-no-margin e-text-indigo-700'}>	
+	        						button
+	        					</Block>
+	        					<Block classes={'brick brick-3 e-no-margin e-text-orange-700'}>	
+	        						flat
+	        					</Block>
+	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-900'}>	
+									Choose button type: raised, flat, fab, fab-mini
+	        					</Block>
+	        				</Block>
+	        				<Block classes={'e-row tabel-line no-resize e-body1 e-no-margin'}>	
+	        					<Block classes={'brick brick-3 e-no-margin e-text-indigo-700'}>	
+	        						type
+	        					</Block>
+	        					<Block classes={'brick brick-3 e-no-margin e-text-orange-700'}>	
+	        						type=&#123;'default'&#125;
+	        					</Block>
+	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-900'}>	
+									Choose button type: default, primary, success, info, warning, danger
+	        					</Block>
+	        				</Block>	
+	        				<Block classes={'e-row tabel-line no-resize e-body1 e-no-margin'}>	
+	        					<Block classes={'brick brick-3 e-no-margin e-text-indigo-700'}>	
+	        						icon
+	        					</Block>
+	        					<Block classes={'brick brick-3 e-no-margin e-text-orange-700'}>	
+	        						null
+	        					</Block>
+	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-900'}>	
+									Name of icon
+	        					</Block>
+	        				</Block>   
+	        				<Block classes={'e-row tabel-line no-resize e-body1 e-no-margin'}>	
+	        					<Block classes={'brick brick-3 e-no-margin e-text-indigo-700'}>	
+	        						label
+	        					</Block>
+	        					<Block classes={'brick brick-3 e-no-margin e-text-orange-700'}>	
+	        						undefined
+	        					</Block>
+	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-900'}>	
+									The text of the button
+	        					</Block>
+	        				</Block>
+	        				<Block classes={'e-row tabel-line no-resize e-body1 e-no-margin'}>	
+	        					<Block classes={'brick brick-3 e-no-margin e-text-indigo-700'}>	
+	        						submit
+	        					</Block>
+	        					<Block classes={'brick brick-3 e-no-margin e-text-orange-700'}>	 
+	        						false
+	        					</Block>
+	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-900'}>	
+									 Set type to submit or button
+	        					</Block>
+	        				</Block>
+	        				<Block classes={'e-row tabel-line no-resize e-body1 e-no-margin'}>	
+	        					<Block classes={'brick brick-3 e-no-margin e-text-indigo-700'}>	
+	        						ripple
+	        					</Block>
+	        					<Block classes={'brick brick-3 e-no-margin e-text-orange-700'}>	
+	        						true
+	        					</Block>
+	        					<Block classes={'brick brick-6 e-no-margin e-text-grey-900'}>	
+									 Enable ripple effect & false - disable ripple effect
+	        					</Block>
+	        				</Block>        						        				
+						</Block>		        		
 					</Block>
 				</Block>
+				<Footer />
 			</Block>
 		);
     }
